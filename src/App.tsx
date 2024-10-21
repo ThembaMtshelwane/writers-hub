@@ -1,4 +1,6 @@
 import Button from "./components/Button";
+import CreatorCard from "./components/CreatorCard";
+import CreatorCardGrid from "./components/CreatorCardGrid";
 import FilterButton from "./components/FilterButton";
 import Navbar from "./components/Navbar";
 
@@ -49,6 +51,19 @@ export default function App() {
           <FilterButton name={"Sci-Fi"} />
           <FilterButton name={"Fantasy"} />
         </section>
+      </section>
+
+      <section className="mt-10 p-4">
+        <CreatorCard
+          name={"Dune"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi tempora iusto iure ducimus quas optio cum non alias nemo blanditiis? Ea officiis nobis consequatur rem minima at. Aperiam, voluptatibus quae quos sapiente suscipit aliquid? Possimus quas cupiditate laborum, eum quisquam, ipsam sit inventore perspiciatis voluptas explicabo tempore, reiciendis voluptates. Assumenda?nventore perspiciatis voluptas explicabo tempore, reiciendis voluptates. Assumenda?"
+          }
+        />
+      </section>
+
+      <section className="mb-24 border-2 border-blue-600 w-[70%] ml-auto">
+        <CreatorCardGrid />
       </section>
     </>
   );
