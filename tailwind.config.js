@@ -6,8 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      
-    },
+      colors: {
+        'primary' : '#F2F8F3',
+        'secondary' : '#528362',
+        'accent' : '#295131'
+        
+      },
+      fontFamily : {
+        heading : ['Inter', 'sans-serif'],
+        body : ['Roboto', 'sans-serif'],
+      }
+    },  
   },
   plugins: [],
 }
