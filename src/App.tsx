@@ -9,7 +9,7 @@ import CommentCard from "./components/CommentCard";
 
 export default function App() {
   return (
-    <section className="w-full">
+    <section className="w-full bg-primary font-body">
       <Navbar />
       <section className="border-2 mt-10  p-4">
         <section className="space-x-10 space-y-4">
