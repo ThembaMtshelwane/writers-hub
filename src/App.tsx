@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <>
+    <section className="w-full">
       <Navbar />
       <section className="border-2 mt-10  p-4">
         <section className="space-x-10 space-y-4">
@@ -62,9 +62,9 @@ export default function App() {
         />
       </section>
 
-      <section className="mb-24 border-2 border-blue-600 w-[70%] ml-auto">
+      <section className="mb-24 border-2 border-blue-600 sm:w-[70%] sm:ml-auto">
         <CreatorCardGrid />
       </section>
-    </>
+    </section>
   );
 }

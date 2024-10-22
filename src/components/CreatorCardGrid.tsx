@@ -5,9 +5,9 @@ const CreatorCardGrid = () => {
     <section
       className="
         grid 
-        grid-cols-[repeat(auto-fit,_minmax(250px,_320px))] 
+        grid-cols-[repeat(auto-fit,_minmax(250px,300px))] 
         gap-4 
-        p-4 justify-self-center
+        justify-center
     "
     >
       <CreatorCard
