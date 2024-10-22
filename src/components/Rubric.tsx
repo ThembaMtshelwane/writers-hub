@@ -1,4 +1,4 @@
-import { IoClose } from "react-icons/io5"
+import { IoClose } from "react-icons/io5";
 
 const Rubric = () => {
   return (
@@ -9,14 +9,14 @@ const Rubric = () => {
         <div className="flex border border-black">
           <p className=" p-2 w-full">{"Criteria 1"}</p>
           <span className="border-l border-inherit px-5 flex items-center">
-            5
+            4
           </span>
         </div>
 
         <div className="flex border border-black">
           <p className=" p-2 w-full">{"Criteria 2"}</p>
           <span className="border-l border-inherit px-5 flex items-center">
-            4
+            5
           </span>
         </div>
 
@@ -43,7 +43,7 @@ const Rubric = () => {
       <div className="p-5 border border-black text-2xl w-fit rounded-md">
         20
       </div>
-      <IoClose className="size-6 absolute right-5 top-5 cursor-pointer hover:text-black/50"/>
+      <IoClose className="size-6 absolute right-5 top-5 cursor-pointer hover:text-black/50" />
     </div>
   );
 };
