@@ -4,14 +4,10 @@ import CreatorCardGrid from "./components/CreatorCardGrid";
 import FilterButton from "./components/FilterButton";
 import Navbar from "./components/Navbar";
 
-import BasicInfoCard from "./components/BasicInfoCard"
-import CommentCard from "./components/CommentCard"
-
+import BasicInfoCard from "./components/BasicInfoCard";
+import CommentCard from "./components/CommentCard";
 
 export default function App() {
-
-
-
   return (
     <section className="w-full">
       <Navbar />
@@ -73,13 +69,9 @@ export default function App() {
         <CreatorCardGrid />
       </section>
       <div>
-
-<CommentCard/>
-<BasicInfoCard/>
-
-   </div>
+        <CommentCard />
+        <BasicInfoCard />
+      </div>
     </section>
   );
 }
-
-
