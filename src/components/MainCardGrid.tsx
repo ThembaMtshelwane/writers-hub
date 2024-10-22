@@ -4,7 +4,7 @@ import maincard from "../maincard.json";
 const MainCardGrid = () => {
   console.log(maincard);
   return (
-    <div className="grid grid-cols-layout gap-5 w-[70%] px-10">
+    <div className="grid grid-cols-layout gap-5  lg:w-[70%] border-2 border-red-500 justify-center lg:ml-auto mb-20">
       {maincard.map((book) => {
         return (
           <MainCard
