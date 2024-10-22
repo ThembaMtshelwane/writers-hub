@@ -9,7 +9,7 @@ type CardProps = {
 
 const MainCard = ({ image, title, author, desc }: CardProps) => {
   return (
-    <div className="bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl">
+    <div className="bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl hover:scale-105 transition ease-in-out duration-500">
       <div className="h-[55%] mb-3">
         <img
           src={image}
