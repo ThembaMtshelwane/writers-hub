@@ -11,7 +11,6 @@ import MainCardGrid from "./components/MainCardGrid";
 
 import Gravity from "./assets/Images/gravity.jpeg";
 import MainSideBar from "./components/MainSideBar";
-import AuthorWorks from "./components/AuthorWorks";
 import PersonalInfoList from "./components/PersonalInfoList";
 
 export default function App() {
