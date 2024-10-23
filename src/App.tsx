@@ -1,5 +1,6 @@
 import BasicInfoCard from "./components/BasicInfoCard"
 import CommentCard from "./components/CommentCard"
+import ProfileSideBar from "./components/ProfileSideBar"
 
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
 
 <CommentCard/>
 <BasicInfoCard/>
+<ProfileSideBar/>
 
    </div>
   )
