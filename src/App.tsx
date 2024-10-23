@@ -10,6 +10,8 @@ import MainCard from "./components/MainCard";
 import MainCardGrid from "./components/MainCardGrid";
 
 import Gravity from "./assets/Images/gravity.jpeg";
+import ViewScore from "./components/ViewScore";
+import Rubric from "./components/Rubric";
 import MainSideBar from "./components/MainSideBar";
 import PersonalInfoList from "./components/PersonalInfoList";
 
@@ -87,6 +89,8 @@ export default function App() {
         desc="Lorem ipsum, dolor sit amet consecte adipisicing elit. Inventore autem, aliquam maiores dolorem sed eos accusamus officia consequatur adipisci totam?"
       />
       <MainCardGrid />
+      <ViewScore />
+      <Rubric />
       <div>
         
         <MainSideBar/>
