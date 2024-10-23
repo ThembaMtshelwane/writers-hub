@@ -22,7 +22,7 @@
           "genres": "article",
           "reviews": [
             {
-              "id": "00ad76a2-2886-46d1-8baf-b4cfaca50d56",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 5,
               "criteria2": 5,
               "criteria3": 4,
@@ -117,7 +117,7 @@
           "genres": "comedy",
           "reviews": [
             {
-              "id": "6e7b981a-ff9f-4618-991c-2ae0e5d59666",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 3,
               "criteria2": 5,
               "criteria3": 0,
@@ -212,7 +212,7 @@
           "genres": "horror",
           "reviews": [
             {
-              "id": "8c97ffef-f8d4-45a0-a6eb-cca1f811e0a3",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 5,
               "criteria2": 2,
               "criteria3": 4,
@@ -220,7 +220,7 @@
               "score": 16
             },
             {
-              "id": "0d8d8d09-05de-4d33-abef-e5ab29ee76a8",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 5,
               "criteria2": 3,
               "criteria3": 1,
@@ -228,7 +228,7 @@
               "score": 14
             },
             {
-              "id": "a5af0963-f2e0-4559-95b0-b4557a960747",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 2,
               "criteria2": 1,
               "criteria3": 3,
@@ -236,7 +236,7 @@
               "score": 11
             },
             {
-              "id": "3c0429b8-4b02-4d18-93dd-7e92671b74fb",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 0,
               "criteria2": 2,
               "criteria3": 1,
@@ -323,7 +323,7 @@
           "genres": "mystery",
           "reviews": [
             {
-              "id": "cd818383-7ed4-44f7-b04b-64158ea7df53",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 1,
               "criteria2": 3,
               "criteria3": 5,
@@ -841,7 +841,7 @@
       "gender": "Female",
       "school": "Instituto Politécnico de Tomar",
       "grade": 10,
-      "password": "mK9\u003EVx4AjvmEt@sj",
+      "password": "mK9>Vx4AjvmEt@sj",
       "DOB": "17/12/1965",
       "content": [
         {
@@ -854,7 +854,7 @@
           "genres": "thriller",
           "reviews": [
             {
-              "id": "c2d0c2cb-a85f-48f4-8810-b44d99802fee",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 2,
               "criteria2": 4,
               "criteria3": 1,
@@ -862,7 +862,7 @@
               "score": 9
             },
             {
-              "id": "8a569ecf-c00c-459c-bc52-8c96d466780d",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 2,
               "criteria2": 1,
               "criteria3": 1,
@@ -870,7 +870,7 @@
               "score": 6
             },
             {
-              "id": "26b66942-1ce2-4c49-bafa-93328e47f115",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 0,
               "criteria2": 3,
               "criteria3": 4,
@@ -1023,7 +1023,7 @@
           "genres": "comedy",
           "reviews": [
             {
-              "id": "e96e3b5e-a356-44b9-9522-8d878346f447",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 1,
               "criteria2": 2,
               "criteria3": 0,
@@ -1031,7 +1031,7 @@
               "score": 6
             },
             {
-              "id": "fc0e6492-1738-4f04-b57b-6618900fccfd",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 1,
               "criteria2": 2,
               "criteria3": 4,
@@ -1039,7 +1039,7 @@
               "score": 12
             },
             {
-              "id": "0edf6682-fe34-4a64-be44-1511d71982d8",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 3,
               "criteria2": 5,
               "criteria3": 4,
@@ -1158,7 +1158,7 @@
           "genres": "romance",
           "reviews": [
             {
-              "id": "8ddacdc3-26e7-483b-93d0-cf80a44b4db0",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 4,
               "criteria2": 0,
               "criteria3": 1,
@@ -1166,7 +1166,7 @@
               "score": 9
             },
             {
-              "id": "6d014cb0-c6d4-4e1b-a032-41b79c64cae9",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 0,
               "criteria2": 0,
               "criteria3": 3,
@@ -1174,7 +1174,7 @@
               "score": 8
             },
             {
-              "id": "4ab6a63d-a05b-492d-999a-36600a4756d6",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 2,
               "criteria2": 4,
               "criteria3": 0,
@@ -1293,7 +1293,7 @@
           "genres": "sci-fi",
           "reviews": [
             {
-              "id": "d44b21e5-e214-453e-a656-69d77f5281f6",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 3,
               "criteria2": 5,
               "criteria3": 0,
@@ -1337,7 +1337,7 @@
           "genres": "article",
           "reviews": [
             {
-              "id": "75049e1a-6e0f-4f57-b773-88e0f180df58",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 1,
               "criteria2": 1,
               "criteria3": 1,
@@ -1381,7 +1381,7 @@
           "genres": "thriller",
           "reviews": [
             {
-              "id": "1d023f60-c57f-481f-9d15-805a472ad5c6",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 4,
               "criteria2": 1,
               "criteria3": 3,
@@ -1389,7 +1389,7 @@
               "score": 13
             },
             {
-              "id": "4ec162be-8ce7-4dc8-970f-7763cb24639e",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 1,
               "criteria2": 0,
               "criteria3": 2,
@@ -1397,7 +1397,7 @@
               "score": 6
             },
             {
-              "id": "a3058c85-b95d-4d8d-b2fb-ff38a3554b4c",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 3,
               "criteria2": 1,
               "criteria3": 2,
@@ -1481,7 +1481,7 @@
           "genres": "action",
           "reviews": [
             {
-              "id": "fa858996-bf0f-459f-aede-a0a8f8106343",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 1,
               "criteria2": 1,
               "criteria3": 5,
@@ -1489,7 +1489,7 @@
               "score": 10
             },
             {
-              "id": "a981e5a3-6825-445d-ad06-2dab7ccc1014",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 5,
               "criteria2": 1,
               "criteria3": 3,
@@ -1497,7 +1497,7 @@
               "score": 9
             },
             {
-              "id": "c35bccce-3fa7-4137-ba0b-e33fe4dfa980",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 1,
               "criteria2": 1,
               "criteria3": 0,
@@ -1505,7 +1505,7 @@
               "score": 5
             },
             {
-              "id": "2c93f666-1a7b-4d09-b85e-5084a01a8261",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 1,
               "criteria2": 2,
               "criteria3": 0,
@@ -1513,7 +1513,7 @@
               "score": 4
             },
             {
-              "id": "b88502a3-2816-458d-a8cf-b0cd0391d746",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 3,
               "criteria2": 0,
               "criteria3": 1,
@@ -1558,7 +1558,7 @@
       "gender": "Female",
       "school": "Tamil Nadu Agricultural University",
       "grade": 6,
-      "password": "lT7~O}|6t\u003C\\6Ut33",
+      "password": "lT7~O}|6t<\\6Ut33",
       "DOB": "12/10/1964",
       "content": [
         {
@@ -1657,7 +1657,7 @@
           "genres": "horror",
           "reviews": [
             {
-              "id": "9d3276eb-bb02-4b1b-892e-5e2e29aab501",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 1,
               "criteria2": 4,
               "criteria3": 0,
@@ -1665,7 +1665,7 @@
               "score": 10
             },
             {
-              "id": "8f842234-c72c-405b-967c-d405d3427b9a",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 3,
               "criteria2": 3,
               "criteria3": 3,
@@ -1673,7 +1673,7 @@
               "score": 10
             },
             {
-              "id": "0ea85132-0132-488d-a62b-783ba49ead5d",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 1,
               "criteria2": 0,
               "criteria3": 0,
@@ -1681,7 +1681,7 @@
               "score": 3
             },
             {
-              "id": "1e36edbe-87f9-4015-bd7e-304a86488646",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 5,
               "criteria2": 2,
               "criteria3": 1,
@@ -1689,7 +1689,7 @@
               "score": 13
             },
             {
-              "id": "dd0fea0a-2b2f-40aa-9e73-d7918e209d42",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 5,
               "criteria2": 5,
               "criteria3": 2,
@@ -1824,7 +1824,7 @@
           "genres": "comedy",
           "reviews": [
             {
-              "id": "efac5957-6866-409f-bbc2-5945863c9b3f",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 4,
               "criteria2": 3,
               "criteria3": 1,
@@ -1832,7 +1832,7 @@
               "score": 11
             },
             {
-              "id": "b7b7f7a9-f50b-409d-9520-ba5059b4cb5e",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 3,
               "criteria2": 1,
               "criteria3": 3,
@@ -1840,7 +1840,7 @@
               "score": 11
             },
             {
-              "id": "40641412-f633-418a-ba61-7c148a2ee191",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 3,
               "criteria2": 3,
               "criteria3": 0,
@@ -1848,7 +1848,7 @@
               "score": 10
             },
             {
-              "id": "7c382ef3-fa1d-41fa-88ff-051ee8941614",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 1,
               "criteria2": 3,
               "criteria3": 1,
@@ -1856,7 +1856,7 @@
               "score": 6
             },
             {
-              "id": "e039f758-6fbd-49a8-95ec-f4193a6569b2",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "criteria1": 3,
               "criteria2": 1,
               "criteria3": 3,
@@ -1955,7 +1955,7 @@
           "genres": "history",
           "reviews": [
             {
-              "id": "4c45e077-70d6-4d3d-9d21-f9edf259246f",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 4,
               "criteria2": 1,
               "criteria3": 5,
@@ -1963,7 +1963,7 @@
               "score": 12
             },
             {
-              "id": "99b25e89-6dd3-44d0-8fd8-22d7ff5de624",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 3,
               "criteria2": 5,
               "criteria3": 5,
@@ -2636,7 +2636,7 @@
           "genres": "adventure",
           "reviews": [
             {
-              "id": "812a8eaa-b6ae-43fa-8b4b-276ef44c3af3",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "criteria1": 5,
               "criteria2": 4,
               "criteria3": 4,
