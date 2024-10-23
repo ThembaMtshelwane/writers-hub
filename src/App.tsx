@@ -6,6 +6,9 @@ import Navbar from "./components/Navbar";
 
 import BasicInfoCard from "./components/BasicInfoCard";
 import CommentCard from "./components/CommentCard";
+import MainSideBar from "./components/MainSideBar";
+import AuthorWorks from "./components/AuthorWorks";
+import PersonalInfoList from "./components/PersonalInfoList";
 
 export default function App() {
   return (
@@ -71,6 +74,11 @@ export default function App() {
       <div>
         <CommentCard />
         <BasicInfoCard />
+      </div>
+      <div>
+        
+        <MainSideBar/>
+        <PersonalInfoList/>
       </div>
     </section>
   );
