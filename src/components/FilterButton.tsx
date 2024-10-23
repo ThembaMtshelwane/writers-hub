@@ -15,8 +15,8 @@ const FilterButton = ({ name }: FilterButtonProps) => {
     <button
       className={`p-2 rounded-md min-w-[80px] ${
         isChosen
-          ? " bg-[#528362] text-white hover:bg-[#295131] border"
-          : "bg-white text-black border border-[#528362] hover:bg-[#F2F8F3]"
+          ? " bg-secondary text-white hover:bg-accent border"
+          : "bg-white text-black border border-secondary hover:bg-primary"
       }`}
       onClick={handleChosenGenre}
     >

@@ -1,5 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+@layer base {
+  body {
+    @apply font-body;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading;
+  }
+
+  h1 {
+    @apply text-xl;
+  }
+  .contentCard {
+    @apply bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl hover:scale-[1.02] transition ease-in-out duration-500;
+  }
+  .contentCardGrid {
+    @apply grid grid-cols-layout gap-5 justify-center;
+  }
+}

@@ -6,14 +6,19 @@ import Navbar from "./components/Navbar";
 
 import BasicInfoCard from "./components/BasicInfoCard";
 import CommentCard from "./components/CommentCard";
+import MainCard from "./components/MainCard";
+import MainCardGrid from "./components/MainCardGrid";
+
+import Gravity from "./assets/Images/gravity.jpeg";
 import MainSideBar from "./components/MainSideBar";
 import AuthorWorks from "./components/AuthorWorks";
 import PersonalInfoList from "./components/PersonalInfoList";
 
 export default function App() {
   return (
-    <section className="w-full">
+    <section className="w-full bg-primary font-body">
       <Navbar />
+
       <section className="border-2 mt-10  p-4">
         <section className="space-x-10 space-y-4">
           <Button
@@ -75,6 +80,14 @@ export default function App() {
         <CommentCard />
         <BasicInfoCard />
       </div>
+
+      <MainCard
+        title="The Gravity of Us"
+        author="Fanelo Baloyi"
+        image={Gravity}
+        desc="Lorem ipsum, dolor sit amet consecte adipisicing elit. Inventore autem, aliquam maiores dolorem sed eos accusamus officia consequatur adipisci totam?"
+      />
+      <MainCardGrid />
       <div>
         
         <MainSideBar/>
