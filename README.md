@@ -6,4 +6,4 @@ This project uses the following main packages:
 
 - **React-Icons** : npm install react-icons --save
 - **JSON server** : npm i json-server
-- 
+- **React Router Dom** : npm i react-router-dom
