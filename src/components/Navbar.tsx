@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -6,22 +7,27 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between p-4 text-white bg-[#528362]">
       {/* Logo */}
-      <img
-        src="Writer_s-Hub-Logo-1.svg"
-        alt="Writer's Hub Logo"
-        className="h-16 hover:scale-110 transition-transform"
-      />
+      <NavLink to={"/"}>
+        <img
+          src="Writer_s-Hub-Logo-1.svg"
+          alt="Writer's Hub Logo"
+          className="h-16 hover:scale-110 transition-transform"
+        />
+      </NavLink>
 
       {/* Desktop Menu */}
       <ul className="hidden sm:flex justify-between w-[40%] sm:max-w-[300px] md:mr-20">
-        {["Feed", "Post", "Profile"].map((item) => (
+        {["feed", "post", "profile"].map((item) => (
           <li
             key={item}
             className="p-2 w-[150px] text-center hover:scale-110 transition-transform"
           >
-            <a href="#" className="hover:underline hover:decoration-white">
+            <NavLink
+              to={`/${item}`}
+              className="hover:underline hover:decoration-white capitalize"
+            >
               {item}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
