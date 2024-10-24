@@ -7,7 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import MainLandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage";
 import ProfileLayout from "./layout/ProfileLayout";
 // import ProfilePage from "./pages/ProfilePage";
 // import WorksPage from "./pages/WorksPage";
@@ -37,9 +37,11 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<MainLandingPage />} />
-            <Route path="post" element={<MainLandingPage />} />
+
+          <Route path="/" element={<LandingPage />} />
+
+          <Route path="/home" element={<MainLayout />}>
+            <Route path="post" element={<LandingPage />} />
           </Route>
 
           <Route path="/profile" element={<ProfileLayout />}>
@@ -47,6 +49,7 @@ export default function App() {
             <Route path="works" element={<CreatorCardGrid />} />
             {/* <Route path="works" element={<WorksPage />} /> */}
           </Route>
+
         </Routes>
       </BrowserRouter>
       {/* <RouterProvider router={router} /> */}
