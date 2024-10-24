@@ -1,18 +1,42 @@
-import BasicInfoCard from "./components/BasicInfoCard"
-import CommentCard from "./components/CommentCard"
-import ProfileSideBar from "./components/ProfileSideBar"
-  import Writing from "./components/Writing"
-
-
+import {
+  // createBrowserRouter,
+  // createRoutesFromElements,
+  BrowserRouter,
+  Route,
+  // RouterProvider,
+  Routes,
+} from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
+import MainLandingPage from "./pages/LandingPage";
+import ProfileLayout from "./layout/ProfileLayout";
+// import ProfilePage from "./pages/ProfilePage";
+// import WorksPage from "./pages/WorksPage";
+import PersonalInfoList from "./components/PersonalInfoList";
+import CreatorCardGrid from "./components/CreatorCardGrid";
+// import BasicInfoCard from "./components/BasicInfoCard"
+// import CommentCard from "./components/CommentCard"
+// import ProfileSideBar from "./components/ProfileSideBar"
 
 export default function App() {
+  // const router = createBrowserRouter(
+  //   createRoutesFromElements(
+  //     <Routes>
+  //       <Route path="/" element={<MainLayout />}>
+  //         <Route index element={<MainLandingPage />} />
+  //         <Route path="post" element={<MainLandingPage />} />
+  //       </Route>
+
+  //       <Route path="/profile" element={<ProfileLayout />}>
+  //         <Route index element={<ProfilePage />} />
+  //       </Route>
+  //     </Routes>
+  //   )
+  // );
+
   return (
    <div>
 
-<CommentCard/>
-<BasicInfoCard/>
-<ProfileSideBar/>
-<Writing/>
+
 
    </div>
   )

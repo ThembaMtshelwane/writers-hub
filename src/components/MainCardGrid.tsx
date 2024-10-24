@@ -2,7 +2,6 @@ import MainCard from "./MainCard";
 import maincard from "../maincard.json";
 
 const MainCardGrid = () => {
-  console.log(maincard);
   return (
     <div className="contentCardGrid">
       {maincard.map((book) => {
