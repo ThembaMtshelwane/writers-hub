@@ -5,6 +5,7 @@ import ProfileLayout from "./layout/ProfileLayout";
 import PersonalInfoList from "./components/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 
+
 export default function App() {
   return (
     <>
