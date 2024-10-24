@@ -8,4 +8,5 @@ This project uses the following main packages:
 - **JSON server** : npm i json-server
 - **React Router Dom** : npm i react-router-dom
 - **SwiperJS** : npm i swiper
-- **Axios** : npm i axio
+- **Axios** : npm i axios
+ **Quill** : npm i react-quill
