@@ -9,7 +9,9 @@ const MainLayout = () => {
         <Navbar />
       </header>
       <main className="grid grid-cols-[60%_30%]">
-        <Outlet />
+        <section className="border-2 bg-red-200">
+          <Outlet />
+        </section>
         <MainSideBar />
       </main>
     </>

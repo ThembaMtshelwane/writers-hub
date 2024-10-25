@@ -10,7 +10,9 @@ const ProfileLayout = () => {
       </header>
       <main className="grid grid-cols-[30%_70%]">
         <ProfileSideBar />
-        <Outlet />
+        <section className="border-2 bg-red-200">
+          <Outlet />
+        </section>
       </main>
     </>
   );

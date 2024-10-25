@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import LandingPage from "./pages/LandingPage";
 import ProfileLayout from "./layout/ProfileLayout";
-import PersonalInfoList from "./components/PersonalInfoList";
+import PersonalInfoList from "./pages/profile/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 
 export default function App() {
