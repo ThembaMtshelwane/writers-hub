@@ -2,13 +2,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import BasicInfoCard from "../../components/BasicInfoCard";
 import { Content, User } from "../../types";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
-type Props = {};
-
-const Livefeed = (props: Props) => {
+const Livefeed = () => {
   const [users, setUsers] = useState<User[]>([]);
-
   useEffect(() => {
     const fetchContent = async () => {
       try {
@@ -25,7 +22,7 @@ const Livefeed = (props: Props) => {
     <section className="grid gap-5">
       {users.map((user: User) =>
         user.content.slice(0, 7).map((work: Content) => (
-          <Link to={`posts/${user.username}/${work.id}`}>
+          <Link to={`/post/${user.username}/${work.id}`}>
             <BasicInfoCard
               key={work.id + work.title}
               title={work.title}
