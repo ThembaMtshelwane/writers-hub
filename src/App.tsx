@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import LandingPage from "./pages/LandingPage";
 import ProfileLayout from "./layout/ProfileLayout";
-import PersonalInfoList from "./pages/profile/PersonalInfoList";
+import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 
 
@@ -13,13 +13,67 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
 
-          <Route path="/home" element={<MainLayout />}>
-            <Route path="post" element={<LandingPage />} />
+          <Route path="/feed" element={<MainLayout />}>
+            <Route
+              index
+              element={
+                <>
+                  <p className="text-5xl font-bold">This is the livefeed</p>
+                </>
+              }
+            />
+          </Route>
+
+          <Route path="/post" element={<MainLayout />}>
+            <Route
+              index
+              element={
+                <>
+                  <p className="text-5xl font-bold">Enter basic info</p>
+                </>
+              }
+            />
+            <Route
+              path="write"
+              element={
+                <>
+                  <p className="text-5xl font-bold">Type your nonsense</p>
+                </>
+              }
+            />
+            <Route
+              path="preview"
+              element={
+                <>
+                  <p className="text-5xl font-bold">PREVIEW your nonsense </p>
+                </>
+              }
+            />
           </Route>
 
           <Route path="/profile" element={<ProfileLayout />}>
             <Route index element={<PersonalInfoList />} />
             <Route path="works" element={<CreatorCardGrid />} />
+            <Route
+              path="preview"
+              element={
+                <>
+                  <p className="text-5xl font-bold">
+                    The work you have reviewed
+                  </p>
+                </>
+              }
+            />
+            <Route
+              path="view-score"
+              element={
+                <>
+                  <p className="text-5xl font-bold">
+                    This is your score so far
+                  </p>
+                </>
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>
