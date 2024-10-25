@@ -1,4 +1,4 @@
-import PersonalInfoList from "./profile/PersonalInfoList";
+import PersonalInfoList from "./profilePage/PersonalInfoList";
 
 const ProfilePage = () => {
   return (
