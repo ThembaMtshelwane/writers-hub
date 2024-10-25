@@ -5,6 +5,7 @@ import ProfileLayout from "./layout/ProfileLayout";
 import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 import NotFound from "./pages/NotFound";
+import SplashPage from "./pages/SplashPage";
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-
+          <Route path="/splash" element={<SplashPage />} />
           <Route path="/feed" element={<MainLayout />}>
             <Route
               index

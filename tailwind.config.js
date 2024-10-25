@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         heading: ['Inter', 'sans-serif'],
         body: ['Roboto', 'sans-serif'],
+        italiana: ['Italiana', 'sans-serif']
       },
       gridTemplateColumns: {
         'layout': 'repeat(auto-fit, minmax(250px, 300px))'
