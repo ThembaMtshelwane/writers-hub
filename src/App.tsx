@@ -55,7 +55,7 @@ export default function App() {
             <Route index element={<PersonalInfoList />} />
             <Route path="works" element={<CreatorCardGrid />} />
             <Route
-              path="preview"
+              path="reviews"
               element={
                 <>
                   <p className="text-5xl font-bold">

@@ -39,29 +39,33 @@ const ProfileSideBar: React.FC = () => {
           </button>
         </Link>
 
-        <button
-          onClick={() => handleClick("reviews")}
-          className="bg-white p-6 min-w-[200px] "
-        >
-          REVIEWS
-          <div className="grid place-content-center mt-2">
-            {chosenButton === "reviews" && (
-              <hr className="border-[3px] w-32 flex border-[#528362]" />
-            )}
-          </div>
-        </button>
+        <Link to="/profile/reviews">
+          <button
+            onClick={() => handleClick("reviews")}
+            className="bg-white p-6 min-w-[200px] "
+          >
+            REVIEWS
+            <div className="grid place-content-center mt-2">
+              {chosenButton === "reviews" && (
+                <hr className="border-[3px] w-32 flex border-[#528362]" />
+              )}
+            </div>
+          </button>
+        </Link>
 
-        <button
-          onClick={() => handleClick("view-score")}
-          className="bg-white p-6 min-w-[200px] "
-        >
-          VIEW SCORE
-          <div className="grid place-content-center mt-2">
-            {chosenButton === "view-score" && (
-              <hr className="border-[3px] w-32 flex border-[#528362]" />
-            )}
-          </div>
-        </button>
+        <Link to="/profile/view-score">
+          <button
+            onClick={() => handleClick("view-score")}
+            className="bg-white p-6 min-w-[200px] "
+          >
+            VIEW SCORE
+            <div className="grid place-content-center mt-2">
+              {chosenButton === "view-score" && (
+                <hr className="border-[3px] w-32 flex border-[#528362]" />
+              )}
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   );
