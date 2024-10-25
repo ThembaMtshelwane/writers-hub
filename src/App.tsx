@@ -5,6 +5,7 @@ import ProfileLayout from "./layout/ProfileLayout";
 import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 import NotFound from "./pages/NotFound";
+import Livefeed from "./pages/feedPage/Livefeed";
 
 export default function App() {
   return (
@@ -14,14 +15,7 @@ export default function App() {
           <Route path="/" element={<LandingPage />} />
 
           <Route path="/feed" element={<MainLayout />}>
-            <Route
-              index
-              element={
-                <>
-                  <p className="text-5xl font-bold">This is the livefeed</p>
-                </>
-              }
-            />
+            <Route index element={<Livefeed />} />
           </Route>
 
           <Route path="/post" element={<MainLayout />}>
