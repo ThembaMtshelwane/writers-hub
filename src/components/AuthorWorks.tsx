@@ -7,9 +7,9 @@ type Props = {
 
 const AuthorWorks = ({ image, title, AuthorName, description }: Props) => {
   return (
-    <section className="flex  px-10">
+    <section className="flex px-10">
       <div>
-        <img src={image} className="h-20 w-20  " />
+        <img src={image} className="object-cover object-center size-full" />
       </div>
       <div className="bg-white w-80">
         <div className=" mx-2 p-2 my-2 flex flex-col">

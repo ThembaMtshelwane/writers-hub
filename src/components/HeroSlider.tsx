@@ -14,7 +14,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const { data } = await axios.get("/api/users");
+        const { data } = await axios.get("/api/users?_limit=2");
         setUser(data);
       } catch (error) {
         console.error("Error fetching Data: ", error);

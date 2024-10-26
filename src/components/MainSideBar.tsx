@@ -3,7 +3,7 @@ import author from "../assets/Images/author.png";
 
 const MainSideBar = () => {
   return (
-    <section className="flex justify-center  h-fit">
+    <section className="flex justify-center h-fit w-full">
       <div className="border border-black h-fit p-4  bg-primary rounded-lg">
         <h1 className="text-center py-5 text-3xl font-heading">Author/Works</h1>
         <div className="flex flex-col gap-4">
