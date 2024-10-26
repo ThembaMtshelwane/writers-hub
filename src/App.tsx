@@ -7,6 +7,9 @@ import CreatorCardGrid from "./components/CreatorCardGrid";
 import NotFound from "./pages/NotFound";
 import Livefeed from "./pages/feedPage/Livefeed";
 import SinglePost from "./pages/SinglePost";
+import AuthLayout from "./layout/AuthLayout";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 
 export default function App() {
   return (
@@ -14,6 +17,11 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
+          <Route path="/auth" element={<AuthLayout />}>
+            <Route path="signup" element={<Signup />} />
+            <Route path="login" element={<Login />} />
+          </Route>
 
           <Route path="/feed" element={<MainLayout />}>
             <Route index element={<Livefeed />} />
