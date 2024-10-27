@@ -13,6 +13,8 @@ import ProfileLayout from "./layout/ProfileLayout";
 // import WorksPage from "./pages/WorksPage";
 import PersonalInfoList from "./components/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
+import Writing from "./components/Writing";
+import Preview from "./components/Preview";
 // import BasicInfoCard from "./components/BasicInfoCard"
 // import CommentCard from "./components/CommentCard"
 // import ProfileSideBar from "./components/ProfileSideBar"
@@ -35,6 +37,9 @@ export default function App() {
 
   return (
    <div>
+    <Writing/>
+    <Preview/>
+    
 
 
 
