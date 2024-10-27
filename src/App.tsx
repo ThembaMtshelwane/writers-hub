@@ -5,6 +5,11 @@ import ProfileLayout from "./layout/ProfileLayout";
 import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 import NotFound from "./pages/NotFound";
+import Livefeed from "./pages/feedPage/Livefeed";
+import SinglePost from "./pages/SinglePost";
+import AuthLayout from "./layout/AuthLayout";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 import SplashPage from "./pages/SplashPage";
 import PreferencePage from "./pages/PreferencePage";
 
@@ -13,19 +18,17 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
+
+          <Route path="/auth" element={<AuthLayout />}>
+            <Route path="signup" element={<Signup />} />
+            <Route path="login" element={<Login />} />
+          </Route>
           <Route path="/" element={<SplashPage />} />
           <Route path="/index" element={<LandingPage />} />
 
           <Route path="/pref" element={<PreferencePage />} />
           <Route path="/feed" element={<MainLayout />}>
-            <Route
-              index
-              element={
-                <>
-                  <p className="text-5xl font-bold">This is the livefeed</p>
-                </>
-              }
-            />
+            <Route index element={<Livefeed />} />
           </Route>
 
           <Route path="/post" element={<MainLayout />}>
@@ -53,6 +56,7 @@ export default function App() {
                 </>
               }
             />
+            <Route path=":username/:id" element={<SinglePost />} />
           </Route>
 
           <Route path="/profile" element={<ProfileLayout />}>
