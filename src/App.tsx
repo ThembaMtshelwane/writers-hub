@@ -13,8 +13,8 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/splash" element={<SplashPage />} />
+          <Route path="/" element={<SplashPage />} />
+          <Route path="/index" element={<LandingPage />} />
 
           <Route path="/pref" element={<PreferencePage />} />
           <Route path="/feed" element={<MainLayout />}>

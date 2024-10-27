@@ -1,8 +1,57 @@
-const PreferencePage = () => {
-  return (
-    <div className="min-h-screen flex justify-center items-center">
-      <h1>Choose Your Preference</h1>
+import { useEffect, useState } from "react";
+import { Genres } from "../types";
+import FilterButton from "../components/FilterButton";
+import axios from "axios";
+// import Button from "../components/Button";
+import { useNavigate } from "react-router-dom";
 
+const PreferencePage = () => {
+  const [genres, setGenres] = useState<Genres[]>([]);
+  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchGenres = async () => {
+      const { data } = await axios("/api/genres");
+      setGenres(data);
+    };
+
+    fetchGenres();
+  }, []);
+
+  const handleGenreSelection = (genreName: string) => {
+    setSelectedGenres((prevSelected) =>
+      prevSelected.includes(genreName)
+        ? prevSelected.filter((name) => name !== genreName)
+        : [...prevSelected, genreName]
+    );
+  };
+
+  const handleSubmit = () => {
+    console.log("Selected genres:", selectedGenres); // For debugging
+    navigate("/index", { replace: true });
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col justify-center items-center gap-10">
+      <h1 className="text-6xl">Choose Your Preference</h1>
+      <div className="flex justify-center items-start p-5 w-[90%] text-4xl gap-10 flex-wrap h-64">
+        {genres.map((genre) => (
+          <FilterButton
+            key={genre.id}
+            name={genre.name}
+            isSelected={selectedGenres.includes(genre.name)}
+            onSelect={handleGenreSelection}
+          />
+        ))}
+      </div>
+      <button
+        className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent text-4xl disabled:bg-black/50 disabled:cursor-not-allowed"
+        onClick={handleSubmit}
+        disabled={selectedGenres.length === 0}
+      >
+        Submit
+      </button>
     </div>
   );
 };

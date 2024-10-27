@@ -1,6 +1,16 @@
+import { useEffect } from "react";
 import Logo from "../assets/Images/Writer_s-Hub-Logo-1 copy.svg";
+import { useNavigate } from "react-router-dom";
 
 const SplashPage = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/pref", { replace: true });
+    }, 3000);
+  });
+
   return (
     <div className="min-h-screen bg-secondary flex flex-col justify-center items-center text-white pb-14">
       <img

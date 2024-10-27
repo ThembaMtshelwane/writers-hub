@@ -8,8 +8,20 @@ import FilterButton from "../components/FilterButton";
 
 const LandingPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const [selectedFilter, setSelectedFilter] = useState<string[]>(["Latest"]);
 
-  console.log(searchQuery);
+  const handleSelection = (filter: string) => {
+    setSelectedFilter((selected) =>
+      selected.includes(filter)
+        ? selected.filter((name) => name !== filter)
+        : [...selected, filter]
+    );
+  };
+
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <>
       <Navbar />
@@ -20,27 +32,27 @@ const LandingPage = () => {
             {["Latest", "Poems", "Short Stories", "Long-Form"].map(
               (types, index) => {
                 return (
-                  <FilterButton key={index} name={types} />
-                  // <a
-                  //   key={index}
-                  //   onClick={() => console.log("Link Clicked")}
-                  //   className="py-3 px-5 text-lg rounded-full min-w-[80px] bg-secondary text-white cursor-pointer border border-transparent hover:bg-white hover:border-secondary hover:text-black"
-                  // >
-                  //   {types}
-                  // </a>
+                  <FilterButton
+                    key={index}
+                    name={types}
+                    isSelected={selectedFilter.includes(types)}
+                    onSelect={handleSelection}
+                  />
                 );
               }
             )}
           </div>
 
-          <input
-            type="text"
-            placeholder="Search"
-            id="search"
-            className="w-full rounded-full border border-slate-800 bg-transparent px-6 py-2 text-sm text-slate-800 focus:border-secondary focus:outline-none md:text-base "
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <MainCardGrid />
+          <div className="rounded-full border border-slate-800 bg-transparent">
+            <input
+              type="text"
+              placeholder="Search"
+              id="search"
+              className="w-full rounded-full px-6 py-2 text-sm text-slate-800 focus:border-secondary focus:outline-none md:text-base "
+              onChange={handleSearch}
+            />
+          </div>
+          <MainCardGrid search={searchQuery} />
         </section>
         <MainSideBar />
       </main>

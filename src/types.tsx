@@ -49,3 +49,8 @@ export type Like = {
   username: string;
   date: string;
 };
+
+export type Genres = {
+  id: string;
+  name: string;
+};

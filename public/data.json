@@ -2744,5 +2744,17 @@
       ],
       "status": "learner"
     }
+  ],
+  "genres": [
+    { "id": "horror", "name": "Horror" },
+    { "id": "comedy", "name": "Comedy" },
+    { "id": "drama", "name": "Drama" },
+    { "id": "romance", "name": "Romance" },
+    { "id": "poems", "name": "Poems" },
+    { "id": "short story", "name": "Short Story" },
+    { "id": "fantasy", "name": "Fantasy" },
+    { "id": "sci-fi", "name": "Sci-Fi" },
+    { "id": "mystery", "name": "Mystery" },
+    { "id": "history", "name": "History" }
   ]
 }
