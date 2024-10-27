@@ -6,6 +6,7 @@ import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 import NotFound from "./pages/NotFound";
 import SplashPage from "./pages/SplashPage";
+import PreferencePage from "./pages/PreferencePage";
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/splash" element={<SplashPage />} />
+
+          <Route path="/pref" element={<PreferencePage />} />
           <Route path="/feed" element={<MainLayout />}>
             <Route
               index

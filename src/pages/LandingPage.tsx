@@ -3,6 +3,7 @@ import HeroSlider from "../components/HeroSlider";
 import MainCardGrid from "../components/MainCardGrid";
 import MainSideBar from "../components/MainSideBar";
 import Navbar from "../components/Navbar";
+import FilterButton from "../components/FilterButton";
 // import Button from "../components/Button";
 
 const LandingPage = () => {
@@ -19,18 +20,14 @@ const LandingPage = () => {
             {["Latest", "Poems", "Short Stories", "Long-Form"].map(
               (types, index) => {
                 return (
-                  <a
-                    key={index}
-                    onClick={() => console.log("Link Clicked")}
-                    className="py-3 px-5 text-lg rounded-full min-w-[80px] bg-secondary text-white cursor-pointer border border-transparent hover:bg-white hover:border-secondary hover:text-black"
-                  >
-                    {types}
-                  </a>
-                  // <Button
+                  <FilterButton key={index} name={types} />
+                  // <a
                   //   key={index}
-                  //   name={types}
-                  //   buttonFunction={() => setSearchQuery("Checking")}
-                  // />
+                  //   onClick={() => console.log("Link Clicked")}
+                  //   className="py-3 px-5 text-lg rounded-full min-w-[80px] bg-secondary text-white cursor-pointer border border-transparent hover:bg-white hover:border-secondary hover:text-black"
+                  // >
+                  //   {types}
+                  // </a>
                 );
               }
             )}
