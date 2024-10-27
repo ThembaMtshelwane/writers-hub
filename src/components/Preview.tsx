@@ -9,7 +9,7 @@ const Preview: React.FC = () => {
           <BasicInfoCard />
         </div>
         <div className="py-5 text-start ">
-          <h1 className="sm:text-sm  lg:text-md ">
+          <h1 className="text-sm ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
