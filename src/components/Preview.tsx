@@ -1,12 +1,14 @@
 import React from "react";
 import BasicInfoCard from "./BasicInfoCard";
+import img1 from '../assets/Images/Robert-Frost-Portrait-Square.webp'
 
 const Preview: React.FC = () => {
   return (
     <section className="">
       <div className="border">
         <div>
-          <BasicInfoCard />
+          <BasicInfoCard title={"Beautiful Lie"} author={"Ashleigh"} description={"ever since the 1500s, when an unknown printer took a galley of type"} image={img1}/>
+        
         </div>
         <div className="py-5 text-start ">
           <h1 className="text-sm ">

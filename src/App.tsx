@@ -12,6 +12,8 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import SplashPage from "./pages/SplashPage";
 import PreferencePage from "./pages/PreferencePage";
+import Writing from "./components/Writing";
+import Preview from "./components/Preview";
 
 export default function App() {
   return (
@@ -42,17 +44,14 @@ export default function App() {
             <Route
               path="write"
               element={
-                <>
-                  <p className="text-5xl font-bold">Type your nonsense</p>
-                </>
+               <Writing/>
               }
             />
             <Route
               path="preview"
               element={
-                <>
-                  <p className="text-5xl font-bold">PREVIEW your nonsense </p>
-                </>
+               
+                <Preview/>
               }
             />
             <Route path=":username/:id" element={<SinglePost />} />
