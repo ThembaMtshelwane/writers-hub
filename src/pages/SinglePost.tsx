@@ -5,6 +5,7 @@ import axios from "axios";
 import BasicInfoCard from "../components/BasicInfoCard";
 import Button from "../components/Button";
 import CommentsSection from "../components/CommentsSection";
+import ReviewSection from "../components/ReviewSection";
 
 const SinglePost = () => {
   const [filteredContent, setFilteredContent] = useState<Content | null>(null);
@@ -13,6 +14,7 @@ const SinglePost = () => {
   const [previews, setPreviews] = useState<Review[] | null>(null);
 
   const [isCommentsOpen, setIsCommentsOpen] = useState<boolean>(false);
+  const [isReviewOpen, setIsReviewOpen] = useState<boolean>(false);
 
   const { id, username } = useParams();
   const isReviwer = true;
@@ -66,7 +68,9 @@ const SinglePost = () => {
               {isReviwer && (
                 <Button
                   name={`Previews (${previews?.length})`}
-                  buttonFunction={() => console.log("preview", previews)}
+                  buttonFunction={() =>
+                    setIsReviewOpen((prevState) => !prevState)
+                  }
                 />
               )}
             </div>
@@ -77,6 +81,11 @@ const SinglePost = () => {
             isOpen={isCommentsOpen}
             setIsOpen={setIsCommentsOpen}
             data={comments}
+          />
+          <ReviewSection
+            isOpen={isReviewOpen}
+            setIsOpen={setIsReviewOpen}
+            title={filteredContent.title}
           />
         </div>
       ) : (
