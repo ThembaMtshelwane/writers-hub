@@ -14,10 +14,6 @@ const PreferencePage = () => {
     const fetchGenres = async () => {
       const { data } = await axios("/api/genres");
       setGenres(data);
-      } catch (error) {
-        console.error("Error fetching data: ", error)
-      }
-      
     };
 
     fetchGenres();
