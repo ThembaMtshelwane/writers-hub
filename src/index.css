@@ -25,3 +25,16 @@
     @apply grid grid-cols-layout gap-5 justify-center;
   }
 }
+
+/* index.css */
+.custom-quill .ql-container {
+  border: none !important;
+  border-radius: 1rem !important; /* Match the rounded style */
+}
+
+.custom-quill .ql-editor {
+  border: none !important;
+}
+
+
+
