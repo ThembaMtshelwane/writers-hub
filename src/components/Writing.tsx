@@ -40,7 +40,7 @@ const Writing: React.FC = () => {
   return (
     <div>
       <ReactQuill
-        className="h-[40rem]  p-10"
+        className="h-[40rem]  p-10 "
         modules={modules}
         theme="snow"
         value={value}

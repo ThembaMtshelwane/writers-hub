@@ -9,7 +9,7 @@ const MainLayout = () => {
         <Navbar />
       </header>
       <main className="grid grid-cols-[65%_30%] gap-[2%] mt-10  justify-self-center w-[95%] ">
-        <section className="border-2 bg-red-200 w-full">
+        <section className="border-2  w-full">
           <Outlet />
         </section>
         <MainSideBar />
