@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   const [isNavOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between p-4 text-white bg-[#528362]">
+    <nav className="flex items-center justify-between p-4 text-white bg-[#528362] ">
       {/* Logo */}
       <NavLink to={"/"}>
         <img
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isNavOpen && (
-        <ul className="absolute top-20 left-0 w-full bg-[#528362] flex flex-col items-center space-y-4 py-4 sm:hidden border-t-2">
+        <ul className="absolute top-20 left-0 w-full bg-[#528362] flex flex-col items-center space-y-4 py-4 sm:hidden border-t-2 z-30">
           {["Feed", "Post", "Profile"].map((item) => (
             <li
               key={item}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Rubric from "./Rubric"; // Import the Rubric component
 
 const ViewScore = () => {
@@ -26,17 +26,49 @@ const ViewScore = () => {
             >
               <p className="p-2 w-full">{work}</p>
               <span className="border-l border-inherit px-5 flex items-center">
-               20
+                20
               </span>
             </div>
           ))}
         </div>
       </div>
-      
+
       {/* Conditional rendering for Rubric popup */}
       {showRubric && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
-          <Rubric work={selectedWork} onClose={() => setShowRubric(false)} />
+          <Rubric
+            work={selectedWork}
+            onClose={() => setShowRubric(false)}
+            isDisabled={true}
+            review={{
+              id: "wwwwwwwwwwwwwww",
+              criteria: [
+                {
+                  text: "Conveys a theme or a message",
+                  point: 3,
+                },
+                {
+                  text: "Plot, setting, characters, details and development",
+                  point: 1,
+                },
+                {
+                  text: "Organization/structure",
+                  point: 0,
+                },
+                {
+                  text: "Language abd style",
+                  point: 1,
+                },
+                {
+                  text: "Convention",
+                  point: 3,
+                },
+              ],
+              score: 12,
+              feedback:
+                "Well done! You did a very good job, however there is definitely room for improvement",
+            }}
+          />
         </div>
       )}
     </div>
