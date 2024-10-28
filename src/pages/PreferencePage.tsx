@@ -12,7 +12,7 @@ const PreferencePage = () => {
 
   useEffect(() => {
     const fetchGenres = async () => {
-      const { data } = await axios("/api/genre");
+      const { data } = await axios("/api/genres");
       setGenres(data);
     };
 
