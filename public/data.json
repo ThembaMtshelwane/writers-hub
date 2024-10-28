@@ -2745,23 +2745,7 @@
       "status": "learner"
     }
   ],
-  "genres": [
-    "horror",
-    "comedy",
-    "drama",
-    "horror",
-    "comedy",
-    "drama",
-    "horror",
-    "comedy",
-    "horror",
-    "comedy",
-    "drama",
-    "horror",
-    "comedy",
-    "drama"
-  ],
-  "genre": [
+    "genres": [
     { "id": "horror", "name": "Horror" },
     { "id": "comedy", "name": "Comedy" },
     { "id": "drama", "name": "Drama" },
