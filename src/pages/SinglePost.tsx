@@ -4,12 +4,15 @@ import { Comment, Content, Like, Review, User } from "../types";
 import axios from "axios";
 import BasicInfoCard from "../components/BasicInfoCard";
 import Button from "../components/Button";
+import CommentsSection from "../components/CommentsSection";
 
 const SinglePost = () => {
   const [filteredContent, setFilteredContent] = useState<Content | null>(null);
   const [comments, setComments] = useState<Comment[] | null>([]);
   const [likes, setLikes] = useState<Like[] | null>(null);
   const [previews, setPreviews] = useState<Review[] | null>(null);
+
+  const [isCommentsOpen, setIsCommentsOpen] = useState<boolean>(false);
 
   const { id, username } = useParams();
   const isReviwer = true;
@@ -56,7 +59,9 @@ const SinglePost = () => {
               />
               <Button
                 name={`Comments (${comments?.length})`}
-                buttonFunction={() => console.log("comments", comments)}
+                buttonFunction={() =>
+                  setIsCommentsOpen((prevState) => !prevState)
+                }
               />
               {isReviwer && (
                 <Button
@@ -68,6 +73,11 @@ const SinglePost = () => {
           </BasicInfoCard>
 
           <section>{filteredContent.body}</section>
+          <CommentsSection
+            isOpen={isCommentsOpen}
+            setIsOpen={setIsCommentsOpen}
+            data={comments}
+          />
         </div>
       ) : (
         <p>No matching content found.</p>
