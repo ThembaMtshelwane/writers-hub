@@ -2746,19 +2746,8 @@
     }
   ],
   "genres": [
-    "horror",
-    "comedy",
-    "drama",
-    "horror",
-    "comedy",
-    "drama",
-    "horror",
-    "comedy",
-    "horror",
-    "comedy",
-    "drama",
-    "horror",
-    "comedy",
-    "drama"
+    { "id": 1, "genre": "horror" },
+    { "id": 1, "genre": "comedy" },
+    { "id": 1, "genre": "drama" }
   ]
 }
