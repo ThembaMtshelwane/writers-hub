@@ -12,6 +12,9 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import SplashPage from "./pages/SplashPage";
 import PreferencePage from "./pages/PreferencePage";
+import ShareWork from "./components/ShareWork";
+import ViewScore from "./components/ViewScore";
+
 import Writing from "./components/Writing";
 import Preview from "./components/Preview";
 
@@ -36,9 +39,7 @@ export default function App() {
             <Route
               index
               element={
-                <>
-                  <p className="text-5xl font-bold">Enter basic info</p>
-                </>
+               <ShareWork/>
               }
             />
             <Route
@@ -74,9 +75,7 @@ export default function App() {
               path="view-score"
               element={
                 <>
-                  <p className="text-5xl font-bold">
-                    This is your score so far
-                  </p>
+                  <ViewScore/>
                 </>
               }
             />

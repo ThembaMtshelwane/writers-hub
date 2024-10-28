@@ -8,8 +8,8 @@ const MainLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className="grid grid-cols-[65%_30%] gap-[2%] mt-10  justify-self-center w-[95%] ">
-        <section className="border-2  w-full">
+      <main className="grid grid-cols-[65%_30%] gap-[2%] mt-10 bg-[#F2F8F3] justify-self-center w-[95%] ">
+        <section className="  w-full">
           <Outlet />
         </section>
         <MainSideBar />

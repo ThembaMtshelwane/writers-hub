@@ -12,7 +12,7 @@ const PreferencePage = () => {
 
   useEffect(() => {
     const fetchGenres = async () => {
-      const { data } = await axios("/api/genre");
+      const { data } = await axios("/api/genres");
       setGenres(data);
     };
 
@@ -27,6 +27,7 @@ const PreferencePage = () => {
     );
   };
 
+  
   const handleSubmit = () => {
     console.log("Selected genres:", selectedGenres);
     navigate("/index", { replace: true });

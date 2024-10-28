@@ -2745,7 +2745,7 @@
       "status": "learner"
     }
   ],
-    "genres": [
+  "genres": [
     { "id": "horror", "name": "Horror" },
     { "id": "comedy", "name": "Comedy" },
     { "id": "drama", "name": "Drama" },
@@ -2758,4 +2758,3 @@
     { "id": "history", "name": "History" }
   ]
 }
-
