@@ -29,11 +29,14 @@ export type Content = {
 
 export type Review = {
   id: string;
-  criteria1: number;
-  criteria2: number;
-  criteria3: number;
-  criteria4: number;
+  criteria: Point[];
   score: number;
+  feedback: string;
+};
+
+export type Point = {
+  text: string;
+  point: number;
 };
 
 export type Comment = {
