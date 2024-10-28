@@ -12,9 +12,7 @@ const PreferencePage = () => {
 
   useEffect(() => {
     const fetchGenres = async () => {
-      try {
-        const { data } = await axios("/api/genres");
-      console.log(data);
+      const { data } = await axios("/api/genres");
       setGenres(data);
       } catch (error) {
         console.error("Error fetching data: ", error)
