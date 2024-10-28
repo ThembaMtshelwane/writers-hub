@@ -23,6 +23,8 @@ const HeroSlider = () => {
     fetchUsers();
   }, []);
 
+  const content = users.flatMap((user) => user.content);
+
   return (
     <Swiper
       centeredSlides={true}
@@ -37,17 +39,15 @@ const HeroSlider = () => {
       modules={[Autoplay, Pagination, Navigation]}
       className="text-center h-[25rem]"
     >
-      {users.map((user) => {
-        return user.content.map((cont, index) => (
-          <SwiperSlide key={index}>
-            <img
-              src={cont.image}
-              alt={cont.title}
-              className="size-full object-cover"
-            />
-          </SwiperSlide>
-        ));
-      })}
+      {content.slice(0, 4).map((cont, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={cont.image}
+            alt={cont.title}
+            className="size-full object-cover"
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

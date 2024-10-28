@@ -2745,24 +2745,33 @@
       "status": "learner"
     }
   ],
-  "genres" : [
-    "horror" ,
-    "romance",
+  "genres": [
+    "horror",
     "comedy",
     "drama",
-    "action",
-    "thriller",
-    "fantasy",
-    "mystery",
-    "satire",
-    "adventure",
-    "sci-fi"
+    "horror",
+    "comedy",
+    "drama",
+    "horror",
+    "comedy",
+    "horror",
+    "comedy",
+    "drama",
+    "horror",
+    "comedy",
+    "drama"
   ],
-
-  "types" :[
-    "short story",
-    "poetry",
-    "long-form",
-    ""
+  "genre": [
+    { "id": "horror", "name": "Horror" },
+    { "id": "comedy", "name": "Comedy" },
+    { "id": "drama", "name": "Drama" },
+    { "id": "romance", "name": "Romance" },
+    { "id": "poems", "name": "Poems" },
+    { "id": "short story", "name": "Short Story" },
+    { "id": "fantasy", "name": "Fantasy" },
+    { "id": "sci-fi", "name": "Sci-Fi" },
+    { "id": "mystery", "name": "Mystery" },
+    { "id": "history", "name": "History" }
   ]
 }
+

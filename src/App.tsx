@@ -7,17 +7,28 @@ import CreatorCardGrid from "./components/CreatorCardGrid";
 import NotFound from "./pages/NotFound";
 import Livefeed from "./pages/feedPage/Livefeed";
 import SinglePost from "./pages/SinglePost";
+import AuthLayout from "./layout/AuthLayout";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import SplashPage from "./pages/SplashPage";
+import PreferencePage from "./pages/PreferencePage";
 import ShareWork from "./components/ShareWork";
 import ViewScore from "./components/ViewScore";
-import Rubric from "./components/Rubric";
+
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/auth" element={<AuthLayout />}>
+            <Route path="signup" element={<Signup />} />
+            <Route path="login" element={<Login />} />
+          </Route>
+          <Route path="/" element={<SplashPage />} />
+          <Route path="/index" element={<LandingPage />} />
 
+          <Route path="/pref" element={<PreferencePage />} />
           <Route path="/feed" element={<MainLayout />}>
             <Route index element={<Livefeed />} />
           </Route>
