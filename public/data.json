@@ -2744,5 +2744,25 @@
       ],
       "status": "learner"
     }
+  ],
+  "genres" : [
+    "horror" ,
+    "romance",
+    "comedy",
+    "drama",
+    "action",
+    "thriller",
+    "fantasy",
+    "mystery",
+    "satire",
+    "adventure",
+    "sci-fi"
+  ],
+
+  "types" :[
+    "short story",
+    "poetry",
+    "long-form",
+    ""
   ]
 }

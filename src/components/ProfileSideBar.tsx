@@ -9,7 +9,7 @@ const ProfileSideBar: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#F2F8F3] p-10">
+    <div className=" p-10">
       <div className="space-y-2 grid place-items-center">
         <Link to="/profile">
           <button

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
+import Writing from "./Writing";
 
 
 const ShareWork = () => {
@@ -29,10 +31,10 @@ const ShareWork = () => {
       };
 
   return (
-    <section>
-        <div className=" bg-white">
-            <h1 className="">SHARE YOUR WORK</h1>
-            <form action="" className="flex py-10 space-x-8">
+    <section className="py-3 px-10">
+        <div className=" bg-white rounded-3xl">
+            <h1 className="pl-8 pt-10">SHARE YOUR WORK</h1>
+            <form action="" className="flex py-10 space-x-8 px-8">
             <div className="flex flex-col items-center">
       <label htmlFor="file-upload">
         <img 
@@ -97,6 +99,7 @@ placeholder=''
 value={Description}
 onChange={(e) => setDescription(e.target.value)}
 ></textarea>
+
 </div>
                 </div>
 
@@ -105,8 +108,11 @@ onChange={(e) => setDescription(e.target.value)}
 
 
             </form>
-            <div className="pl-72">
-            <Button name="Next" buttonFunction={handleNext} />
+            <div className="pl-72 pb-3">
+              <Link to={'preview'}>
+              <Button name="Next" buttonFunction={handleNext} />
+              </Link>
+           
 
             </div>
         </div>
