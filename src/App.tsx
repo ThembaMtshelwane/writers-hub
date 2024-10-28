@@ -18,7 +18,6 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-
           <Route path="/auth" element={<AuthLayout />}>
             <Route path="signup" element={<Signup />} />
             <Route path="login" element={<Login />} />

@@ -1,10 +1,17 @@
 import MainCard from "./MainCard";
-// import maincard from "../maincard.json";
+// import maincard from "../maincard.json";|
+
 import { useEffect, useState } from "react";
 import { User } from "../types";
 import axios from "axios";
 
-const MainCardGrid = ({ search }: { search: string }) => {
+const MainCardGrid = ({
+  search,
+  selectedFilter,
+}: {
+  search: string;
+  selectedFilter: string[];
+}) => {
   const [content, setContent] = useState<User[]>([]);
   console.log(search);
 
@@ -22,9 +29,14 @@ const MainCardGrid = ({ search }: { search: string }) => {
   }, []);
 
   const filteredContent = content.flatMap((user) =>
-    user.content.filter((cont) =>
-      cont.title.toLowerCase().includes(search.toLowerCase())
-    )
+    user.content.filter((cont) => {
+      const searchQuery = cont.title
+        .toLowerCase()
+        .includes(search.toLowerCase());
+      const matchType =
+        selectedFilter.length === 0 || selectedFilter.includes(cont.type);
+      return searchQuery && matchType;
+    })
   );
 
   return (

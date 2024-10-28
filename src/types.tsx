@@ -50,7 +50,7 @@ export type Like = {
   date: string;
 };
 
-export type Genres = {
+export type Genre = {
   id: string;
   name: string;
 };

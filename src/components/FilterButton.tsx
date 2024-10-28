@@ -11,7 +11,7 @@ const FilterButton = ({ name, isSelected, onSelect }: FilterButtonProps) => {
 
   return (
     <button
-      className={`p-2 rounded-md min-w-[80px] ${
+      className={`p-2 rounded-md min-w-[80px] capitalize ${
         isSelected
           ? "bg-secondary text-white hover:bg-accent border"
           : "bg-white text-black border border-secondary hover:bg-primary"

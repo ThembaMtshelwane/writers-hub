@@ -4,11 +4,11 @@ import MainCardGrid from "../components/MainCardGrid";
 import MainSideBar from "../components/MainSideBar";
 import Navbar from "../components/Navbar";
 import FilterButton from "../components/FilterButton";
-// import Button from "../components/Button";
+// import { IoMenuOutline } from "react-icons/io5";
 
 const LandingPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [selectedFilter, setSelectedFilter] = useState<string[]>(["Latest"]);
+  const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
 
   const handleSelection = (filter: string) => {
     setSelectedFilter((selected) =>
@@ -26,21 +26,19 @@ const LandingPage = () => {
     <>
       <Navbar />
       <HeroSlider />
-      <main className="grid grid-cols-[70%_30%] mt-10 gap-5 justify-self-center w-[95%] ">
+      <main className="grid md:grid-cols-[65%_30%] mt-10 gap-[5%] justify-self-center w-[95%] relative">
         <section className=" w-full space-y-8">
           <div className="space-x-8">
-            {["Latest", "Poems", "Short Stories", "Long-Form"].map(
-              (types, index) => {
-                return (
-                  <FilterButton
-                    key={index}
-                    name={types}
-                    isSelected={selectedFilter.includes(types)}
-                    onSelect={handleSelection}
-                  />
-                );
-              }
-            )}
+            {["poem", "short story", "long form"].map((types, index) => {
+              return (
+                <FilterButton
+                  key={index}
+                  name={types}
+                  isSelected={selectedFilter.includes(types)}
+                  onSelect={handleSelection}
+                />
+              );
+            })}
           </div>
 
           <div className="rounded-full border border-slate-800 bg-transparent">
@@ -52,9 +50,16 @@ const LandingPage = () => {
               onChange={handleSearch}
             />
           </div>
-          <MainCardGrid search={searchQuery} />
-        </section>
-        <MainSideBar />
+          <div className="w-full ">
+            <MainCardGrid
+              search={searchQuery}
+              selectedFilter={selectedFilter}
+            />
+          </div>
+        </section> 
+        <div className="hidden md:block">
+          <MainSideBar />
+        </div>
       </main>
     </>
   );
