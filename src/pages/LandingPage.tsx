@@ -8,6 +8,7 @@ import FilterButton from "../components/FilterButton";
 
 const LandingPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
+  
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
 
   const handleSelection = (filter: string) => {

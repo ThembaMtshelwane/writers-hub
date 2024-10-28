@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between p-4 text-white bg-[#528362]">
       {/* Logo */}
-      <NavLink to={"/"}>
+      <NavLink to={"/index"}>
         <img
           src="Writer_s-Hub-Logo-1.svg"
           alt="Writer's Hub Logo"

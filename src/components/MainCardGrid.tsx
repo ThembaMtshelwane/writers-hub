@@ -9,11 +9,10 @@ const MainCardGrid = ({
   search,
   selectedFilter,
 }: {
-  search: string;
+  search: string | "";
   selectedFilter: string[];
 }) => {
   const [content, setContent] = useState<User[]>([]);
-  console.log(search);
 
   useEffect(() => {
     const fetchContent = async () => {
@@ -34,7 +33,9 @@ const MainCardGrid = ({
         .toLowerCase()
         .includes(search.toLowerCase());
       const matchType =
-        selectedFilter.length === 0 || selectedFilter.includes(cont.type);
+        selectedFilter.length === 0 ||
+        selectedFilter.includes(cont.type) ||
+        selectedFilter.includes(cont.genres);
       return searchQuery && matchType;
     })
   );
