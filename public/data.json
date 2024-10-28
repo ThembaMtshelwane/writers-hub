@@ -22,23 +22,27 @@
           "genres": "article",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 4
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 1
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 3
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
                   "point": 0
                 }
               ],
@@ -120,7 +124,8 @@
               "date": "02/09/2010"
             }
           ],
-          "final_score": 17
+          "final_score": 17,
+          "username": "rstrapp0"
         },
         {
           "id": 2,
@@ -136,20 +141,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 4
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Language and style",
                   "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 12
@@ -230,7 +239,8 @@
               "date": "14/03/1985"
             }
           ],
-          "final_score": 12
+          "final_score": 12,
+          "username": "rstrapp0"
         },
         {
           "id": 3,
@@ -246,19 +256,23 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 5
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 4
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
                   "point": 4
                 }
               ],
@@ -269,65 +283,77 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Language and style",
                   "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 14
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 5
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 3
                 },
                 {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Language and style",
                   "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
                 }
               ],
               "score": 11
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 2
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
                   "point": 4
                 }
               ],
@@ -401,7 +427,8 @@
               "date": "11/01/1991"
             }
           ],
-          "final_score": 49
+          "final_score": 49,
+          "username": "rstrapp0"
         },
         {
           "id": 4,
@@ -417,20 +444,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 5
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Language and style",
                   "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
                 }
               ],
               "score": 12
@@ -533,7 +564,8 @@
               "date": "10/04/1970"
             }
           ],
-          "final_score": 12
+          "final_score": 12,
+          "username": "rstrapp0"
         }
       ],
       "status": "learner"
@@ -602,7 +634,8 @@
               "date": "04/09/2006"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "bedes1"
         },
         {
           "id": 2,
@@ -614,35 +647,111 @@
           "genres": "comedy",
           "reviews": [
             {
-              "id": "201df274-3788-4a70-9a8c-e0f9fb97b97b",
-              "criteria1": 1,
-              "criteria2": 2,
-              "criteria3": 4,
-              "criteria4": 5,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 12
             },
             {
-              "id": "4e67339b-7285-43c8-9263-18e59fde644a",
-              "criteria1": 0,
-              "criteria2": 3,
-              "criteria3": 3,
-              "criteria4": 0,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 5
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 6
             },
             {
-              "id": "cbad268b-9d40-42e8-9723-a0b45bf553cd",
-              "criteria1": 4,
-              "criteria2": 5,
-              "criteria3": 1,
-              "criteria4": 5,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 15
             },
             {
-              "id": "ae062fd3-70d9-4d81-a695-11a7f5275790",
-              "criteria1": 3,
-              "criteria2": 2,
-              "criteria3": 0,
-              "criteria4": 2,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 7
             }
           ],
@@ -721,7 +830,8 @@
               "date": "28/11/2006"
             }
           ],
-          "final_score": 40
+          "final_score": 40,
+          "username": "bedes1"
         },
         {
           "id": 3,
@@ -733,57 +843,138 @@
           "genres": "thriller",
           "reviews": [
             {
-              "id": "9a7a4462-1ff3-4769-8a8a-acc0bc38b0bd",
-              "criteria1": 0,
-              "criteria2": 1,
-              "criteria3": 2,
-              "criteria4": 4,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "lorem20",
+                  "text": "Conveys a theme or a message",
                   "point": 0
                 },
                 {
-                  "criteria2": "lorem20",
-                  "point": 1
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "c": "lorem20",
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
                   "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
                 }
               ],
               "score": 7
             },
             {
-              "id": "09cd591a-cccc-41d6-b13f-e481ac8c8c56",
-              "criteria1": 5,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 0,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 9
             },
             {
-              "id": "0ef25d50-44d3-4741-8203-458f5126ed16",
-              "criteria1": 5,
-              "criteria2": 4,
-              "criteria3": 5,
-              "criteria4": 3,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
               "score": 17
             },
             {
-              "id": "251a4977-8aa5-4751-91f6-88080cf4a496",
-              "criteria1": 4,
-              "criteria2": 0,
-              "criteria3": 2,
-              "criteria4": 0,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 5
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 6
             },
             {
-              "id": "df873326-9ceb-4d1b-9103-5e77a741d12f",
-              "criteria1": 2,
-              "criteria2": 2,
-              "criteria3": 3,
-              "criteria4": 1,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
               "score": 8
             }
           ],
@@ -834,7 +1025,8 @@
               "date": "14/04/1953"
             }
           ],
-          "final_score": 47
+          "final_score": 47,
+          "username": "bedes1"
         },
         {
           "id": 4,
@@ -846,19 +1038,57 @@
           "genres": "article",
           "reviews": [
             {
-              "id": "8d858a43-d793-4707-ac6b-52ef523ebc61",
-              "criteria1": 3,
-              "criteria2": 2,
-              "criteria3": 0,
-              "criteria4": 5,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 5
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
               "score": 10
             },
             {
-              "id": "fee8d433-230d-42a1-80d5-3beffdffa1b0",
-              "criteria1": 0,
-              "criteria2": 4,
-              "criteria3": 5,
-              "criteria4": 5,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 5
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
               "score": 14
             }
           ],
@@ -946,7 +1176,8 @@
               "date": "24/04/1984"
             }
           ],
-          "final_score": 24
+          "final_score": 24,
+          "username": "bedes1"
         }
       ],
       "status": "reviewer"
@@ -973,70 +1204,82 @@
           "genres": "thriller",
           "reviews": [
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 2
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 0
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 3
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 9
-            },
-            {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
-              "criteria": [
-                {
-                  "criteria1": "Conveys a theme or a message"
-                },
-                {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
-                  "point": 0
-                }
-              ],
-              "score": 6
             },
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 5
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 6
+            },
+            {
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
                   "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 9
@@ -1075,7 +1318,8 @@
               "date": "28/03/1981"
             }
           ],
-          "final_score": 24
+          "final_score": 24,
+          "username": "ndeedes2"
         },
         {
           "id": 2,
@@ -1160,7 +1404,8 @@
               "date": "07/09/1972"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "ndeedes2"
         }
       ],
       "status": "learner"
@@ -1187,24 +1432,28 @@
           "genres": "comedy",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Plot, setting, characters, details and development",
                   "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 6
@@ -1214,20 +1463,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 2
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 2
                 },
                 {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Language and style",
                   "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 12
@@ -1237,20 +1490,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
-                },
-                {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Conveys a theme or a message",
                   "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 5
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
                 }
               ],
               "score": 17
@@ -1340,7 +1597,8 @@
               "date": "26/08/1955"
             }
           ],
-          "final_score": 35
+          "final_score": 35,
+          "username": "ptowne3"
         }
       ],
       "status": "learner"
@@ -1367,47 +1625,55 @@
           "genres": "romance",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 1
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Plot, setting, characters, details and development",
                   "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
                 }
               ],
               "score": 9
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 0
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 0
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 3
+                  "text": "Convention",
+                  "point": 0
                 }
               ],
               "score": 8
@@ -1417,20 +1683,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 5
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 0
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 3
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 11
@@ -1535,7 +1805,8 @@
               "date": "09/04/1960"
             }
           ],
-          "final_score": 28
+          "final_score": 28,
+          "username": "obartak4"
         },
         {
           "id": 2,
@@ -1551,20 +1822,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
-                },
-                {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Conveys a theme or a message",
                   "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
                 }
               ],
               "score": 11
@@ -1594,7 +1869,8 @@
             }
           ],
           "likes": [],
-          "final_score": 11
+          "final_score": 11,
+          "username": "obartak4"
         },
         {
           "id": 3,
@@ -1610,20 +1886,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 2
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 0
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 1
+                  "text": "Convention",
+                  "point": 2
                 }
               ],
               "score": 5
@@ -1653,7 +1933,8 @@
             }
           ],
           "likes": [],
-          "final_score": 5
+          "final_score": 5,
+          "username": "obartak4"
         },
         {
           "id": 4,
@@ -1665,47 +1946,55 @@
           "genres": "thriller",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 2
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 5
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 5
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 4
+                  "text": "Convention",
+                  "point": 3
                 }
               ],
               "score": 13
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
                 },
                 {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Organization/structure",
                   "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 6
@@ -1715,20 +2004,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 3
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 0
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 1
+                  "text": "Convention",
+                  "point": 2
                 }
               ],
               "score": 6
@@ -1783,7 +2076,8 @@
               "date": "21/07/2003"
             }
           ],
-          "final_score": 25
+          "final_score": 25,
+          "username": "obartak4"
         }
       ],
       "status": "learner"
@@ -1814,20 +2108,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 3
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 5
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 2
+                  "text": "Convention",
+                  "point": 0
                 }
               ],
               "score": 10
@@ -1837,20 +2135,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
                 },
                 {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Organization/structure",
                   "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
                 }
               ],
               "score": 9
@@ -1860,19 +2162,23 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 4
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 3
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 2
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
                   "point": 0
                 }
               ],
@@ -1883,19 +2189,23 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 1
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 4
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 3
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
                   "point": 4
                 }
               ],
@@ -1906,20 +2216,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 4
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 0
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 4
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 1
+                  "text": "Convention",
+                  "point": 0
                 }
               ],
               "score": 8
@@ -1948,7 +2262,8 @@
               "date": "20/06/1981"
             }
           ],
-          "final_score": 36
+          "final_score": 36,
+          "username": "lmcgarrity5"
         }
       ],
       "status": "learner"
@@ -2049,7 +2364,8 @@
               "date": "08/12/2005"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "rfilippello6"
         },
         {
           "id": 2,
@@ -2065,20 +2381,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 1
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Plot, setting, characters, details and development",
                   "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 10
@@ -2088,20 +2408,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
-                },
-                {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Conveys a theme or a message",
                   "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 5
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 10
@@ -2111,20 +2435,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 2
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 2
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 3
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 3
@@ -2134,20 +2462,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Plot, setting, characters, details and development",
                   "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 13
@@ -2157,20 +2489,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
-                },
-                {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Conveys a theme or a message",
                   "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 5
                 }
               ],
               "score": 15
@@ -2276,7 +2612,8 @@
               "date": "20/11/1977"
             }
           ],
-          "final_score": 51
+          "final_score": 51,
+          "username": "rfilippello6"
         }
       ],
       "status": "learner"
@@ -2303,47 +2640,28 @@
           "genres": "comedy",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
-              "criteria": [
-                {
-                  "criteria1": "Conveys a theme or a message"
-                },
-                {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
-                  "point": 4
-                }
-              ],
-              "score": 11
-            },
-            {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 1
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
-                },
-                {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Plot, setting, characters, details and development",
                   "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 11
@@ -2353,43 +2671,78 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 1
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 0
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 4
                 },
                 {
-                  "criteria5": "Convention",
+                  "text": "Convention",
+                  "point": 5
+                }
+              ],
+              "score": 11
+            },
+            {
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 5
+                },
+                {
+                  "text": "Convention",
                   "point": 0
                 }
               ],
               "score": 10
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 4
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 3
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 4
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 1
+                  "text": "Convention",
+                  "point": 0
                 }
               ],
               "score": 6
@@ -2399,20 +2752,24 @@
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 2
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 5
                 },
                 {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Language and style",
                   "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 10
@@ -2497,7 +2854,8 @@
               "date": "12/02/1955"
             }
           ],
-          "final_score": 48
+          "final_score": 48,
+          "username": "dmyrick7"
         },
         {
           "id": 2,
@@ -2509,47 +2867,55 @@
           "genres": "history",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 0
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
                 },
                 {
-                  "criteria3": "Organization/structure"
-                },
-                {
-                  "criteria4": "Language abd style"
-                },
-                {
-                  "criteria5": "Convention",
+                  "text": "Organization/structure",
                   "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
                 }
               ],
               "score": 12
             },
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 1
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 2
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 4
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 3
+                  "text": "Convention",
+                  "point": 1
                 }
               ],
               "score": 13
@@ -2590,7 +2956,8 @@
               "date": "24/01/2004"
             }
           ],
-          "final_score": 25
+          "final_score": 25,
+          "username": "dmyrick7"
         },
         {
           "id": 3,
@@ -2674,7 +3041,8 @@
               "date": "03/02/1998"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "dmyrick7"
         },
         {
           "id": 4,
@@ -2752,7 +3120,8 @@
               "date": "28/12/1960"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "dmyrick7"
         }
       ],
       "status": "learner"
@@ -2779,35 +3148,111 @@
           "genres": "satire",
           "reviews": [
             {
-              "id": "e7a0da6c-8a46-4ae1-a13c-bb581ba76940",
-              "criteria1": 1,
-              "criteria2": 3,
-              "criteria3": 2,
-              "criteria4": 1,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 7
             },
             {
-              "id": "d9145108-f016-445b-b128-4e882423c241",
-              "criteria1": 3,
-              "criteria2": 2,
-              "criteria3": 3,
-              "criteria4": 3,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
               "score": 11
             },
             {
-              "id": "69021a0c-1e46-4bf0-ae8d-3ca12f641f32",
-              "criteria1": 3,
-              "criteria2": 1,
-              "criteria3": 1,
-              "criteria4": 1,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 6
             },
             {
-              "id": "f09e6425-f435-4097-b1c7-0544add660ad",
-              "criteria1": 1,
-              "criteria2": 3,
-              "criteria3": 2,
-              "criteria4": 5,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 5
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
               "score": 11
             }
           ],
@@ -2849,7 +3294,8 @@
               "date": "30/08/1967"
             }
           ],
-          "final_score": 35
+          "final_score": 35,
+          "username": "tborthwick8"
         },
         {
           "id": 2,
@@ -2861,27 +3307,84 @@
           "genres": "thriller",
           "reviews": [
             {
-              "id": "31a8550c-9e3a-4363-836a-0cfddd948d64",
-              "criteria1": 3,
-              "criteria2": 4,
-              "criteria3": 2,
-              "criteria4": 2,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 5
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 11
             },
             {
-              "id": "66c1b55b-3324-4869-bebc-781da700823d",
-              "criteria1": 0,
-              "criteria2": 2,
-              "criteria3": 5,
-              "criteria4": 5,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 5
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
               "score": 12
             },
             {
-              "id": "a8260b76-51af-4be2-b0d5-9c488c97acce",
-              "criteria1": 4,
-              "criteria2": 0,
-              "criteria3": 1,
-              "criteria4": 3,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 5
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
               "score": 8
             }
           ],
@@ -2933,7 +3436,8 @@
               "date": "24/06/1976"
             }
           ],
-          "final_score": 31
+          "final_score": 31,
+          "username": "tborthwick8"
         },
         {
           "id": 3,
@@ -3013,7 +3517,8 @@
               "date": "07/12/1991"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "tborthwick8"
         },
         {
           "id": 4,
@@ -3025,35 +3530,111 @@
           "genres": "adventure",
           "reviews": [
             {
-              "id": "628af01f-df47-4386-9f25-583c630b550b",
-              "criteria1": 3,
-              "criteria2": 0,
-              "criteria3": 4,
-              "criteria4": 5,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 12
             },
             {
-              "id": "27957909-65b0-486e-a463-eb58ce42c2e7",
-              "criteria1": 1,
-              "criteria2": 4,
-              "criteria3": 4,
-              "criteria4": 2,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 11
             },
             {
-              "id": "47b9c87d-39e8-4c39-85fa-7f583171b2c7",
-              "criteria1": 4,
-              "criteria2": 3,
-              "criteria3": 3,
-              "criteria4": 1,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 5
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
               "score": 11
             },
             {
-              "id": "f6198afa-21ec-4af7-881e-f7a26ad47b5c",
-              "criteria1": 5,
-              "criteria2": 3,
-              "criteria3": 1,
-              "criteria4": 0,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
               "score": 9
             }
           ],
@@ -3125,7 +3706,8 @@
               "date": "12/04/2003"
             }
           ],
-          "final_score": 43
+          "final_score": 43,
+          "username": "tborthwick8"
         },
         {
           "id": 5,
@@ -3137,35 +3719,111 @@
           "genres": "satire",
           "reviews": [
             {
-              "id": "d1cebd87-29f1-47dc-bf22-ee01f9894d8c",
-              "criteria1": 5,
-              "criteria2": 5,
-              "criteria3": 4,
-              "criteria4": 2,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 16
             },
             {
-              "id": "e276351d-53a1-4830-9352-0f4daf967673",
-              "criteria1": 0,
-              "criteria2": 4,
-              "criteria3": 0,
-              "criteria4": 4,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 8
             },
             {
-              "id": "ab664d61-3810-4fbf-b75d-9551ded0535f",
-              "criteria1": 0,
-              "criteria2": 0,
-              "criteria3": 1,
-              "criteria4": 2,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
               "score": 3
             },
             {
-              "id": "09440c43-5fa8-4206-96e6-a01ddc795895",
-              "criteria1": 2,
-              "criteria2": 2,
-              "criteria3": 4,
-              "criteria4": 0,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
               "score": 8
             }
           ],
@@ -3193,7 +3851,8 @@
             }
           ],
           "likes": [],
-          "final_score": 35
+          "final_score": 35,
+          "username": "tborthwick8"
         }
       ],
       "status": "reviewer"
@@ -3220,24 +3879,28 @@
           "genres": "adventure",
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
               "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
               "criteria": [
                 {
-                  "criteria1": "Conveys a theme or a message"
+                  "text": "Conveys a theme or a message",
+                  "point": 3
                 },
                 {
-                  "criteria2": "Plot, setting, characters, details and development"
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
                 },
                 {
-                  "criteria3": "Organization/structure"
+                  "text": "Organization/structure",
+                  "point": 5
                 },
                 {
-                  "criteria4": "Language abd style"
+                  "text": "Language and style",
+                  "point": 0
                 },
                 {
-                  "criteria5": "Convention",
-                  "point": 2
+                  "text": "Convention",
+                  "point": 0
                 }
               ],
               "score": 16
@@ -3338,7 +4001,8 @@
               "date": "28/03/1960"
             }
           ],
-          "final_score": 16
+          "final_score": 16,
+          "username": "tquantrill9"
         }
       ],
       "status": "learner"
