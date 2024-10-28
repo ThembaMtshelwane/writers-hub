@@ -27,7 +27,7 @@ const AuthLayout = () => {
           <h2 className="text-4xl text-accent">Categories</h2>
           <section className="flex gap-2 my-4 flex-wrap">
             {genres.map((genre: string) => (
-              <FilterButton name={genre} key={genre} />
+              <FilterButton name={genre.name} key={genre.id} />
             ))}
           </section>
         </section>
