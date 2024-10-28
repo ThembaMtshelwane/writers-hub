@@ -4,7 +4,7 @@ const Signup = () => {
   const handleSignUp = () => {
     console.log("Handle Sign-Up");
   };
-  return <AuthForm mode={"signup"} handleForm={handleSignUp} />;
+  return <AuthForm mode={"sign up"} handleForm={handleSignUp} />;
 };
 
 export default Signup;
