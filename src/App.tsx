@@ -14,9 +14,9 @@ import SplashPage from "./pages/SplashPage";
 import PreferencePage from "./pages/PreferencePage";
 import ShareWork from "./components/ShareWork";
 import ViewScore from "./components/ViewScore";
-
 import Writing from "./components/Writing";
 import Preview from "./components/Preview";
+import ReviewdPage from "./pages/ReviewdPage";
 
 export default function App() {
   return (
@@ -46,6 +46,7 @@ export default function App() {
               path="write"
               element={
                <Writing/>
+
               }
             />
             <Route
@@ -65,9 +66,7 @@ export default function App() {
               path="reviews"
               element={
                 <>
-                  <p className="text-5xl font-bold">
-                    The work you have reviewed
-                  </p>
+                 <ReviewdPage/>
                 </>
               }
             />

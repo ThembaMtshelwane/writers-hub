@@ -6,6 +6,9 @@ import "react-quill/dist/quill.snow.css";
 const Writing: React.FC = () => {
   const [value, setValue] = useState("");
 
+
+
+
   useEffect(() => {
     const savedDraft = localStorage.getItem("draft");
     if (savedDraft) {
@@ -38,16 +41,16 @@ const Writing: React.FC = () => {
   }, [value]);
 
   return (
-    <div>
+    <div className=" ">
       <ReactQuill
-        className="h-[40rem]  p-10 "
+        className="h-[40rem] p-10 "
         modules={modules}
         theme="snow"
         value={value}
         onChange={setValue}
       />
 
-      <div className="py-5 flex justify-center">
+      <div className="py-5 flex justify-center sm:pt-10">
         <button className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent ">
           Preview
         </button>

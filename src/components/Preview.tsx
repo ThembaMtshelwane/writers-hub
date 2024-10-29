@@ -2,7 +2,13 @@ import React from "react";
 import BasicInfoCard from "./BasicInfoCard";
 import img1 from '../assets/Images/Robert-Frost-Portrait-Square.webp'
 
+
+
 const Preview: React.FC = () => {
+
+
+  
+  
   return (
     <section className="">
       <div className="border">
