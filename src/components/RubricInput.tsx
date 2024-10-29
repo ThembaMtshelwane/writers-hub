@@ -95,13 +95,16 @@ const RubricInput: React.FC<RubricInputProps> = ({
             />
           </div>
         ))}
-        <p>
-          {criteria.theme +
-            criteria.plot +
-            criteria.organization +
-            criteria.language +
-            criteria.convention}
-        </p>
+        <div className="flex">
+          <p className="p-2 w-full">Score:</p>
+          <p className="px-5 flex items-center w-[80px]">
+            {criteria.theme +
+              criteria.plot +
+              criteria.organization +
+              criteria.language +
+              criteria.convention}
+          </p>
+        </div>
 
         <textarea
           className="p-2 border border-black h-40 w-full"
