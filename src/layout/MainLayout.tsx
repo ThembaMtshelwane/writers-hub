@@ -12,7 +12,7 @@ const MainLayout = () => {
         <section className="  w-full">
           <Outlet />
         </section>
-        <MainSideBar />
+         <MainSideBar /> 
       </main>
     </>
   );

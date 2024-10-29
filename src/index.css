@@ -40,10 +40,11 @@
 
 /* index.css */
 .custom-quill .ql-container {
-  border: none !important;
-  border-radius: 1rem !important; /* Match the rounded style */
+  border: none !important; /* Removes default Quill border */
+  border-radius: 5px; /* Adds rounded border */
 }
 
 .custom-quill .ql-editor {
   border: none !important;
+  border-radius: 1rem !important;
 }
