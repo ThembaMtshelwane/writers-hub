@@ -27,6 +27,7 @@ export default function App() {
             <Route path="signup" element={<Signup />} />
             <Route path="login" element={<Login />} />
           </Route>
+
           <Route path="/" element={<SplashPage />} />
           <Route path="/index" element={<LandingPage />} />
 
@@ -36,25 +37,9 @@ export default function App() {
           </Route>
 
           <Route path="/post" element={<MainLayout />}>
-            <Route
-              index
-              element={
-               <ShareWork/>
-              }
-            />
-            <Route
-              path="write"
-              element={
-               <Writing/>
-              }
-            />
-            <Route
-              path="preview"
-              element={
-               
-                <Preview/>
-              }
-            />
+            <Route index element={<ShareWork />} />
+            <Route path="write" element={<Writing />} />
+            <Route path="preview" element={<Preview />} />
             <Route path=":username/:id" element={<SinglePost />} />
           </Route>
 
@@ -75,7 +60,7 @@ export default function App() {
               path="view-score"
               element={
                 <>
-                  <ViewScore/>
+                  <ViewScore />
                 </>
               }
             />

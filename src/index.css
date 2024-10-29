@@ -6,6 +6,14 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
   body {
     @apply font-body;
   }
@@ -18,8 +26,12 @@
   h1 {
     @apply text-xl;
   }
+
+  .buttonStyle {
+    @apply p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent;
+  }
   .contentCard {
-    @apply bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl hover:scale-[1.02] transition ease-in-out duration-500;
+    @apply bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl hover:scale-[1.02] transition ease-in-out duration-500 cursor-pointer;
   }
   .contentCardGrid {
     @apply grid grid-cols-layout gap-5 justify-center;
@@ -36,6 +48,3 @@
   border: none !important;
   border-radius: 1rem !important;
 }
-
-
-

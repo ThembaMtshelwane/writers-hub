@@ -23,11 +23,12 @@ const CommentsSection = ({ isOpen, setIsOpen, data }: CommentsSectionProps) => {
 
   const list = () => (
     <div className="w-full h-[50vh] overflow-y-auto relative  bg-gray-100 p-4 flex items-center justify-center">
-      <div className="absolute top-0 flex flex-col gap-5 m-6 justify-center border-2 border-black mx-auto w-[70%]">
+      <div className="absolute top-0 flex flex-col gap-5 m-6 justify-center mx-auto md:w-[90%]">
         <h2 className="text-3xl my-4 font-bold">{data?.length} Comments </h2>
         {data !== null ? (
           data.map((comment: Comment) => (
             <CommentCard
+              key={comment.id}
               avatar={comment.avatar}
               username={comment.username}
               text={comment.text}
