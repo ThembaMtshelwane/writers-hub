@@ -23,7 +23,7 @@
     @apply p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent;
   }
   .contentCard {
-    @apply bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl hover:scale-[1.02] transition ease-in-out duration-500;
+    @apply bg-white h-[480px] w-[300px] border-2 rounded-lg overflow-hidden shadow-xl hover:scale-[1.02] transition ease-in-out duration-500 cursor-pointer;
   }
   .contentCardGrid {
     @apply grid grid-cols-layout gap-5 justify-center;
