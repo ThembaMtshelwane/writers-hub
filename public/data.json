@@ -4602,14 +4602,6 @@
       "name": "Romance"
     },
     {
-      "id": "poem",
-      "name": "Poems"
-    },
-    {
-      "id": "short story",
-      "name": "Short Story"
-    },
-    {
       "id": "fantasy",
       "name": "Fantasy"
     },
@@ -4625,5 +4617,10 @@
       "id": "history",
       "name": "History"
     }
+  ],
+  "types": [
+    { "id": "short story", "name": "Short Story" },
+    { "id": "long form", "name": "Long Form" },
+    { "id": "poetry", "name": "Poetry" }
   ]
 }
