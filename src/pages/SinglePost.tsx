@@ -17,7 +17,7 @@ const SinglePost = () => {
   const [isReviewOpen, setIsReviewOpen] = useState<boolean>(false);
 
   const { id, username } = useParams();
-  const isReviwer = true;
+  const isReviewer = true;
 
   useEffect(() => {
     const fetchContent = async () => {
@@ -45,38 +45,41 @@ const SinglePost = () => {
   }, [id, username]);
 
   return (
-    <div>
+    <div className="bg-white h-full">
       {filteredContent ? (
-        <div>
+        <div className="mb-4 text-justify w-[90%] md:w-[70%] mx-auto">
           <BasicInfoCard
             title={filteredContent.title}
             author={username || ""}
             description={filteredContent.description}
             image={filteredContent.image}
           >
-            <div className=" flex gap-5">
+            <Button
+              name={`Likes (${likes?.length})`}
+              buttonFunction={() => console.log("likes", likes)}
+            />
+            <Button
+              name={`Comments (${comments?.length})`}
+              buttonFunction={() =>
+                setIsCommentsOpen((prevState) => !prevState)
+              }
+            />
+            {isReviewer && (
               <Button
-                name={`Likes (${likes?.length})`}
-                buttonFunction={() => console.log("likes", likes)}
-              />
-              <Button
-                name={`Comments (${comments?.length})`}
+                name={`Review (${previews?.length})`}
                 buttonFunction={() =>
-                  setIsCommentsOpen((prevState) => !prevState)
+                  setIsReviewOpen((prevState) => !prevState)
                 }
               />
-              {isReviwer && (
-                <Button
-                  name={`Previews (${previews?.length})`}
-                  buttonFunction={() =>
-                    setIsReviewOpen((prevState) => !prevState)
-                  }
-                />
-              )}
-            </div>
+            )}
           </BasicInfoCard>
 
-          <section>{filteredContent.body}</section>
+          <div
+            className="my-10"
+            dangerouslySetInnerHTML={{
+              __html: filteredContent.body.replace(/\n\n/g, "<br><br>"),
+            }}
+          />
           <CommentsSection
             isOpen={isCommentsOpen}
             setIsOpen={setIsCommentsOpen}
