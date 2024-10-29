@@ -40,11 +40,11 @@ const HeroSlider = () => {
       className="text-center h-[25rem]"
     >
       {content.slice(0, 4).map((cont, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} className="bg-black">
           <img
             src={cont.image}
             alt={cont.title}
-            className="size-full object-cover"
+            className="size-full object-cover -z-50"
           />
         </SwiperSlide>
       ))}

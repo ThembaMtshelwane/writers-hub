@@ -61,7 +61,7 @@ const MainCardGrid = ({
           );
         })
       ) : (
-        <div>No Book found</div>
+        <div>There is no content matching your query.</div>
       )}
     </div>
   );

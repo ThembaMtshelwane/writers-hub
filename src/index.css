@@ -6,6 +6,14 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
   body {
     @apply font-body;
   }
@@ -35,6 +43,3 @@
 .custom-quill .ql-editor {
   border: none !important;
 }
-
-
-

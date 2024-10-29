@@ -8,7 +8,7 @@ import FilterButton from "../components/FilterButton";
 
 const LandingPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  
+
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
 
   const handleSelection = (filter: string) => {
@@ -27,17 +27,8 @@ const LandingPage = () => {
     <>
       <Navbar />
       <HeroSlider />
-      <main className="grid md:grid-cols-[65%_30%] mt-10 gap-[5%] justify-self-center w-[95%] relative">
+      <main className="grid lg:grid-cols-[65%_30%] mt-10 gap-[5%] justify-self-center w-[95%] relative">
         <section className=" w-full space-y-8">
-          <div className="rounded-full border border-slate-800 bg-transparent">
-            <input
-              type="text"
-              placeholder="Search"
-              id="search"
-              className="w-full rounded-full px-6 py-2 text-sm text-slate-800 focus:border-secondary focus:outline-none md:text-base "
-              onChange={handleSearch}
-            />
-          </div>
           <div className="space-x-8">
             {["poem", "short story", "long form"].map((types, index) => {
               return (
@@ -51,6 +42,16 @@ const LandingPage = () => {
             })}
           </div>
 
+          <div className="rounded-full border border-slate-800 bg-transparent">
+            <input
+              type="text"
+              placeholder="Search"
+              id="search"
+              className="w-full rounded-full px-6 py-2 text-sm text-slate-800 focus:border-secondary focus:outline-none md:text-base "
+              onChange={handleSearch}
+            />
+          </div>
+
           <div className="w-full ">
             <MainCardGrid
               search={searchQuery}
@@ -58,7 +59,7 @@ const LandingPage = () => {
             />
           </div>
         </section>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <MainSideBar />
         </div>
       </main>
