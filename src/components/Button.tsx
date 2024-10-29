@@ -5,10 +5,7 @@ type ButtonProps = {
 
 const Button = ({ name, buttonFunction }: ButtonProps) => {
   return (
-    <button
-      className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent "
-      onClick={buttonFunction}
-    >
+    <button className="buttonStyle " onClick={buttonFunction}>
       {name}
     </button>
   );
