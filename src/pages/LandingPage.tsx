@@ -30,7 +30,7 @@ const LandingPage = () => {
       <main className="grid lg:grid-cols-[65%_30%] mt-10 gap-[5%] justify-self-center w-[95%] relative">
         <section className=" w-full space-y-8">
           <div className="space-x-8">
-            {["poem", "short story", "long form"].map((types, index) => {
+            {["poetry", "short story", "long form"].map((types, index) => {
               return (
                 <FilterButton
                   key={index}

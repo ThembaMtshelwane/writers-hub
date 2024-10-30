@@ -19,6 +19,7 @@ const PreferencePage = () => {
     fetchGenres();
   }, []);
 
+  console.log(selectedGenres);
   const handleGenreSelection = (genreName: string) => {
     setSelectedGenres((prevSelected) =>
       prevSelected.includes(genreName)
@@ -27,7 +28,6 @@ const PreferencePage = () => {
     );
   };
 
-  
   const handleSubmit = () => {
     console.log("Selected genres:", selectedGenres);
     navigate("/index", { replace: true });

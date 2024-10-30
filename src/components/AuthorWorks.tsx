@@ -7,7 +7,7 @@ type Props = {
 
 const AuthorWorks = ({ image, title, AuthorName, description }: Props) => {
   return (
-    <section className="flex xl:px-10">
+    <section className="flex xl:px-10 border border-transparent cursor-pointer hover:">
       <div>
         <img src={image} className="object-cover object-center size-full" />
       </div>

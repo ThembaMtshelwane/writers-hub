@@ -37,10 +37,11 @@ const HeroSlider = () => {
       }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
-      className="text-center h-[25rem]"
+      className="text-center h-[25rem] "
     >
       {content.slice(0, 4).map((cont, index) => (
-        <SwiperSlide key={index} className="bg-black">
+        <SwiperSlide key={index}>
+          {/* <div className="bg-gradient-to-r from-black/60 to-white/5 black/50 flex size-full items-center justify-center absolute"></div> */}
           <img
             src={cont.image}
             alt={cont.title}
