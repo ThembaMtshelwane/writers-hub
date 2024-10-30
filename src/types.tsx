@@ -19,7 +19,7 @@ export type Content = {
   description: string;
   body: string;
   image: string;
-  type: string;
+  type: Type;
   genres: string;
   reviews: Review[];
   comments: Comment[];
@@ -29,11 +29,14 @@ export type Content = {
 
 export type Review = {
   id: string;
-  criteria1: number;
-  criteria2: number;
-  criteria3: number;
-  criteria4: number;
+  criteria: Point[];
   score: number;
+  feedback: string;
+};
+
+export type Point = {
+  text: string;
+  point: number;
 };
 
 export type Comment = {
@@ -51,6 +54,11 @@ export type Like = {
 };
 
 export type Genre = {
+  id: string;
+  name: string;
+};
+
+export type Type = {
   id: string;
   name: string;
 };

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import { useLocation } from "react-router-dom";
 
 
 const Writing: React.FC = () => {
   const [value, setValue] = useState("");
+  const location = useLocation();
+  const formData = location.state;
 
 
 
@@ -54,6 +57,11 @@ const Writing: React.FC = () => {
         <button className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent ">
           Preview
         </button>
+      </div>
+      <div>
+        <h1>{formData?.Title}</h1>
+        {/* Render other fields */}
+        <h1>{formData?.Description}</h1>
       </div>
     </div>
   );

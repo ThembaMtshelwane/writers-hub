@@ -9,11 +9,10 @@ const MainCardGrid = ({
   search,
   selectedFilter,
 }: {
-  search: string;
+  search: string | "";
   selectedFilter: string[];
 }) => {
   const [content, setContent] = useState<User[]>([]);
-  console.log(search);
 
   useEffect(() => {
     const fetchContent = async () => {
@@ -34,7 +33,9 @@ const MainCardGrid = ({
         .toLowerCase()
         .includes(search.toLowerCase());
       const matchType =
-        selectedFilter.length === 0 || selectedFilter.includes(cont.type);
+        selectedFilter.length === 0 ||
+        selectedFilter.includes(cont.type.id) ||
+        selectedFilter.includes(cont.genres);
       return searchQuery && matchType;
     })
   );
@@ -45,9 +46,11 @@ const MainCardGrid = ({
         filteredContent.map((con, index) => {
           const authorUser = content.find((user) => user.content.includes(con));
 
-          const authorName = authorUser
+          const authorName: string = authorUser
             ? `${authorUser.first_name} ${authorUser.last_name}`
             : "Unknown Author";
+
+          const username = authorUser?.username || "Unknown Author";
 
           return (
             <MainCard
@@ -56,11 +59,13 @@ const MainCardGrid = ({
               author={authorName}
               image={con.image}
               desc={con.description}
+              username={username}
+              id={con.id}
             />
           );
         })
       ) : (
-        <div>No Book found</div>
+        <div>No matching content found.</div>
       )}
     </div>
   );

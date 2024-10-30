@@ -18,16 +18,43 @@
           "description": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "short story",
-          "genres": "article",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            }
+          ],
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 5,
-              "criteria2": 5,
-              "criteria3": 4,
-              "criteria4": 3,
-              "score": 17
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 9
             }
           ],
           "comments": [
@@ -105,23 +132,55 @@
               "date": "02/09/2010"
             }
           ],
-          "final_score": 17
+          "final_score": 17,
+          "username": "rstrapp0"
         },
         {
           "id": 2,
           "title": "100 Years at the Movies",
           "description": "Proin eu mi. Nulla ac enim.",
-          "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
+          "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui. Leo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies.\n\n Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.Vel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.     Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui. Leo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula.\n\nIn ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur. Vel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl,\n amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc. Vitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "short story",
-          "genres": "comedy",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "horror",
+              "name": "Horror"
+            },
+            {
+              "id": "romance",
+              "name": "Romance"
+            }
+          ],
           "reviews": [
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 3,
-              "criteria2": 5,
-              "criteria3": 0,
-              "criteria4": 4,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 12
             }
           ],
@@ -200,7 +259,8 @@
               "date": "14/03/1985"
             }
           ],
-          "final_score": 12
+          "final_score": 12,
+          "username": "rstrapp0"
         },
         {
           "id": 3,
@@ -208,40 +268,132 @@
           "description": "Nunc rhoncus dui vel sem.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/cc0000/ffffff",
-          "type": "short story",
-          "genres": "horror",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            }
+          ],
           "reviews": [
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 5,
-              "criteria2": 2,
-              "criteria3": 4,
-              "criteria4": 5,
-              "score": 16
-            },
-            {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 5,
-              "criteria2": 3,
-              "criteria3": 1,
-              "criteria4": 5,
-              "score": 14
-            },
-            {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 2,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 5,
-              "score": 11
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 9
             },
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 0,
-              "criteria2": 2,
-              "criteria3": 1,
-              "criteria4": 5,
-              "score": 8
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 5
+            },
+            {
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 6
+            },
+            {
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 2
             }
           ],
           "comments": [
@@ -311,7 +463,8 @@
               "date": "11/01/1991"
             }
           ],
-          "final_score": 49
+          "final_score": 49,
+          "username": "rstrapp0"
         },
         {
           "id": 4,
@@ -319,16 +472,43 @@
           "description": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/cc0000/ffffff",
-          "type": "short story",
-          "genres": "mystery",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "drama",
+              "name": "Drama"
+            }
+          ],
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 1,
-              "criteria2": 3,
-              "criteria3": 5,
-              "criteria4": 3,
-              "score": 12
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 10
             }
           ],
           "comments": [
@@ -428,10 +608,33 @@
               "date": "10/04/1970"
             }
           ],
-          "final_score": 12
+          "final_score": 12,
+          "username": "rstrapp0"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "comedy",
+          "name": "Comedy"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery"
+        },
+        {
+          "id": "romance",
+          "name": "Romance"
+        },
+        {
+          "id": "history",
+          "name": "History"
+        },
+        {
+          "id": "fantasy",
+          "name": "Fantasy"
+        }
+      ]
     },
     {
       "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
@@ -451,8 +654,16 @@
           "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "long form",
-          "genres": "biography. essay",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "drama",
+              "name": "Drama"
+            }
+          ],
           "reviews": [],
           "comments": [],
           "likes": [
@@ -497,7 +708,8 @@
               "date": "04/09/2006"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "bedes1"
         },
         {
           "id": 2,
@@ -505,40 +717,140 @@
           "description": "Aenean lectus. Pellentesque eget nunc.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "comics",
-          "genres": "comedy",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "drama",
+              "name": "Drama"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            },
+            {
+              "id": "romance",
+              "name": "Romance"
+            },
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            }
+          ],
           "reviews": [
             {
-              "id": "201df274-3788-4a70-9a8c-e0f9fb97b97b",
-              "criteria1": 1,
-              "criteria2": 2,
-              "criteria3": 4,
-              "criteria4": 5,
-              "score": 12
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "4e67339b-7285-43c8-9263-18e59fde644a",
-              "criteria1": 0,
-              "criteria2": 3,
-              "criteria3": 3,
-              "criteria4": 0,
-              "score": 6
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 10
             },
             {
-              "id": "cbad268b-9d40-42e8-9723-a0b45bf553cd",
-              "criteria1": 4,
-              "criteria2": 5,
-              "criteria3": 1,
-              "criteria4": 5,
-              "score": 15
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 11
             },
             {
-              "id": "ae062fd3-70d9-4d81-a695-11a7f5275790",
-              "criteria1": 3,
-              "criteria2": 2,
-              "criteria3": 0,
-              "criteria4": 2,
-              "score": 7
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 13
             }
           ],
           "comments": [
@@ -616,7 +928,8 @@
               "date": "28/11/2006"
             }
           ],
-          "final_score": 40
+          "final_score": 40,
+          "username": "bedes1"
         },
         {
           "id": 3,
@@ -624,48 +937,159 @@
           "description": "Duis mattis egestas metus.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/dddddd/000000",
-          "type": "long form",
-          "genres": "thriller",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "romance",
+              "name": "Romance"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            }
+          ],
           "reviews": [
             {
-              "id": "9a7a4462-1ff3-4769-8a8a-acc0bc38b0bd",
-              "criteria1": 0,
-              "criteria2": 1,
-              "criteria3": 2,
-              "criteria4": 4,
-              "score": 7
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 10
             },
             {
-              "id": "09cd591a-cccc-41d6-b13f-e481ac8c8c56",
-              "criteria1": 5,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 0,
-              "score": 9
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 15
             },
             {
-              "id": "0ef25d50-44d3-4741-8203-458f5126ed16",
-              "criteria1": 5,
-              "criteria2": 4,
-              "criteria3": 5,
-              "criteria4": 3,
-              "score": 17
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "251a4977-8aa5-4751-91f6-88080cf4a496",
-              "criteria1": 4,
-              "criteria2": 0,
-              "criteria3": 2,
-              "criteria4": 0,
-              "score": 6
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "df873326-9ceb-4d1b-9103-5e77a741d12f",
-              "criteria1": 2,
-              "criteria2": 2,
-              "criteria3": 3,
-              "criteria4": 1,
-              "score": 8
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 4
             }
           ],
           "comments": [
@@ -715,7 +1139,8 @@
               "date": "14/04/1953"
             }
           ],
-          "final_score": 47
+          "final_score": 47,
+          "username": "bedes1"
         },
         {
           "id": 4,
@@ -723,23 +1148,69 @@
           "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "short story",
-          "genres": "article",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            }
+          ],
           "reviews": [
             {
-              "id": "8d858a43-d793-4707-ac6b-52ef523ebc61",
-              "criteria1": 3,
-              "criteria2": 2,
-              "criteria3": 0,
-              "criteria4": 5,
-              "score": 10
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 9
             },
             {
-              "id": "fee8d433-230d-42a1-80d5-3beffdffa1b0",
-              "criteria1": 0,
-              "criteria2": 4,
-              "criteria3": 5,
-              "criteria4": 5,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 14
             }
           ],
@@ -827,10 +1298,25 @@
               "date": "24/04/1984"
             }
           ],
-          "final_score": 24
+          "final_score": 24,
+          "username": "bedes1"
         }
       ],
-      "status": "reviewer"
+      "status": "reviewer",
+      "preferences": [
+        {
+          "id": "comedy",
+          "name": "Comedy"
+        },
+        {
+          "id": "drama",
+          "name": "Drama"
+        },
+        {
+          "id": "romance",
+          "name": "Romance"
+        }
+      ]
     },
     {
       "id": "7432cf64-66cd-4937-b3c5-f0f8b0b6edc5",
@@ -850,32 +1336,97 @@
           "description": "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "poem",
-          "genres": "thriller",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "drama",
+              "name": "Drama"
+            }
+          ],
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 2,
-              "criteria2": 4,
-              "criteria3": 1,
-              "criteria4": 2,
-              "score": 9
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 12
             },
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 2,
-              "criteria2": 1,
-              "criteria3": 1,
-              "criteria4": 2,
-              "score": 6
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 11
             },
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 0,
-              "criteria2": 3,
-              "criteria3": 4,
-              "criteria4": 2,
-              "score": 9
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 5
             }
           ],
           "comments": [
@@ -911,7 +1462,8 @@
               "date": "28/03/1981"
             }
           ],
-          "final_score": 24
+          "final_score": 24,
+          "username": "ndeedes2"
         },
         {
           "id": 2,
@@ -919,8 +1471,28 @@
           "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "short story",
-          "genres": "mystery",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "romance",
+              "name": "Romance"
+            }
+          ],
           "reviews": [],
           "comments": [
             {
@@ -996,10 +1568,29 @@
               "date": "07/09/1972"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "ndeedes2"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "drama",
+          "name": "Drama"
+        },
+        {
+          "id": "comedy",
+          "name": "Comedy"
+        },
+        {
+          "id": "sci-fi",
+          "name": "Sci-Fi"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery"
+        }
+      ]
     },
     {
       "id": "af3a9560-36b5-4d63-85b1-6008859aac3a",
@@ -1019,32 +1610,101 @@
           "description": "Phasellus sit amet erat.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "long form",
-          "genres": "comedy",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            }
+          ],
           "reviews": [
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 1,
-              "criteria2": 2,
-              "criteria3": 0,
-              "criteria4": 3,
-              "score": 6
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 3
             },
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 1,
-              "criteria2": 2,
-              "criteria3": 4,
-              "criteria4": 5,
-              "score": 12
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 3,
-              "criteria2": 5,
-              "criteria3": 4,
-              "criteria4": 5,
-              "score": 17
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 5
             }
           ],
           "comments": [
@@ -1131,10 +1791,17 @@
               "date": "26/08/1955"
             }
           ],
-          "final_score": 35
+          "final_score": 35,
+          "username": "ptowne3"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "history",
+          "name": "History"
+        }
+      ]
     },
     {
       "id": "f348493e-9d8b-49f7-9c71-79a95af3a768",
@@ -1154,32 +1821,105 @@
           "description": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "short story",
-          "genres": "romance",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            },
+            {
+              "id": "history",
+              "name": "History"
+            }
+          ],
           "reviews": [
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 4,
-              "criteria2": 0,
-              "criteria3": 1,
-              "criteria4": 4,
-              "score": 9
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 10
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 0,
-              "criteria2": 0,
-              "criteria3": 3,
-              "criteria4": 5,
-              "score": 8
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 2,
-              "criteria2": 4,
-              "criteria3": 0,
-              "criteria4": 5,
-              "score": 11
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 17
             }
           ],
           "comments": [
@@ -1281,7 +2021,8 @@
               "date": "09/04/1960"
             }
           ],
-          "final_score": 28
+          "final_score": 28,
+          "username": "obartak4"
         },
         {
           "id": 2,
@@ -1289,16 +2030,51 @@
           "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/cc0000/ffffff",
-          "type": "poem",
-          "genres": "sci-fi",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "romance",
+              "name": "Romance"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            }
+          ],
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 3,
-              "criteria2": 5,
-              "criteria3": 0,
-              "criteria4": 3,
-              "score": 11
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 6
             }
           ],
           "comments": [
@@ -1325,7 +2101,8 @@
             }
           ],
           "likes": [],
-          "final_score": 11
+          "final_score": 11,
+          "username": "obartak4"
         },
         {
           "id": 3,
@@ -1333,16 +2110,59 @@
           "description": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/dddddd/000000",
-          "type": "long form",
-          "genres": "article",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "romance",
+              "name": "Romance"
+            },
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            }
+          ],
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 1,
-              "criteria2": 1,
-              "criteria3": 1,
-              "criteria4": 2,
-              "score": 5
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 9
             }
           ],
           "comments": [
@@ -1369,7 +2189,8 @@
             }
           ],
           "likes": [],
-          "final_score": 5
+          "final_score": 5,
+          "username": "obartak4"
         },
         {
           "id": 4,
@@ -1377,32 +2198,113 @@
           "description": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "comics",
-          "genres": "thriller",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "romance",
+              "name": "Romance"
+            },
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            }
+          ],
           "reviews": [
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 4,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 5,
-              "score": 13
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 7
             },
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 1,
-              "criteria2": 0,
-              "criteria3": 2,
-              "criteria4": 3,
-              "score": 6
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 4
             },
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 3,
-              "criteria2": 1,
-              "criteria3": 2,
-              "criteria4": 0,
-              "score": 6
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 12
             }
           ],
           "comments": [
@@ -1454,10 +2356,25 @@
               "date": "21/07/2003"
             }
           ],
-          "final_score": 25
+          "final_score": 25,
+          "username": "obartak4"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "history",
+          "name": "History"
+        },
+        {
+          "id": "fantasy",
+          "name": "Fantasy"
+        },
+        {
+          "id": "sci-fi",
+          "name": "Sci-Fi"
+        }
+      ]
     },
     {
       "id": "b6581392-29b6-401f-b9b7-11a9166ed06e",
@@ -1477,48 +2394,167 @@
           "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "comics",
-          "genres": "action",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "romance",
+              "name": "Romance"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            }
+          ],
           "reviews": [
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 1,
-              "criteria2": 1,
-              "criteria3": 5,
-              "criteria4": 3,
-              "score": 10
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 8
             },
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 5,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 0,
-              "score": 9
-            },
-            {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 1,
-              "criteria2": 1,
-              "criteria3": 0,
-              "criteria4": 3,
-              "score": 5
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 8
             },
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 1,
-              "criteria2": 2,
-              "criteria3": 0,
-              "criteria4": 1,
-              "score": 4
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 10
             },
             {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 3,
-              "criteria2": 0,
-              "criteria3": 1,
-              "criteria4": 4,
-              "score": 8
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 12
+            },
+            {
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 11
             }
           ],
           "comments": [],
@@ -1544,10 +2580,21 @@
               "date": "20/06/1981"
             }
           ],
-          "final_score": 36
+          "final_score": 36,
+          "username": "lmcgarrity5"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "comedy",
+          "name": "Comedy"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery"
+        }
+      ]
     },
     {
       "id": "d4190c94-88c6-41be-971c-ea2573a9f283",
@@ -1567,8 +2614,24 @@
           "description": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "short story",
-          "genres": "biography. essay",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            }
+          ],
           "reviews": [],
           "comments": [
             {
@@ -1645,7 +2708,8 @@
               "date": "08/12/2005"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "rfilippello6"
         },
         {
           "id": 2,
@@ -1653,48 +2717,163 @@
           "description": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "long form",
-          "genres": "horror",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "drama",
+              "name": "Drama"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            }
+          ],
           "reviews": [
             {
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 17
+            },
+            {
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 12
+            },
+            {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 1,
-              "criteria2": 4,
-              "criteria3": 0,
-              "criteria4": 5,
-              "score": 10
-            },
-            {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 3,
-              "criteria2": 3,
-              "criteria3": 3,
-              "criteria4": 1,
-              "score": 10
-            },
-            {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 1,
-              "criteria2": 0,
-              "criteria3": 0,
-              "criteria4": 2,
-              "score": 3
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 8
             },
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 5,
-              "criteria2": 2,
-              "criteria3": 1,
-              "criteria4": 5,
-              "score": 13
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 6
             },
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 5,
-              "criteria2": 5,
-              "criteria3": 2,
-              "criteria4": 3,
-              "score": 15
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 8
             }
           ],
           "comments": [
@@ -1797,10 +2976,29 @@
               "date": "20/11/1977"
             }
           ],
-          "final_score": 51
+          "final_score": 51,
+          "username": "rfilippello6"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "history",
+          "name": "History"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery"
+        },
+        {
+          "id": "drama",
+          "name": "Drama"
+        },
+        {
+          "id": "comedy",
+          "name": "Comedy"
+        }
+      ]
     },
     {
       "id": "2ba1d7e5-1607-4c83-b91b-41e4d6f2127e",
@@ -1820,48 +3018,167 @@
           "description": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/cc0000/ffffff",
-          "type": "long form",
-          "genres": "comedy",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "drama",
+              "name": "Drama"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            }
+          ],
           "reviews": [
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 4,
-              "criteria2": 3,
-              "criteria3": 1,
-              "criteria4": 3,
-              "score": 11
-            },
-            {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 3,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 4,
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 11
             },
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 3,
-              "criteria2": 3,
-              "criteria3": 0,
-              "criteria4": 4,
-              "score": 10
-            },
-            {
-              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 1,
-              "criteria2": 3,
-              "criteria3": 1,
-              "criteria4": 1,
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 2
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 6
             },
             {
               "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-              "criteria1": 3,
-              "criteria2": 1,
-              "criteria3": 3,
-              "criteria4": 3,
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 9
+            },
+            {
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
               "score": 10
+            },
+            {
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 11
             }
           ],
           "comments": [
@@ -1943,7 +3260,8 @@
               "date": "12/02/1955"
             }
           ],
-          "final_score": 48
+          "final_score": 48,
+          "username": "dmyrick7"
         },
         {
           "id": 2,
@@ -1951,24 +3269,74 @@
           "description": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/dddddd/000000",
-          "type": "poem",
-          "genres": "history",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            }
+          ],
           "reviews": [
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 4,
-              "criteria2": 1,
-              "criteria3": 5,
-              "criteria4": 2,
-              "score": 12
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 4
             },
             {
               "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 3,
-              "criteria2": 5,
-              "criteria3": 5,
-              "criteria4": 0,
-              "score": 13
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
+              "score": 9
             }
           ],
           "comments": [
@@ -2006,7 +3374,8 @@
               "date": "24/01/2004"
             }
           ],
-          "final_score": 25
+          "final_score": 25,
+          "username": "dmyrick7"
         },
         {
           "id": 3,
@@ -2014,8 +3383,24 @@
           "description": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "long form",
-          "genres": "thriller",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            }
+          ],
           "reviews": [],
           "comments": [
             {
@@ -2090,7 +3475,8 @@
               "date": "03/02/1998"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "dmyrick7"
         },
         {
           "id": 4,
@@ -2098,8 +3484,20 @@
           "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "poem",
-          "genres": "comedy",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            }
+          ],
           "reviews": [],
           "comments": [
             {
@@ -2168,10 +3566,17 @@
               "date": "28/12/1960"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "dmyrick7"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "comedy",
+          "name": "Comedy"
+        }
+      ]
     },
     {
       "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
@@ -2191,40 +3596,140 @@
           "description": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "poem",
-          "genres": "satire",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            },
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "drama",
+              "name": "Drama"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            }
+          ],
           "reviews": [
             {
-              "id": "e7a0da6c-8a46-4ae1-a13c-bb581ba76940",
-              "criteria1": 1,
-              "criteria2": 3,
-              "criteria3": 2,
-              "criteria4": 1,
-              "score": 7
-            },
-            {
-              "id": "d9145108-f016-445b-b128-4e882423c241",
-              "criteria1": 3,
-              "criteria2": 2,
-              "criteria3": 3,
-              "criteria4": 3,
-              "score": 11
-            },
-            {
-              "id": "69021a0c-1e46-4bf0-ae8d-3ca12f641f32",
-              "criteria1": 3,
-              "criteria2": 1,
-              "criteria3": 1,
-              "criteria4": 1,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
               "score": 6
             },
             {
-              "id": "f09e6425-f435-4097-b1c7-0544add660ad",
-              "criteria1": 1,
-              "criteria2": 3,
-              "criteria3": 2,
-              "criteria4": 5,
-              "score": 11
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 10
+            },
+            {
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 0
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 5
+            },
+            {
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 0
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 5
             }
           ],
           "comments": [],
@@ -2265,7 +3770,8 @@
               "date": "30/08/1967"
             }
           ],
-          "final_score": 35
+          "final_score": 35,
+          "username": "tborthwick8"
         },
         {
           "id": 2,
@@ -2273,32 +3779,97 @@
           "description": "Vivamus tortor. Duis mattis egestas metus.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "poem",
-          "genres": "thriller",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "drama",
+              "name": "Drama"
+            }
+          ],
           "reviews": [
             {
-              "id": "31a8550c-9e3a-4363-836a-0cfddd948d64",
-              "criteria1": 3,
-              "criteria2": 4,
-              "criteria3": 2,
-              "criteria4": 2,
-              "score": 11
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 3
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 4
+                }
+              ],
+              "score": 15
             },
             {
-              "id": "66c1b55b-3324-4869-bebc-781da700823d",
-              "criteria1": 0,
-              "criteria2": 2,
-              "criteria3": 5,
-              "criteria4": 5,
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 12
             },
             {
-              "id": "a8260b76-51af-4be2-b0d5-9c488c97acce",
-              "criteria1": 4,
-              "criteria2": 0,
-              "criteria3": 1,
-              "criteria4": 3,
-              "score": 8
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 4
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 16
             }
           ],
           "comments": [
@@ -2349,7 +3920,8 @@
               "date": "24/06/1976"
             }
           ],
-          "final_score": 31
+          "final_score": 31,
+          "username": "tborthwick8"
         },
         {
           "id": 3,
@@ -2357,8 +3929,28 @@
           "description": "In eleifend quam a odio. In hac habitasse platea dictumst.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/5fa2dd/ffffff",
-          "type": "short story",
-          "genres": "history",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "drama",
+              "name": "Drama"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            }
+          ],
           "reviews": [],
           "comments": [
             {
@@ -2429,7 +4021,8 @@
               "date": "07/12/1991"
             }
           ],
-          "final_score": 0
+          "final_score": 0,
+          "username": "tborthwick8"
         },
         {
           "id": 4,
@@ -2437,39 +4030,135 @@
           "description": "Nunc purus. Phasellus in felis. Donec semper sapien a libero.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "comics",
-          "genres": "adventure",
+          "type": {
+            "id": "poetry",
+            "name": "Poetry"
+          },
+          "genres": [
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "fantasy",
+              "name": "Fantasy"
+            },
+            {
+              "id": "horror",
+              "name": "Horror"
+            }
+          ],
           "reviews": [
             {
-              "id": "628af01f-df47-4386-9f25-583c630b550b",
-              "criteria1": 3,
-              "criteria2": 0,
-              "criteria3": 4,
-              "criteria4": 5,
-              "score": 12
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 6
             },
             {
-              "id": "27957909-65b0-486e-a463-eb58ce42c2e7",
-              "criteria1": 1,
-              "criteria2": 4,
-              "criteria3": 4,
-              "criteria4": 2,
-              "score": 11
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 2
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "47b9c87d-39e8-4c39-85fa-7f583171b2c7",
-              "criteria1": 4,
-              "criteria2": 3,
-              "criteria3": 3,
-              "criteria4": 1,
-              "score": 11
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 0
+                }
+              ],
+              "score": 13
             },
             {
-              "id": "f6198afa-21ec-4af7-881e-f7a26ad47b5c",
-              "criteria1": 5,
-              "criteria2": 3,
-              "criteria3": 1,
-              "criteria4": 0,
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 2
+                }
+              ],
               "score": 9
             }
           ],
@@ -2541,7 +4230,8 @@
               "date": "12/04/2003"
             }
           ],
-          "final_score": 43
+          "final_score": 43,
+          "username": "tborthwick8"
         },
         {
           "id": 5,
@@ -2549,40 +4239,140 @@
           "description": "Donec semper sapien a libero. Nam dui.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/ff4444/ffffff",
-          "type": "poem",
-          "genres": "satire",
+          "type": {
+            "id": "long form",
+            "name": "Long Form"
+          },
+          "genres": [
+            {
+              "id": "history",
+              "name": "History"
+            },
+            {
+              "id": "sci-fi",
+              "name": "Sci-Fi"
+            },
+            {
+              "id": "mystery",
+              "name": "Mystery"
+            },
+            {
+              "id": "comedy",
+              "name": "Comedy"
+            },
+            {
+              "id": "romance",
+              "name": "Romance"
+            }
+          ],
           "reviews": [
             {
-              "id": "d1cebd87-29f1-47dc-bf22-ee01f9894d8c",
-              "criteria1": 5,
-              "criteria2": 5,
-              "criteria3": 4,
-              "criteria4": 2,
-              "score": 16
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 4
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 11
             },
             {
-              "id": "e276351d-53a1-4830-9352-0f4daf967673",
-              "criteria1": 0,
-              "criteria2": 4,
-              "criteria3": 0,
-              "criteria4": 4,
-              "score": 8
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 1
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 1
+                },
+                {
+                  "text": "Language and style",
+                  "point": 4
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 10
             },
             {
-              "id": "ab664d61-3810-4fbf-b75d-9551ded0535f",
-              "criteria1": 0,
-              "criteria2": 0,
-              "criteria3": 1,
-              "criteria4": 2,
-              "score": 3
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 1
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 3
+                },
+                {
+                  "text": "Language and style",
+                  "point": 2
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 10
             },
             {
-              "id": "09440c43-5fa8-4206-96e6-a01ddc795895",
-              "criteria1": 2,
-              "criteria2": 2,
-              "criteria3": 4,
-              "criteria4": 0,
-              "score": 8
+              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 2
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 0
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 1
+                },
+                {
+                  "text": "Convention",
+                  "point": 1
+                }
+              ],
+              "score": 4
             }
           ],
           "comments": [
@@ -2609,10 +4399,21 @@
             }
           ],
           "likes": [],
-          "final_score": 35
+          "final_score": 35,
+          "username": "tborthwick8"
         }
       ],
-      "status": "reviewer"
+      "status": "reviewer",
+      "preferences": [
+        {
+          "id": "mystery",
+          "name": "Mystery"
+        },
+        {
+          "id": "romance",
+          "name": "Romance"
+        }
+      ]
     },
     {
       "id": "3ebcae47-c3e7-49e6-a875-614ffe2f9fd3",
@@ -2632,16 +4433,43 @@
           "description": "Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
           "body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Hac nam diam venenatis faucibus interdum risus. Augue nullam sociosqu eu aliquet euismod natoque non. Nunc montes ultricies maximus diam finibus nostra. Ut at ultrices enim conubia blandit viverra posuere amet. Interdum laoreet mollis eu augue ultrices sociosqu rhoncus a scelerisque. Netus placerat convallis natoque mollis adipiscing arcu dui.\n\nLeo nisl auctor netus neque feugiat nec mauris rhoncus. Diam nullam amet maximus eu elit imperdiet. Rutrum id imperdiet potenti finibus felis sagittis natoque ultricies. Venenatis fames ex euismod; facilisis maecenas ad turpis. Convallis id dictum proin libero quisque posuere donec dapibus ligula. In ad mattis quisque mattis torquent faucibus laoreet. Pulvinar ullamcorper cursus aenean pretium fames lectus quis. Justo ligula imperdiet gravida maximus mauris donec sodales curabitur.\n\nVel elementum finibus aliquet eros vehicula egestas consequat placerat. Molestie enim ornare fringilla sed quisque condimentum. Ullamcorper per gravida at; odio maecenas risus. Sollicitudin maecenas habitasse dignissim est ut pharetra. Sed pellentesque etiam vehicula fames pellentesque natoque velit. Porta elit rutrum nisl, amet nascetur imperdiet. Dolor aenean vehicula morbi ante tortor interdum nunc.\n\nVitae turpis taciti tempus in efficitur. Euismod quisque mus in massa vivamus quam. Malesuada fringilla facilisi cras suscipit lacus eget maximus. Pellentesque mollis aliquet ex nascetur cursus. Cras mattis a cursus hac finibus ligula? Facilisi magnis enim ex fusce class, rhoncus vel. Porttitor netus leo nullam metus; maximus ad.",
           "image": "http://dummyimage.com/250x350.png/dddddd/000000",
-          "type": "long form",
-          "genres": "adventure",
+          "type": {
+            "id": "short story",
+            "name": "Short Story"
+          },
+          "genres": [
+            {
+              "id": "history",
+              "name": "History"
+            }
+          ],
           "reviews": [
             {
-              "id": "fa21e224-cb56-4de8-8f52-9bdff57ad721",
-              "criteria1": 5,
-              "criteria2": 4,
-              "criteria3": 4,
-              "criteria4": 3,
-              "score": 16
+              "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
+              "feedback": "Well done! You did a very good job, however there is definitely room for improvement.",
+              "criteria": [
+                {
+                  "text": "Conveys a theme or a message",
+                  "point": 4
+                },
+                {
+                  "text": "Plot, setting, characters, details and development",
+                  "point": 3
+                },
+                {
+                  "text": "Organization/structure",
+                  "point": 0
+                },
+                {
+                  "text": "Language and style",
+                  "point": 3
+                },
+                {
+                  "text": "Convention",
+                  "point": 3
+                }
+              ],
+              "score": 13
             }
           ],
           "comments": [
@@ -2739,22 +4567,60 @@
               "date": "28/03/1960"
             }
           ],
-          "final_score": 16
+          "final_score": 16,
+          "username": "tquantrill9"
         }
       ],
-      "status": "learner"
+      "status": "learner",
+      "preferences": [
+        {
+          "id": "history",
+          "name": "History"
+        },
+        {
+          "id": "sci-fi",
+          "name": "Sci-Fi"
+        }
+      ]
     }
   ],
   "genres": [
-    { "id": "horror", "name": "Horror" },
-    { "id": "comedy", "name": "Comedy" },
-    { "id": "drama", "name": "Drama" },
-    { "id": "romance", "name": "Romance" },
-    { "id": "poems", "name": "Poems" },
+    {
+      "id": "horror",
+      "name": "Horror"
+    },
+    {
+      "id": "comedy",
+      "name": "Comedy"
+    },
+    {
+      "id": "drama",
+      "name": "Drama"
+    },
+    {
+      "id": "romance",
+      "name": "Romance"
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy"
+    },
+    {
+      "id": "sci-fi",
+      "name": "Sci-Fi"
+    },
+    {
+      "id": "mystery",
+      "name": "Mystery"
+    },
+    {
+      "id": "history",
+      "name": "History"
+    }
+  ],
+  "types": [
     { "id": "short story", "name": "Short Story" },
-    { "id": "fantasy", "name": "Fantasy" },
-    { "id": "sci-fi", "name": "Sci-Fi" },
-    { "id": "mystery", "name": "Mystery" },
-    { "id": "history", "name": "History" }
+    { "id": "long form", "name": "Long Form" },
+    { "id": "poetry", "name": "Poetry" }
   ]
 }

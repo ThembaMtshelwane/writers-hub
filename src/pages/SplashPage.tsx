@@ -7,7 +7,7 @@ const SplashPage = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate("/pref", { replace: true });
+      navigate("/auth/login", { replace: true });
     }, 3000);
   });
 
