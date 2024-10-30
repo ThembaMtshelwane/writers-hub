@@ -58,9 +58,11 @@ const ShareWork = () => {
       base64,
     };
 
+    console.log
     // Navigate to the next page with formData as state
     navigate("write", { state: formData });
   };
+
 
   return (
     <section className="py-3 px-3">
