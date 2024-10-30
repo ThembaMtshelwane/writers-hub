@@ -3,23 +3,25 @@ import { Link } from "react-router-dom";
 
 const ProfileSideBar: React.FC = () => {
   const [chosenButton, setChosenButton] = useState<string | null>(null);
-
+const userId = "39cc70c6-31b6-4074-9ad2-caf1471cd911";
   const handleClick = (buttonName: string) => {
     setChosenButton((prev) => (prev === buttonName ? null : buttonName));
+
+
   };
 
   return (
     <div className=" p-10">
       <div className="space-y-2 grid place-items-center">
-        <Link to="/profile">
+        <Link to={`/profile/info/${userId}`}>
           <button
             onClick={() => handleClick("personal-info")}
-            className="bg-white p-6 min-w-[200px] "
+            className="bg-white grid flex-row w-[200px] h-[70px] p-5"
           >
             PERSONAL INFO
             <div className="grid place-content-center mt-2">
               {chosenButton === "personal-info" && (
-                <hr className="border-[3px] w-32 flex border-[#528362]" />
+                <hr className="border-[2px] w-32 flex border-[#528362]" />
               )}
             </div>
           </button>
@@ -28,12 +30,12 @@ const ProfileSideBar: React.FC = () => {
         <Link to="/profile/works">
           <button
             onClick={() => handleClick("works")}
-            className="bg-white p-6 min-w-[200px]"
+            className="bg-white grid flex-row w-[200px] h-[70px] p-5"
           >
             WORKS
             <div className="grid place-content-center mt-2">
               {chosenButton === "works" && (
-                <hr className="border-[3px] w-32 flex border-[#528362]" />
+                <hr className="border-[2px] w-32 flex border-[#528362]" />
               )}
             </div>
           </button>
@@ -42,12 +44,12 @@ const ProfileSideBar: React.FC = () => {
         <Link to="/profile/reviews">
           <button
             onClick={() => handleClick("reviews")}
-            className="bg-white p-6 min-w-[200px] "
+            className="bg-white grid flex-row w-[200px] h-[70px] p-5"
           >
             REVIEWS
             <div className="grid place-content-center mt-2">
               {chosenButton === "reviews" && (
-                <hr className="border-[3px] w-32 flex border-[#528362]" />
+                <hr className="border-[2px] w-32 flex border-[#528362]" />
               )}
             </div>
           </button>
@@ -56,12 +58,12 @@ const ProfileSideBar: React.FC = () => {
         <Link to="/profile/view-score">
           <button
             onClick={() => handleClick("view-score")}
-            className="bg-white p-6 min-w-[200px] "
+            className="bg-white grid flex-row w-[200px] h-[70px] p-5 "
           >
             VIEW SCORE
             <div className="grid place-content-center mt-2">
               {chosenButton === "view-score" && (
-                <hr className="border-[3px] w-32 flex border-[#528362]" />
+                <hr className="border-[2px] w-32 flex border-[#528362]" />
               )}
             </div>
           </button>

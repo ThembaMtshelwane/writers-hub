@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import Button from "./Button";
+import {  useLocation, useNavigate } from "react-router-dom";
 
 
 const Writing: React.FC = () => {
   const [value, setValue] = useState("");
+  const location = useLocation();
+  const formData = location.state;
+  const navigate = useNavigate();
+  const  textRef = useRef<ReactQuill>(null)
+
+
+
 
   useEffect(() => {
     const savedDraft = localStorage.getItem("draft");
@@ -37,20 +46,43 @@ const Writing: React.FC = () => {
     return () => clearInterval(interval);
   }, [value]);
 
+  const handlePreview = () => {
+
+
+    const qui = textRef.current?.getEditor();
+    const text =  qui?.getText();
+
+
+    const dataToPreview = {
+      Write: text ,
+      Title: formData?.Title,
+      Description: formData?.Description,
+    };
+    navigate("/post/preview", { state: dataToPreview, replace:true });
+  };
+
+
+
   return (
-    <div>
+    <div className="">
       <ReactQuill
-        className="h-[40rem]  p-10 "
+      ref={textRef}
+        className="h-[40rem] p-10"
         modules={modules}
         theme="snow"
         value={value}
         onChange={setValue}
       />
 
-      <div className="py-5 flex justify-center">
-        <button className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent ">
-          Preview
-        </button>
+      <div className="py-5 flex justify-center sm:pt-10">
+        <div className="pb-3 md:flex md:justify-center">
+          <Button name="preview" buttonFunction={handlePreview} />
+        </div>
+      </div>
+      <div>
+        <h1>{formData?.Title}</h1>
+        {/* Render other fields */}
+        <h1>{formData?.Description}</h1>
       </div>
     </div>
   );

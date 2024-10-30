@@ -14,9 +14,9 @@ import SplashPage from "./pages/SplashPage";
 import PreferencePage from "./pages/PreferencePage";
 import ShareWork from "./components/ShareWork";
 import ViewScore from "./components/ViewScore";
-
 import Writing from "./components/Writing";
 import Preview from "./components/Preview";
+import ReviewdPage from "./pages/ReviewdPage";
 // import { PostContext } from "./context/PostContext";
 import { UserProvider } from "./context/UserProvider";
 
@@ -46,32 +46,29 @@ export default function App() {
               <Route path=":username/:id" element={<SinglePost />} />
             </Route>
 
-            <Route path="/profile" element={<ProfileLayout />}>
-              <Route index element={<PersonalInfoList />} />
-              <Route path="works" element={<CreatorCardGrid />} />
-              <Route
-                path="reviews"
-                element={
-                  <>
-                    <p className="text-5xl font-bold">
-                      The work you have reviewed
-                    </p>
-                  </>
-                }
-              />
-              <Route
-                path="view-score"
-                element={
-                  <>
-                    <ViewScore />
-                  </>
-                }
-              />
-            </Route>
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </UserProvider>
+          <Route path="/profile" element={<ProfileLayout />}>
+            <Route path="info/:userId" element={<PersonalInfoList />} />
+            <Route path="works" element={<CreatorCardGrid />} />
+            <Route
+              path="reviews"
+              element={
+                <>
+                 <ReviewdPage/>
+                </>
+              }
+            />
+            <Route
+              path="view-score"
+              element={
+                <>
+                  <ViewScore />
+                </>
+              }
+            />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
