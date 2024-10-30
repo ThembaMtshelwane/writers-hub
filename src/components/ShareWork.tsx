@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Button from "./Button";
-import { Link } from "react-router-dom";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "../index.css"; // Import the custom CSS file if needed
@@ -15,17 +15,17 @@ const ShareWork = () => {
   const [image, setImage] = useState<string | null>(null);
   const [Title, setTitle] = useState("");
   const [Genres, setGenres] = useState<Genre[]>([]);
+  const [selectedGenre, setSelectedGenre] = useState("");
   const [Description, setDescription] = useState("");
   const [base64, setBase64] = useState<string>("");
   const [Type, setType] = useState("");
 
+  const navigate = useNavigate(); // Initialize navigate
+
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        // const users: User[] = (await axios.get("/api/genres")).data;
         const { data } = await axios.get("/api/genres");
-
-        console.log(data);
         setGenres(data);
       } catch (error) {
         console.error("Error fetching Data: ", error);
@@ -33,10 +33,6 @@ const ShareWork = () => {
     };
     fetchContent();
   }, []);
-
-  const handleNext = () => {
-    // Your handleNext function logic here
-  };
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const file = e.target.files?.[0];
@@ -51,14 +47,26 @@ const ShareWork = () => {
     }
   };
 
+  const handleNext = () => {
+    // Object containing all the form data
+    const formData = {
+      Title,
+      selectedGenre,
+      Type,
+      Description,
+      image,
+      base64,
+    };
+
+    // Navigate to the next page with formData as state
+    navigate("write", { state: formData });
+  };
+
   return (
     <section className="py-3 px-3">
-      <div className="bg-white rounded-3xl grid px-4 xl:px-6 md:h-[600px]  md:w-[450px] w-[260px]  lg:w-[600px] pc:w-[1200px] pc:h-[750px] xl:w-[850px] ">
-        <h1 className="pt-10  text-sm xl:text-xl">SHARE YOUR WORK</h1>
-        <form
-          action=""
-          className="grid grid-cols-1 py-10 2xl:py-5 lg: 2xl:space-x-1 space-y-3 md:grid-cols-2 pc:px-10"
-        >
+      <div className="bg-white rounded-3xl grid px-4 xl:px-6 md:h-[600px] md:w-[450px] w-[260px] lg:w-[600px] pc:w-[1200px] pc:h-[750px] xl:w-[850px]">
+        <h1 className="pt-10 text-sm xl:text-xl">SHARE YOUR WORK</h1>
+        <form className="grid grid-cols-1 py-10 2xl:py-5 space-y-3 md:grid-cols-2 pc:px-10">
           <div className="flex flex-col ">
             <label htmlFor="file-upload">
               <img
@@ -106,11 +114,11 @@ const ShareWork = () => {
                 <option value="" disabled>
                   Select Genre
                 </option>
-                 {Genres.map((genre) => (
+                {Genres.map((genre) => (
                   <option key={genre.id} value={genre.name}>
                     {genre.name}
                   </option>
-                ))} 
+                ))}
               </select>
             </div>
 
@@ -191,10 +199,9 @@ const ShareWork = () => {
             </div>
           </div>
         </form>
-        <div className="pb-3 md:flex md:justify-center  ">
-          <Link to={"write"}>
-            <Button name="Next" buttonFunction={handleNext} />
-          </Link>
+
+        <div className="pb-3 md:flex md:justify-center">
+          <Button name="Next" buttonFunction={handleNext} />
         </div>
       </div>
     </section>

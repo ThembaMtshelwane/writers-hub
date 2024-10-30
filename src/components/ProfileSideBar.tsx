@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 
 const ProfileSideBar: React.FC = () => {
   const [chosenButton, setChosenButton] = useState<string | null>(null);
-
+const userId = "39cc70c6-31b6-4074-9ad2-caf1471cd911";
   const handleClick = (buttonName: string) => {
     setChosenButton((prev) => (prev === buttonName ? null : buttonName));
+
+
   };
 
   return (
     <div className=" p-10">
       <div className="space-y-2 grid place-items-center">
-        <Link to="/profile">
+        <Link to={`/profile/info/${userId}`}>
           <button
             onClick={() => handleClick("personal-info")}
             className="bg-white p-6 min-w-[200px] "

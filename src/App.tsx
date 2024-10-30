@@ -44,7 +44,7 @@ export default function App() {
           </Route>
 
           <Route path="/profile" element={<ProfileLayout />}>
-            <Route index element={<PersonalInfoList />} />
+            <Route path="info/:userId" element={<PersonalInfoList />} />
             <Route path="works" element={<CreatorCardGrid />} />
             <Route
               path="reviews"
