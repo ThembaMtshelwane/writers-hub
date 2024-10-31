@@ -4624,10 +4624,13 @@
     { "id": "poetry", "name": "Poetry" }
   ],
   "criteria": [
-    "Conveys a theme or a message",
-    "Plot, setting, characters, details and development",
-    "Organization/structure",
-    "Language and style",
-    "Convention"
+    { "id": "theme", "name": "Conveys a theme or a message" },
+    {
+      "id": "plot",
+      "name": "Plot, setting, characters, details and development"
+    },
+    { "id": "organization", "name": "Organization/structure" },
+    { "id": "language", "name": "Language and style" },
+    { "id": "convention", "name": "Convention" }
   ]
 }
