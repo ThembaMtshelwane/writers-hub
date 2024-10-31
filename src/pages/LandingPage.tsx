@@ -74,6 +74,7 @@ const LandingPage = () => {
             />
           </div>
         </section>
+        
         <div className="hidden lg:block">
           <MainSideBar />
         </div>

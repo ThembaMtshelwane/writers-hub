@@ -12,7 +12,9 @@ const MainLayout = () => {
         <section className="  w-full">
           <Outlet />
         </section>
-         <MainSideBar /> 
+        <div className="hidden lg:block">
+          <MainSideBar />
+        </div>
       </main>
     </>
   );
