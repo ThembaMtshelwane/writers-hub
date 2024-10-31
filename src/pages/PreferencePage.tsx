@@ -19,18 +19,12 @@ const PreferencePage = () => {
     fetchGenres();
   }, []);
 
-  console.log(selectedGenres);
   const handleGenreSelection = (genreName: string) => {
     setSelectedGenres((prevSelected) =>
       prevSelected.includes(genreName)
         ? prevSelected.filter((name) => name !== genreName)
         : [...prevSelected, genreName]
     );
-  };
-
-  const handleSubmit = () => {
-    console.log("Selected genres:", selectedGenres);
-    navigate("/index", { replace: true });
   };
 
   return (
@@ -42,15 +36,16 @@ const PreferencePage = () => {
         {genres.map((genre) => (
           <FilterButton
             key={genre.id}
+            id={genre.id}
             name={genre.name}
-            isSelected={selectedGenres.includes(genre.name)}
+            isSelected={selectedGenres.includes(genre.id)}
             onSelect={handleGenreSelection}
           />
         ))}
       </div>
       <button
         className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent md:text-2xl lg:text-4xl disabled:bg-black/50 disabled:cursor-not-allowed"
-        onClick={handleSubmit}
+        onClick={() => navigate("/index", { replace: true })}
         disabled={selectedGenres.length === 0}
       >
         Submit

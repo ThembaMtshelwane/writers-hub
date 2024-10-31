@@ -20,7 +20,7 @@ export type Content = {
   body: string;
   image: string;
   type: Type;
-  genres: string;
+  genres: Genre[];
   reviews: Review[];
   comments: Comment[];
   likes: Like[];
