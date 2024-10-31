@@ -1,9 +1,10 @@
 import MainCard from "./MainCard";
 // import maincard from "../maincard.json";|
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { User } from "../types";
-import axios from "axios";
+// import axios from "axios";
+import useFetch from "../hooks/useFetch";
 
 const MainCardGrid = ({
   search,
@@ -12,30 +13,27 @@ const MainCardGrid = ({
   search: string | "";
   selectedFilter: string[];
 }) => {
-  const [content, setContent] = useState<User[]>([]);
+  
+  const { data, loading, error } = useFetch<User[]>("/api/users");
 
-  useEffect(() => {
-    const fetchContent = async () => {
-      try {
-        // const url = search.
-        const { data } = await axios.get("/api/users");
-        setContent(data);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    };
-    fetchContent();
-  }, []);
+  if (!data || data.length === 0) return <p>No data available</p>;
+  if (error) {
+    console.log("Error: ", error);
+    return <p>Error: {error}</p>;
+  }
+  if (loading) return <p>Loading...</p>;
 
-  const filteredContent = content.flatMap((user) =>
+  const filteredContent = data.flatMap((user) =>
     user.content.filter((cont) => {
       const searchQuery = cont.title
         .toLowerCase()
         .includes(search.toLowerCase());
+
       const matchType =
         selectedFilter.length === 0 ||
         selectedFilter.includes(cont.type.id) ||
-        selectedFilter.includes(cont.genres);
+        cont.genres.some((genre) => selectedFilter.includes(genre.id));
+
       return searchQuery && matchType;
     })
   );
@@ -44,12 +42,10 @@ const MainCardGrid = ({
     <div className="contentCardGrid">
       {filteredContent.length > 0 ? (
         filteredContent.map((con, index) => {
-          const authorUser = content.find((user) => user.content.includes(con));
-
+          const authorUser = data.find((user) => user.content.includes(con));
           const authorName: string = authorUser
             ? `${authorUser.first_name} ${authorUser.last_name}`
             : "Unknown Author";
-
           const username = authorUser?.username || "Unknown Author";
 
           return (

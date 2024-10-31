@@ -1,15 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HeroSlider from "../components/HeroSlider";
 import MainCardGrid from "../components/MainCardGrid";
 import MainSideBar from "../components/MainSideBar";
 import Navbar from "../components/Navbar";
 import FilterButton from "../components/FilterButton";
+import { Type } from "../types";
+import axios from "axios";
 // import { IoMenuOutline } from "react-icons/io5";
 
 const LandingPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-
+  const [types, setTypes] = useState<Type[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchTypes = async () => {
+      try {
+        const { data } = await axios.get("/api/types");
+        setTypes(data);
+      } catch (error) {
+        console.error("Error fetching Data: ", error);
+      }
+    };
+    fetchTypes();
+  }, []);
 
   const handleSelection = (filter: string) => {
     setSelectedFilter((selected) =>
@@ -30,12 +44,13 @@ const LandingPage = () => {
       <main className="grid lg:grid-cols-[65%_30%] mt-10 gap-[5%] justify-self-center w-[95%] relative">
         <section className=" w-full space-y-8">
           <div className="space-x-8">
-            {["poetry", "short story", "long form"].map((types, index) => {
+            {types.map((type, index) => {
               return (
                 <FilterButton
                   key={index}
-                  name={types}
-                  isSelected={selectedFilter.includes(types)}
+                  name={type.name}
+                  id={type.id}
+                  isSelected={selectedFilter.includes(type.id)}
                   onSelect={handleSelection}
                 />
               );
@@ -59,6 +74,7 @@ const LandingPage = () => {
             />
           </div>
         </section>
+        
         <div className="hidden lg:block">
           <MainSideBar />
         </div>

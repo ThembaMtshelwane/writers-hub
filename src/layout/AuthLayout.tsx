@@ -8,10 +8,12 @@ import { Genre } from "../types";
 const AuthLayout = () => {
   const [genres, setGenres] = useState<Genre[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
+
   useEffect(() => {
     const fetchGenres = async () => {
       try {
         const data = (await axios.get("/api/genres")).data;
+
         setGenres(data);
       } catch (error) {
         console.error("Error fetching Data: ", error);
@@ -37,7 +39,8 @@ const AuthLayout = () => {
           <section className="flex gap-2 my-4 flex-wrap items-center justify-center">
             {genres.map((genre) => (
               <FilterButton
-                name={genre.id}
+                name={genre.name}
+                id={genre.id}
                 key={genre.id}
                 isSelected={selectedFilter.includes(genre.id)}
                 onSelect={handleSelection}
