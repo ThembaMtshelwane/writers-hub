@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import AuthForm from "../../components/AuthFrom";
 import { useState } from "react";
-import { FormData } from "../../types";
+import { UserFormData } from "../../types";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState<FormData>({
+  const [userFormData, setUserFormData] = useState<UserFormData>({
     email: "",
     password: "",
   });
@@ -14,14 +14,14 @@ const Login = () => {
     e.preventDefault();
     navigate("/pref");
     console.log("Handle Login");
-    console.log("Login data", formData);
+    console.log("Login data", userFormData);
   };
   return (
     <AuthForm
       mode={"login"}
       handleForm={handleLogin}
-      formData={formData}
-      setFormData={setFormData}
+      userFormData={userFormData}
+      setUserFormData={setUserFormData}
     />
   );
 };

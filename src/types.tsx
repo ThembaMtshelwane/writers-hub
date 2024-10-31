@@ -63,7 +63,7 @@ export type Type = {
   name: string;
 };
 
-export type FormData = {
+export type UserFormData = {
   email: string;
   password: string;
   confirmPassword?: string;
@@ -72,4 +72,6 @@ export type FormData = {
   phone?: string;
   company?: string;
   dob?: string;
+  username?: string;
+  school?: string;
 };
