@@ -12,8 +12,6 @@ const AuthLayout = () => {
     const fetchGenres = async () => {
       try {
         const data = (await axios.get("/api/genres")).data;
-        console.log("data", data);
-
         setGenres(data);
       } catch (error) {
         console.error("Error fetching Data: ", error);
@@ -21,8 +19,6 @@ const AuthLayout = () => {
     };
     fetchGenres();
   }, []);
-
-  console.log(genres);
 
   const handleSelection = (filter: string) => {
     setSelectedFilter((selected) =>
@@ -33,10 +29,10 @@ const AuthLayout = () => {
   };
 
   return (
-    <section className="grid grid-cols-[60%_40%]">
+    <section className="grid  sm:grid-cols-[50%_50%] xl:grid-cols-[60%_40%]">
       <section className="bg-primary h-screen">
-        <section className="my-3 p-4 ">
-          <h2 className="text-4xl text-accent">Categories</h2>
+        <section className="my-3 p-4 flex flex-col items-center">
+          <h2 className="text-4xl text-accent mt-4">Categories</h2>
           <section className="flex gap-2 my-4 flex-wrap">
             {genres.map((genre) => (
               <FilterButton
@@ -50,7 +46,7 @@ const AuthLayout = () => {
         </section>
         <MainCardGrid search={""} selectedFilter={selectedFilter} />
       </section>
-      <section className="bg-secondary h-screen flex items-center fixed right-0 w-[40%]">
+      <section className="bg-secondary h-screen flex items-center fixed right-0 w-full sm:w-[50%] xl:w-[40%]">
         <Outlet />
       </section>
     </section>
