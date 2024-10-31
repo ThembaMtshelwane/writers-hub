@@ -66,10 +66,10 @@ const RubricInput: React.FC<RubricInputProps> = ({
 
   return (
     <form
-      className="relative bg-white rounded-md flex flex-col items-center border-2 px-10 pb-10 w-[80%] max-w-[650px] mx-auto space-y-5 "
+      className="relative bg-white rounded-md my-auto flex flex-col items-center  border-2 px-10 pb-10 sm:w-[80%] max-w-[650px] mx-auto space-y-5 "
       onSubmit={handleSubmit}
     >
-      <h2 className="p-5 text-2xl w-fit mt-10">{work} Review</h2>
+      <h2 className="p-5 text-2xl w-fit mt-10 text-center">{work} Review</h2>
 
       <div className="space-y-5 w-full">
         {[
@@ -85,10 +85,10 @@ const RubricInput: React.FC<RubricInputProps> = ({
           <div key={field} className="flex border border-black">
             <p className="p-2 w-full">{label}</p>
             <input
-              className="border-l border-inherit px-5 flex items-center w-[80px]"
+              className="border-l border-inherit px-5 flex items-center w-[80px] "
               type="number"
               min="0"
-              max="5"
+              max="4"
               value={criteria[field as keyof typeof criteria]}
               onChange={(e) => handleCriteriaChange(e, field)}
               required
