@@ -27,8 +27,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ mode, handleForm }) => {
     phone: "",
     company: "",
     dob: "",
-  }
-);
+  });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -40,7 +39,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ mode, handleForm }) => {
 
   return (
     <form
-      className="max-w-md mx-auto bg-primary flex flex-col gap-2 rounded-xl py-10 px-10 w-[80%]"
+      className="max-w-md mx-auto bg-primary flex flex-col gap-2 rounded-xl py-10 px-10 w-[300px] sm:w-[80%]"
       onSubmit={handleForm}
     >
       <h2 className="text-accent text-4xl text-center capitalize">{mode}</h2>
