@@ -1,46 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-
-interface FormData {
-  email: string;
-  password: string;
-  confirmPassword?: string;
-  firstName?: string;
-  lastName?: string;
-  phone?: string;
-  company?: string;
-  dob?: string;
-}
+import { FormData } from "../types";
 
 interface AuthFormProps {
   mode: "login" | "sign up";
-  handleForm: () => void;
+  handleForm: (e: React.FormEvent) => void;
+  formData: FormData;
+  setFormData: React.Dispatch<React.SetStateAction<FormData>>;
 }
 
-const AuthForm: React.FC<AuthFormProps> = ({ mode, handleForm }) => {
-  const [formData, setFormData] = useState<FormData>({
-    email: "",
-    password: "",
-    confirmPassword: "",
-    firstName: "",
-    lastName: "",
-    phone: "",
-    company: "",
-    dob: "",
-  });
-
+const AuthForm: React.FC<AuthFormProps> = ({
+  mode,
+  handleForm,
+  formData,
+  setFormData,
+}) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setFormData(
+      (prevData: FormData) =>
+        ({
+          ...prevData,
+          [name]: value,
+        } as FormData)
+    );
   };
 
   return (
     <form
       className="max-w-md mx-auto bg-primary flex flex-col gap-2 rounded-xl py-10 px-10 w-[300px] sm:w-[80%]"
-      onSubmit={handleForm}
+      onSubmit={(e) => handleForm(e)}
     >
       <h2 className="text-accent text-4xl text-center capitalize">{mode}</h2>
 

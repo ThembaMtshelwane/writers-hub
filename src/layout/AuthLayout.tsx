@@ -12,8 +12,6 @@ const AuthLayout = () => {
     const fetchGenres = async () => {
       try {
         const data = (await axios.get("/api/genres")).data;
-        console.log("data", data);
-
         setGenres(data);
       } catch (error) {
         console.error("Error fetching Data: ", error);
@@ -21,8 +19,6 @@ const AuthLayout = () => {
     };
     fetchGenres();
   }, []);
-
-  console.log(genres);
 
   const handleSelection = (filter: string) => {
     setSelectedFilter((selected) =>

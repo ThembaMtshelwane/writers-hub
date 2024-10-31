@@ -57,3 +57,14 @@ export type Genre = {
   id: string;
   name: string;
 };
+
+export type FormData = {
+  email: string;
+  password: string;
+  confirmPassword?: string;
+  firstName?: string;
+  lastName?: string;
+  phone?: string;
+  company?: string;
+  dob?: string;
+};
