@@ -7,7 +7,7 @@ type CommentCardProps = {
 const CommentCard = ({ avatar, username, text, date }: CommentCardProps) => {
   return (
     <div className="bg-[#F2F8F3]">
-      <div className="grid sm:grid-cols-1 lg:grid-cols-7 gap-4  bg-white">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-7 gap-4  bg-white p-4">
         <div className="col-span-1 grid place-content-center">
           <img className="rounded-full w-20 sm:w-24 md:w-28" src={avatar} />
         </div>

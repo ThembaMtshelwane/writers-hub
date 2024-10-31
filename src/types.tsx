@@ -62,3 +62,16 @@ export type Type = {
   id: string;
   name: string;
 };
+
+export type UserFormData = {
+  email: string;
+  password: string;
+  confirmPassword?: string;
+  firstName?: string;
+  lastName?: string;
+  phone?: string;
+  company?: string;
+  dob?: string;
+  username?: string;
+  school?: string;
+};

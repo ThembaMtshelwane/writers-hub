@@ -99,7 +99,7 @@
               "avatar": "https://robohash.org/accusantiumillodebitis.png?size=80x80&set=set1",
               "date": "17/11/2001",
               "text": "Etiam faucibus cursus urna."
-            },       
+            },
             {
               "id": "d3bc00f1-350b-405c-aa6c-254a1769c630",
               "username": "ascading6",
@@ -4622,5 +4622,12 @@
     { "id": "short story", "name": "Short Story" },
     { "id": "long form", "name": "Long Form" },
     { "id": "poetry", "name": "Poetry" }
+  ],
+  "criteria": [
+    "Conveys a theme or a message",
+    "Plot, setting, characters, details and development",
+    "Organization/structure",
+    "Language and style",
+    "Convention"
   ]
 }
