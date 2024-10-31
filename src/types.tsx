@@ -14,6 +14,7 @@ export type User = {
 };
 
 export type Content = {
+  isReviewed: boolean;
   id: number;
   title: string;
   description: string;
