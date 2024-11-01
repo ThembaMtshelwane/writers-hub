@@ -54,7 +54,7 @@ const PersonalInfoList = () => {
 
   return (
     <section className="grid  px-1 py-1 bg-white border border-white rounded-3xl w-[280px] m-auto h-[600px] md:w-[450px] lg:w-[600px] xl:w-[800px]">
-      <div className="grid  w-[440px] h-[500px] md:place-items-center  lg:pl-32 xl:pl-52">
+      <div className="grid  h-[500px] md:place-items-center ">
         <div className="pl-52 pt-4 cursor-pointer" onClick={handleEditClick}>
           <MdEdit className="text-gray-500" />
         </div>
@@ -120,7 +120,7 @@ const PersonalInfoList = () => {
           </div>
         </div>
       </div>
-      <div className="pt-5 pl-20 md:pl-44 lg:pl-64">
+      <div className="pt-5 grid place-items-center">
         {isEditing && <Button name="Save" buttonFunction={handleSave} />}
       </div>
     </section>
