@@ -1,10 +1,7 @@
 import { Drawer } from "flowbite-react";
-// import { useState } from "react";
-import { HiSquaresPlus } from "react-icons/hi2";
-// import { IoIosClose } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
-import MainSideBar from "./MainSideBar";
-// import { MdBorderColor } from "react-icons/md";
+import AuthorWorks from "./AuthorWorks";
+import author from "../assets/Images/author.png";
 
 type DrawerTypes = {
   isOpen: boolean;
@@ -21,17 +18,58 @@ const DrawerAuthorWorks = ({ isOpen, setIsOpen }: DrawerTypes) => {
         open={isOpen}
         onClose={handleClose}
         position="right"
-        className="p-0 lg:hidden block"
+        className="p-0 lg:hidden block bg-primary"
       >
         <Drawer.Header
-          closeIcon={MdOutlineClose}
+          closeIcon={() => <MdOutlineClose className="text-gray-500 text-lg" />}
           title="Author/Works"
-          titleIcon={HiSquaresPlus}
+          titleIcon={() => <></>}
           onClick={() => setIsOpen(!isOpen)}
-          className="cursor-pointer px-4 pt-4 hover:bg-gray-50 "
+          className="cursor-pointer px-4 pt-4 hover:bg-gray-50 border-black border-b"
         />
-        <Drawer.Items className="border border-red-500">
-          <MainSideBar />
+        <Drawer.Items>
+          <div className="flex flex-col gap-4 p-3">
+            <div>
+              <AuthorWorks
+                image={author}
+                title="The joy ride"
+                AuthorName="Lwandile majola"
+                description="Lorem ipsum dolor sit amet quas optio cum non alias.."
+              />
+            </div>
+            <div>
+              <AuthorWorks
+                image={author}
+                title="The joy ride"
+                AuthorName="Lwandile majola"
+                description="Lorem ipsum dolor sit amet quas optio cum non alias.."
+              />
+            </div>
+            <div>
+              <AuthorWorks
+                image={author}
+                title="The joy ride"
+                AuthorName="Lwandile majola"
+                description="Lorem ipsum dolor sit amet quas optio cum non alias.."
+              />
+            </div>
+            <div>
+              <AuthorWorks
+                image={author}
+                title="The joy ride"
+                AuthorName="Lwandile majola"
+                description="Lorem ipsum dolor sit amet quas optio cum non alias.."
+              />
+            </div>
+            <div>
+              <AuthorWorks
+                image={author}
+                title="The joy ride"
+                AuthorName="Lwandile majola"
+                description="Lorem ipsum dolor sit amet quas optio cum non alias.."
+              />
+            </div>
+          </div>
         </Drawer.Items>
       </Drawer>
     </>
