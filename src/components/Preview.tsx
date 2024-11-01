@@ -5,21 +5,20 @@ import { useLocation } from "react-router-dom";
 
 const Preview: React.FC = () => {
   const location = useLocation();
+
   
   const { Title, Author, Description, Write } = location.state || {};
   
 
   const [submittedData, setSubmittedData] = useState<any>(null);
 
-  const handleSubmit = () => {
+  const handleSubmit = () => { 
     const dataToSave = {
-      title: Title || "Beautiful Lie",
+      title: Title ,
       author: Author || "Ashleigh",
-      description: Description || "ever since the 1500s, when an unknown printer took a galley of type",
+      description: Description,
       write: Write,
     };
-    
-  
     setSubmittedData(dataToSave);
     console.log("Submitted Data: ", dataToSave); 
   };
@@ -29,11 +28,10 @@ const Preview: React.FC = () => {
       <div className="border">
         <div>
           <BasicInfoCard
-            title={Title || "Beautiful Lie"}
+            title={Title }
             author={Author || "Ashleigh"}
             description={
-              Description ||
-              "ever since the 1500s, when an unknown printer took a galley of type"
+              Description 
             }
             image={img1}
           />
@@ -53,9 +51,6 @@ const Preview: React.FC = () => {
           SUBMIT
         </button>
       </div>
-
- 
-      
    
     </section>
   );
