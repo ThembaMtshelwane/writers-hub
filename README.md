@@ -11,3 +11,4 @@ This project uses the following main packages:
 - **Axios** : npm i axios
 - **Quill** : npm i react-quill
 - **SwipeableDrawer** : npm i @mui/material @emotion/react @emotion/styled
+- **Flowbite** : npm i flowbite-react
