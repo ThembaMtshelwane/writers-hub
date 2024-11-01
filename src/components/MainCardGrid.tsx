@@ -13,7 +13,6 @@ const MainCardGrid = ({
   search: string | "";
   selectedFilter: string[];
 }) => {
-  
   const { data, loading, error } = useFetch<User[]>("/api/users");
 
   if (!data || data.length === 0) return <p>No data available</p>;
@@ -61,7 +60,7 @@ const MainCardGrid = ({
           );
         })
       ) : (
-        <div>No matching content found.</div>
+        <div>No data available.</div>
       )}
     </div>
   );
