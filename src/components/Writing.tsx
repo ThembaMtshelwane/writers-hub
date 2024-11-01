@@ -79,11 +79,6 @@ const Writing: React.FC = () => {
           <Button name="preview" buttonFunction={handlePreview} />
         </div>
       </div>
-      <div>
-        <h1>{formData?.Title}</h1>
-        {/* Render other fields */}
-        <h1>{formData?.Description}</h1>
-      </div>
     </div>
   );
 };

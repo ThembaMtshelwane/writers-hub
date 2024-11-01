@@ -4681,5 +4681,20 @@
       "id": "history",
       "name": "History"
     }
+  ],
+  "types": [
+    { "id": "short story", "name": "Short Story" },
+    { "id": "long form", "name": "Long Form" },
+    { "id": "poetry", "name": "Poetry" }
+  ],
+  "criteria": [
+    { "id": "theme", "name": "Conveys a theme or a message" },
+    {
+      "id": "plot",
+      "name": "Plot, setting, characters, details and development"
+    },
+    { "id": "organization", "name": "Organization/structure" },
+    { "id": "language", "name": "Language and style" },
+    { "id": "convention", "name": "Convention" }
   ]
 }

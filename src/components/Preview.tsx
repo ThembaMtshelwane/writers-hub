@@ -22,6 +22,7 @@ const Preview: React.FC = () => {
               "ever since the 1500s, when an unknown printer took a galley of type"
             }
             image={img1}
+            
           />
         </div>
         <div className="py-5 text-start ">
