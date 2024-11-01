@@ -7,6 +7,7 @@ import FilterButton from "../components/FilterButton";
 import { Type } from "../types";
 import axios from "axios";
 import DrawerAuthorWorks from "../components/DrawerAuthorWorks";
+import { useLocation } from "react-router-dom";
 // import { MdExpandMore } from "react-icons/md";
 // import { IoMenuOutline } from "react-icons/io5";
 
@@ -15,6 +16,9 @@ const LandingPage = () => {
   const [types, setTypes] = useState<Type[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const location = useLocation();
+  const userPreference = location.state;
+  console.log(userPreference);
 
   useEffect(() => {
     const fetchTypes = async () => {
@@ -82,6 +86,7 @@ const LandingPage = () => {
           <span className="w-8 h-1 -translate-x-1 bg-black/30 rounded-lg rotate-90"></span>
         </div>
         <DrawerAuthorWorks isOpen={isOpen} setIsOpen={setIsOpen} />
+
         <div className="hidden lg:block">
           <MainSideBar />
         </div>

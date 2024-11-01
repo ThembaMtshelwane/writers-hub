@@ -45,7 +45,9 @@ const PreferencePage = () => {
       </div>
       <button
         className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent md:text-2xl lg:text-4xl disabled:bg-black/50 disabled:cursor-not-allowed"
-        onClick={() => navigate("/index", { replace: true })}
+        onClick={() =>
+          navigate("/index", { replace: true, state: selectedGenres })
+        }
         disabled={selectedGenres.length === 0}
       >
         Submit
