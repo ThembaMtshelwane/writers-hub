@@ -655,7 +655,7 @@
     },
     {
       "id": "39cc70c6-31b6-4074-9ad2-caf1471cd911",
-      "username": "bedes1",
+      "username": "mfajaja",
       "first_name": "Blakeley",
       "last_name": "Edes",
       "email": "bedes1@nba.com",
@@ -4684,18 +4684,39 @@
     }
   ],
   "types": [
-    { "id": "short story", "name": "Short Story" },
-    { "id": "long form", "name": "Long Form" },
-    { "id": "poetry", "name": "Poetry" }
+    {
+      "id": "short story",
+      "name": "Short Story"
+    },
+    {
+      "id": "long form",
+      "name": "Long Form"
+    },
+    {
+      "id": "poetry",
+      "name": "Poetry"
+    }
   ],
   "criteria": [
-    { "id": "theme", "name": "Conveys a theme or a message" },
+    {
+      "id": "theme",
+      "name": "Conveys a theme or a message"
+    },
     {
       "id": "plot",
       "name": "Plot, setting, characters, details and development"
     },
-    { "id": "organization", "name": "Organization/structure" },
-    { "id": "language", "name": "Language and style" },
-    { "id": "convention", "name": "Convention" }
+    {
+      "id": "organization",
+      "name": "Organization/structure"
+    },
+    {
+      "id": "language",
+      "name": "Language and style"
+    },
+    {
+      "id": "convention",
+      "name": "Convention"
+    }
   ]
 }

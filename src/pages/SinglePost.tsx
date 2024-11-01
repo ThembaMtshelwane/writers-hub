@@ -10,13 +10,16 @@ import ReviewSection from "../components/ReviewSection";
 const SinglePost = () => {
   const [filteredContent, setFilteredContent] = useState<Content | null>(null);
   const [comments, setComments] = useState<Comment[] | null>([]);
-  const [likes, setLikes] = useState<Like[] | null>(null);
+  const [likes, setLikes] = useState<Like[] | []>([]);
   const [previews, setPreviews] = useState<Review[] | null>(null);
 
   const [isCommentsOpen, setIsCommentsOpen] = useState<boolean>(false);
   const [isReviewOpen, setIsReviewOpen] = useState<boolean>(false);
 
   const { id, username } = useParams();
+
+  const [likesCount, setLikesCount] = useState<number>(0);
+  const [toggleLikes, setToggleLikes] = useState<boolean>(true);
   const isReviewer = true;
 
   useEffect(() => {
@@ -45,7 +48,7 @@ const SinglePost = () => {
   }, [id, username]);
 
   return (
-    <div className="bg-white h-full">
+    <div className="bg-white h-full m-4">
       {filteredContent ? (
         <div className="mb-4 text-justify  w-full  md:w-[90%] mx-auto">
           <BasicInfoCard
@@ -55,8 +58,15 @@ const SinglePost = () => {
             image={filteredContent.image}
           >
             <Button
-              name={`Likes (${likes?.length})`}
-              buttonFunction={() => console.log("likes", likes)}
+              name={`Likes (${likes?.length + likesCount})`}
+              buttonFunction={() => {
+                if (toggleLikes) {
+                  setLikesCount(likesCount + 1);
+                } else {
+                  setLikesCount(likesCount - 1);
+                }
+                setToggleLikes((prev) => !prev);
+              }}
             />
             <Button
               name={`Comments (${comments?.length})`}

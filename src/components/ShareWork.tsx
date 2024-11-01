@@ -64,7 +64,7 @@ const ShareWork = () => {
 
   return (
     <section className="py-3 px-3 grid place-items-center">
-      <div className="bg-white rounded-3xl grid px-4 xl:px-6  md:h-[840px] 2xl:h-[600px] md:w-[650px] w-[260px] lg:w-[600px] pc:w-[1200px] pc:h-[750px] xl:w-[850px]">
+      <div className="bg-white rounded-3xl grid px-4 xl:px-6  md:h-[840px] 2xl:h-[600px] md:w-[650px] w-[260px] lg:w-[600px] lg:h-[640px] lg:space-y-1 pc:w-[1200px] pc:h-[750px] xl:w-[850px] xl:h-[770px]">
         <h1 className="pt-10 text-sm xl:text-xl md:pt-3">SHARE YOUR WORK</h1>
         <form className="grid grid-cols-1 py-10 2xl:py-5 space-y-3 md:grid-cols-1 pc:px-10 md:space-y-5 lg:grid-cols-2 md:place-content-center md:place-items-center ">
           <div className="flex flex-col ">
@@ -167,7 +167,7 @@ const ShareWork = () => {
           </div>
         </form>
 
-        <div className="pb-3 md:flex md:justify-center ">
+        <div className="pb-3 md:flex md:justify-center flex justify-center ">
           <Button name="Next" buttonFunction={handleNext} />
         </div>
       </div>
