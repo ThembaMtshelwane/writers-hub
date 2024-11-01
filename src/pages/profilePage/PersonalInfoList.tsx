@@ -53,7 +53,7 @@ const PersonalInfoList = () => {
   if (!user) return <p>No user data found.</p>;
 
   return (
-    <section className="grid  px-1 py-1 bg-white border border-white rounded-3xl w-[280px] m-auto h-[600px] md:w-[450px] lg:w-[600px] xl:w-[800px]">
+    <section className="grid  px-1 py-1 bg-white border border-white rounded-3xl w-[280px] m-auto h-[600px] md:w-[450px] lg:w-[600px] xl:w-[800px] big-screen:w-[1500px] big-screen:h-[800px]">
       <div className="grid  h-[500px] md:place-items-center ">
         <div className="pl-52 pt-4 cursor-pointer" onClick={handleEditClick}>
           <MdEdit className="text-gray-500" />
@@ -66,7 +66,7 @@ const PersonalInfoList = () => {
         </div>
 
         <div className="space-y-5 ">
-          <div className="grid grid-cols-2 border border-gray-600 py-2 w-[270px] lg:w-[370px] ">
+          <div className="grid grid-cols-2 border border-gray-600 py-2 w-[270px] lg:w-[370px] big-screen:w-[700px]">
             <h1 className="pl-3">Username:</h1>
             <p className="">
               {isEditing ? (
@@ -82,7 +82,7 @@ const PersonalInfoList = () => {
               )}
             </p>
           </div>
-          <div className="grid grid-cols-2 border border-gray-600 py-2  w-[270px] lg:w-[370px]">
+          <div className="grid grid-cols-2 border border-gray-600 py-2  w-[270px] lg:w-[370px] big-screen:w-[700px]">
             <h1 className="pl-3">Email:</h1>
             <p>
               {isEditing ? (
@@ -98,7 +98,7 @@ const PersonalInfoList = () => {
               )}
             </p>
           </div>
-          <div className="grid grid-cols-2 border border-gray-600 py-2  w-[270px] lg:w-[370px]">
+          <div className="grid grid-cols-2 border border-gray-600 py-2  w-[270px] lg:w-[370px] big-screen:w-[700px]">
             <h1 className="pl-3">Password:</h1>
             <p>
               {isEditing ? (
@@ -114,7 +114,7 @@ const PersonalInfoList = () => {
               )}
             </p>
           </div>
-          <div className="grid grid-cols-2 border border-gray-600 py-2  w-[270px] lg:w-[370px]">
+          <div className="grid grid-cols-2 border border-gray-600 py-2  w-[270px] lg:w-[370px] big-screen:w-[700px]">
             <h1 className="pl-3">DOB:</h1>
             <p>{user.DOB}</p>
           </div>
