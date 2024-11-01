@@ -47,7 +47,7 @@ const SinglePost = () => {
   return (
     <div className="bg-white h-full">
       {filteredContent ? (
-        <div className="mb-4 text-justify w-[90%] md:w-[70%] mx-auto">
+        <div className="mb-4 text-justify  w-full  md:w-[90%] mx-auto">
           <BasicInfoCard
             title={filteredContent.title}
             author={username || ""}

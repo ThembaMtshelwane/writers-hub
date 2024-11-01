@@ -6,21 +6,21 @@ import { useLocation } from "react-router-dom";
 const Preview: React.FC = () => {
   const location = useLocation();
 
-  
   const { Title, Author, Description, Write } = location.state || {};
-  
 
   const [submittedData, setSubmittedData] = useState<any>(null);
 
-  const handleSubmit = () => { 
+  const handleSubmit = () => {
     const dataToSave = {
-      title: Title ,
+      title: Title,
       author: Author || "Ashleigh",
       description: Description,
       write: Write,
     };
     setSubmittedData(dataToSave);
-    console.log("Submitted Data: ", dataToSave); 
+    console.log("Submitted Data: ", dataToSave);
+
+  alert("Your data has been submitted!");
   };
 
   return (
@@ -28,30 +28,25 @@ const Preview: React.FC = () => {
       <div className="border">
         <div>
           <BasicInfoCard
-            title={Title }
+            title={Title}
             author={Author || "Ashleigh"}
-            description={
-              Description 
-            }
+            description={Description}
             image={img1}
           />
         </div>
         <div className="py-5 text-start ">
-          <p className="text-sm ">
-            {Write}
-          </p>
+          <p className="text-sm ">{Write}</p>
         </div>
       </div>
 
       <div className="flex justify-center py-10">
         <button
           className="p-2 rounded-md min-w-[80px] bg-secondary text-white hover:bg-accent"
-          onClick={handleSubmit} 
+          onClick={handleSubmit}
         >
           SUBMIT
         </button>
       </div>
-   
     </section>
   );
 };

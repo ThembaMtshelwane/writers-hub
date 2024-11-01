@@ -8,7 +8,7 @@ const ProfileLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className="grid grid-cols-[30%_60%] min-h-[40vh] py-10 gap-[5%] mt-10 justify-self-center w-[95%] bg-[#F2F8F3]">
+      <main className="grid sm:grid-cols-[30%_60%] min-h-[40vh] py-10 gap-[5%] mt-10 justify-self-center w-[95%] bg-[#F2F8F3]">
         <ProfileSideBar />
         <section className=" ">
           <Outlet />
