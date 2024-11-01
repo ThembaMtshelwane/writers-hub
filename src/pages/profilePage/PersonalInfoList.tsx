@@ -53,7 +53,7 @@ const PersonalInfoList = () => {
   if (!user) return <p>No user data found.</p>;
 
   return (
-    <section className="grid  px-1 py-1 bg-white border border-white rounded-3xl w-[280px] m-auto h-[600px] md:w-[450px] lg:w-[600px] xl:w-[800px]">
+    <section className="grid  px-1 py-1 bg-white border border-white rounded-3xl w-[80%] items-center justify-center  m-auto h-[600px] md:w-[450px] lg:w-[600px] xl:w-[800px]">
       <div className="grid  h-[500px] md:place-items-center ">
         <div className="pl-52 pt-4 cursor-pointer" onClick={handleEditClick}>
           <MdEdit className="text-gray-500" />

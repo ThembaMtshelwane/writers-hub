@@ -13,7 +13,7 @@ const ViewScore = () => {
 
   return (
     <div className="relative">
-      <div className="bg-white rounded-md flex flex-col items-center border-2 p-10 w-[17rem] mx-auto mb-20 md:w-[25rem] lg:w-[37rem] lg:h-[34rem] xl:w-[50rem] xl:h-[40rem] max-w-[40rem]">
+      <div className="bg-white w-[90%] rounded-md flex flex-col items-center border-2 p-10 mx-auto mb-20 md:w-[25rem] lg:w-[37rem] lg:h-[34rem] xl:w-[50rem] xl:h-[40rem] max-w-[40rem]">
         <div className="p-5 text-2xl w-fit my-10 bg-secondary rounded-sm text-white">
           260
         </div>
