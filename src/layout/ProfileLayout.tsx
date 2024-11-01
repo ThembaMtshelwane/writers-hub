@@ -31,7 +31,10 @@ const ProfileLayout = () => {
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <ProfileSideBar />
+          <section onClick={toggleSidebar}>
+            <ProfileSideBar />
+          </section>
+
           <button
             onClick={toggleSidebar}
             className="p-2 bg-secondary text-white absolute top-4 right-4 rounded-md"
