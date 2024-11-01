@@ -1,14 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+import flowbite from 'flowbite-react/tailwind'
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
-      screens:{
+      screens: {
         'kobus': '2012px',
-        'pc' : '1740px'
+        'pc': '1740px'
       },
       colors: {
         'primary': '#F2F8F3',
@@ -25,5 +27,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin(),
+  ],
 }
