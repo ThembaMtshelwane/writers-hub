@@ -32,6 +32,7 @@ const Preview: React.FC = () => {
             author={Author || "Ashleigh"}
             description={Description}
             image={img1}
+            
           />
         </div>
         <div className="py-5 text-start ">
