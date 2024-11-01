@@ -64,7 +64,7 @@ const ShareWork = () => {
 
   return (
     <section className="py-3 px-3 grid place-items-center">
-      <div className="bg-white rounded-3xl grid px-4 xl:px-6  md:h-[840px] 2xl:h-[600px] md:w-[650px] w-[260px] lg:w-[600px] lg:h-[640px] lg:space-y-1 pc:w-[1200px] pc:h-[750px] xl:w-[850px] xl:h-[770px]">
+      <div className="bg-white rounded-3xl grid px-4 xl:px-6  md:h-[840px] 2xl:h-[600px] md:w-[650px] w-[260px] lg:w-[600px] lg:h-[640px] lg:space-y-1 pc:w-[1200px] pc:h-[750px] xl:w-[850px] xl:h-[770px] big-screen:w-[1300px] big-screen:h-[950px]">
         <h1 className="pt-10 text-sm xl:text-xl md:pt-3">SHARE YOUR WORK</h1>
         <form className="grid grid-cols-1 py-10 2xl:py-5 space-y-3 md:grid-cols-1 pc:px-10 md:space-y-5 lg:grid-cols-2 md:place-content-center md:place-items-center ">
           <div className="flex flex-col ">
@@ -83,7 +83,7 @@ const ShareWork = () => {
               className="hidden"
             />
           </div>
-          <div className="border border-black w-[230px] md:w-[400px]  md:px-5 md:h-[430px] md:text-sm px-3 pt-5 lg:w-[290px] lg:px-3 xl:w-[400px] xl:px-5 2xl:w-[400px] 2xl:h-[440px] 2xl:px-10 pc:h-[530px] pc:w-[450px] pc:px-6">
+          <div className="border border-black w-[230px] md:w-[400px]  md:px-5 md:h-[430px] md:text-sm px-3 pt-5 lg:w-[290px] lg:px-3 xl:w-[400px] xl:px-5 2xl:w-[400px] 2xl:h-[440px] 2xl:px-10 pc:h-[530px] pc:w-[450px] pc:px-6 big-screen:w-[500px]">
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">
                 Title
@@ -92,7 +92,7 @@ const ShareWork = () => {
                 type="text"
                 id="title"
                 name="title"
-                className="border rounded-2xl w-[200px] lg:w-[270px] pc:w-[400px] xl:w-[350px] py-2 px-3 mb-2 kobus:w-[700px] border-black 2xl:w-[300px] md:w-[350px]"
+                className="border rounded-2xl w-[200px] lg:w-[270px] pc:w-[400px] xl:w-[350px] py-2 px-3 mb-2 kobus:w-[700px] border-black 2xl:w-[300px] md:w-[350px] big-screen:w-[450px]"
                 placeholder=""
                 required
                 value={Title}
@@ -106,7 +106,7 @@ const ShareWork = () => {
               <select
                 id="genres"
                 name="genres"
-                className="border rounded-2xl w-[200px] pc:w-[400px] lg:w-[270px] xl:w-[350px] py-2 px-3 mb-2 kobus:w-[700px] border-black 2xl:w-[300px] md:w-[350px]"
+                className="border rounded-2xl w-[200px] pc:w-[400px] lg:w-[270px] xl:w-[350px] py-2 px-3 mb-2 kobus:w-[700px] border-black 2xl:w-[300px] md:w-[350px] big-screen:w-[450px]"
                 required
               >
                 <option value="" disabled>
@@ -153,7 +153,7 @@ const ShareWork = () => {
               >
                 Description
               </label>
-              <div className="border border-black w-[200px] lg:w-[270px] pc:w-[400px] pc:h-[180px] xl:w-[350px] h-52 kobus:w-[700px] 2xl:w-[300px] 2xl:h-[130px] md:w-[350px] md:h-[100px]">
+              <div className="border border-black w-[200px] lg:w-[270px] pc:w-[400px] pc:h-[180px] xl:w-[350px] h-52 kobus:w-[700px] 2xl:w-[300px] 2xl:h-[130px] md:w-[350px] md:h-[100px] big-screen:w-[450px]">
                 <ReactQuill
                   ref={textRef}
                   modules={modules}
