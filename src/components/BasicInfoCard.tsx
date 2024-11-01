@@ -16,12 +16,12 @@ const BasicInfoCard = ({
   children,
 }: BasicinfoCardProps) => {
   return (
-    <div className="grid sm:grid-cols-1 lg:grid-cols-7 gap-4  bg-white border w-full ">
-      <div className="col-span-1 grid place-content-center  lg:place-content-start">
-        <img className="w-48" src={image} />
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-[30%_60%] md:grid-cols-[40%_60%] gap-4  bg-white border w-full ">
+      
+        <img className="w-full h-full object-cover object-center max-w-[320px] max-h-[480px] mx-auto " src={image} />
 
-      <div className="mt-7 space-y-2 py-2 md:col-span-2 md:text-left md:p-1  lg:col-span-4 ml-6 w-full">
+
+      <div className="mt-7 space-y-2 p-4 w-full">
         <h1 className="font-bold text-2xl lg:text-4xl">{title}</h1>
         <h2 className="font-thin text-gray-500 text-md lg:text-lg  capitalize">
           {author}

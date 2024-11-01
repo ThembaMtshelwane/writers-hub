@@ -134,7 +134,7 @@
           ],
           "final_score": 17,
           "username": "rstrapp0",
-          "isReviewed": 0
+          "isReviewed": 1
         },
         {
           "id": 2,
@@ -250,6 +250,7 @@
               "date": "31/07/1975",
               "text": "Etiam justo."
             }
+            
           ],
           "likes": [
             {
@@ -633,7 +634,7 @@
           ],
           "final_score": 12,
           "username": "rstrapp0",
-          "isReviewed": 1
+          "isReviewed": 0
         }
       ],
       "status": "learner",
@@ -1335,7 +1336,7 @@
           ],
           "final_score": 24,
           "username": "bedes1",
-          "isReviewed": 0
+          "isReviewed": 1
         }
       ],
       "status": "reviewer",
@@ -3505,7 +3506,7 @@
           ],
           "final_score": 0,
           "username": "dmyrick7",
-          "isReviewed": 1
+          "isReviewed": 0
         },
         {
           "id": 4,
@@ -3597,7 +3598,7 @@
           ],
           "final_score": 0,
           "username": "dmyrick7",
-          "isReviewed": 0
+          "isReviewed": 1
         }
       ],
       "status": "learner",
@@ -4071,7 +4072,7 @@
           ],
           "final_score": 0,
           "username": "tborthwick8",
-          "isReviewed": 1
+          "isReviewed": 0
         },
         {
           "id": 4,
@@ -4281,7 +4282,7 @@
           ],
           "final_score": 43,
           "username": "tborthwick8",
-          "isReviewed": 1
+          "isReviewed": 0
         },
         {
           "id": 5,
@@ -4439,7 +4440,7 @@
           "likes": [],
           "final_score": 35,
           "username": "tborthwick8",
-          "isReviewed": 1
+          "isReviewed": 0
         }
       ],
       "status": "reviewer",

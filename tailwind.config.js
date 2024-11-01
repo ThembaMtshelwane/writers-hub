@@ -9,25 +9,28 @@ export default {
   theme: {
     extend: {
       screens: {
-        'kobus': '2012px',
-        'pc': '1740px'
+        kobus: "2012px",
+        pc: "1740px",
+        "big-screen": "2040px",
       },
       colors: {
-        'primary': '#F2F8F3',
-        'secondary': '#528362',
-        'accent': '#295131'
+        primary: "#F2F8F3",
+        secondary: "#528362",
+        accent: "#295131",
       },
       fontFamily: {
-        heading: ['Inter', 'sans-serif'],
-        body: ['Roboto', 'sans-serif'],
-        italiana: ['Italiana', 'sans-serif']
+        heading: ["Inter", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        italiana: ["Italiana", "sans-serif"],
       },
       gridTemplateColumns: {
-        'layout': 'repeat(auto-fit, minmax(250px, 300px))'
+        layout: "repeat(auto-fit, minmax(250px, 300px))",
       },
     },
   },
   plugins: [
     flowbite.plugin(),
   ],
-}
+};
+
+
