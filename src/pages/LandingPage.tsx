@@ -86,6 +86,7 @@ const LandingPage = () => {
           <span className="w-8 h-1 -translate-x-1 bg-black/30 rounded-lg rotate-90"></span>
         </div>
         <DrawerAuthorWorks isOpen={isOpen} setIsOpen={setIsOpen} />
+
         <div className="hidden lg:block">
           <MainSideBar />
         </div>
