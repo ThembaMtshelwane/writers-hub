@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import flowbite from 'flowbite-react/tailwind'
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,7 +12,7 @@ export default {
         kobus: "2012px",
         pc: "1740px",
         "big-screen": "2040px",
-      
+      },
       colors: {
         primary: "#F2F8F3",
         secondary: "#528362",
@@ -29,9 +28,9 @@ export default {
       },
     },
   },
-  plugins: [],
-},
   plugins: [
     flowbite.plugin(),
   ],
-}
+};
+
+
