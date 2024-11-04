@@ -8,7 +8,7 @@ const Preview: React.FC = () => {
 
   const { Title, Author, Description, Write } = location.state || {};
 
-  const [submittedData, setSubmittedData] = useState<any>(null);
+  const [, setSubmittedData] = useState<any>(null);
 
   const handleSubmit = () => {
     const dataToSave = {
