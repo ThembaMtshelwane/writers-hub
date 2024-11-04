@@ -57,12 +57,15 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {isNavOpen && (
         <ul className="absolute top-20 left-0 w-full bg-[#528362] flex flex-col items-center space-y-4 py-4 sm:hidden border-t-2 z-30">
-          {["Feed", "Post", "Profile"].map((item) => (
+          {["feed", "post", "profile"].map((item) => (
             <li
               key={item}
               className="text-center hover:scale-[1.02] transition-transform w-[90%] p-2 "
             >
-              <a href="#" className="hover:underline hover:decoration-white">
+              <a
+                href={item}
+                className="hover:underline hover:decoration-white capitalize"
+              >
                 {item}
               </a>
             </li>
