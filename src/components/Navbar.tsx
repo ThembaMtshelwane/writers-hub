@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setNavOpen] = useState(false);
+  const navbarOptions = ["feed", "post", "profile"] as const;
 
   return (
     <nav className="flex items-center justify-between p-4 text-white bg-[#528362] ">
@@ -17,7 +18,7 @@ const Navbar: React.FC = () => {
 
       {/* Desktop Menu */}
       <ul className="hidden sm:flex justify-between w-[40%] sm:max-w-[300px] md:mr-20">
-        {["feed", "post", "profile"].map((item) => (
+        {navbarOptions.map((item) => (
           <li
             key={item}
             className="p-2 w-[150px] text-center hover:scale-110 transition-transform"
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {isNavOpen && (
         <ul className="absolute top-20 left-0 w-full bg-[#528362] flex flex-col items-center space-y-4 py-4 sm:hidden border-t-2 z-30">
-          {["feed", "post", "profile"].map((item) => (
+          {navbarOptions.map((item) => (
             <li
               key={item}
               className="text-center hover:scale-[1.02] transition-transform w-[90%] p-2 "
