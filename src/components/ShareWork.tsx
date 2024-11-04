@@ -105,7 +105,7 @@ const ShareWork = () => {
               </label>
               <select
                 id="genres"
-                name="genres"
+                onChange={(e) => setSelectedGenre(e.target.value)}
                 className="border rounded-2xl w-[200px] pc:w-[400px] lg:w-[270px] xl:w-[350px] py-2 px-3 mb-2 kobus:w-[700px] border-black 2xl:w-[300px] md:w-[350px] big-screen:w-[450px]"
                 required
               >
