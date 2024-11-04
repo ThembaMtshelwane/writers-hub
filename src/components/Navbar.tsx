@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -62,12 +62,12 @@ const Navbar: React.FC = () => {
               key={item}
               className="text-center hover:scale-[1.02] transition-transform w-[90%] p-2 "
             >
-              <a
-                href={item}
+              <Link
+                to={`/${item}`}
                 className="hover:underline hover:decoration-white capitalize"
               >
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
