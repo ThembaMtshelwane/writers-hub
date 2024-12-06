@@ -1,4 +1,9 @@
-import { RegisterResponse, RegisterRequest } from "../types";
+import {
+  RegisterResponse,
+  RegisterRequest,
+  LoginResponse,
+  LoginRequest,
+} from "../types";
 import { apiSlice } from "./apiSlice";
 
 export const usersApiSlice = apiSlice.injectEndpoints({
@@ -10,7 +15,14 @@ export const usersApiSlice = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+    login: builder.mutation<LoginResponse, LoginRequest>({
+      query: (data) => ({
+        url: "http://localhost:5000/api/users/login",
+        method: "POST",
+        body: data,
+      }),
+    }),
   }),
 });
 
-export const { useRegisterMutation } = usersApiSlice;
+export const { useRegisterMutation, useLoginMutation } = usersApiSlice;

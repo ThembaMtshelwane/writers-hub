@@ -77,15 +77,22 @@ export type UserFormData = {
   school?: string;
 };
 
+export type ErrorMessage = {
+  status: boolean;
+  data: { message: string; stack: string };
+};
+
+// ***************** User Register, Login
 export interface UserInfo {
   email: string;
   firstName: string;
   lastName: string;
-  DOB: string;
+  DOB: string; //
   username: string;
   _id: string;
   createdAt?: string;
   updatedAt?: string;
+  preferences: string[];
 }
 
 export type RegisterRequest = {
@@ -103,7 +110,13 @@ export type RegisterResponse = {
   data: UserInfo;
 };
 
-export type ErrorMessage = {
-  status: boolean;
-  data: { message: string; stack: string };
+export type LoginRequest = {
+  email: string;
+  password: string;
+};
+
+export type LoginResponse = {
+  success: boolean;
+  message: string;
+  data: UserInfo;
 };
