@@ -6,6 +6,10 @@ import { User } from "../types";
 // import axios from "axios";
 import useFetch from "../hooks/useFetch";
 
+/* Hey Hilton, I changed a few things here, was possible undefined so I added some code to resolve that i.e. content?  and the two lines below*/
+let authorName = "";
+let username = "";
+
 const MainCardGrid = ({
   search,
   selectedFilter,
@@ -23,7 +27,7 @@ const MainCardGrid = ({
   if (loading) return <p>Loading...</p>;
 
   const filteredContent = data.flatMap((user) =>
-    user.content.filter((cont) => {
+    user.content?.filter((cont) => {
       const searchQuery = cont.title
         .toLowerCase()
         .includes(search.toLowerCase());
@@ -41,21 +45,23 @@ const MainCardGrid = ({
     <div className="contentCardGrid">
       {filteredContent.length > 0 ? (
         filteredContent.map((con, index) => {
-          const authorUser = data.find((user) => user.content.includes(con));
-          const authorName: string = authorUser
-            ? `${authorUser.first_name} ${authorUser.last_name}`
-            : "Unknown Author";
-          const username = authorUser?.username || "Unknown Author";
+          if (con) {
+            const authorUser = data.find((user) => user.content?.includes(con));
+            authorName = authorUser
+              ? `${authorUser.first_name} ${authorUser.last_name}`
+              : "Unknown Author";
+            username = authorUser?.username || "Unknown Author";
+          }
 
           return (
             <MainCard
               key={index}
-              title={con.title}
-              author={authorName}
-              image={con.image}
-              desc={con.description}
-              username={username}
-              id={con.id}
+              title={con?.title || ""}
+              author={authorName || ""}
+              image={con?.image || ""}
+              desc={con?.description || ""}
+              username={username || ""}
+              id={con?.id || 0}
             />
           );
         })
