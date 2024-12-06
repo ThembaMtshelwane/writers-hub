@@ -4,6 +4,7 @@ import { useState } from "react";
 import { UserFormData } from "../../types";
 
 const Login = () => {
+  const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
   const [userFormData, setUserFormData] = useState<UserFormData>({
     email: "",
@@ -15,6 +16,8 @@ const Login = () => {
     navigate("/pref");
     console.log("Handle Login");
     console.log("Login data", userFormData);
+    setErrorMessage("");
+    setErrorMessage("error ");
   };
   return (
     <AuthForm
@@ -22,6 +25,7 @@ const Login = () => {
       handleForm={handleLogin}
       userFormData={userFormData}
       setUserFormData={setUserFormData}
+      error={errorMessage}
     />
   );
 };

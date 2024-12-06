@@ -250,7 +250,6 @@
               "date": "31/07/1975",
               "text": "Etiam justo."
             }
-            
           ],
           "likes": [
             {
@@ -4639,6 +4638,69 @@
           "name": "Sci-Fi"
         }
       ]
+    },
+    {
+      "id": "c01d",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-10",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "935b",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-11",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "23fc",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-10",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "7568",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-11",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "42fe",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-02",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "89bb",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-18",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "5bdd",
+      "firstName": "THEMBA",
+      "lastName": "Mtshelwane",
+      "username": "ThembaMM3",
+      "DOB": "2024-12-03",
+      "email": "thembamtshelwane3@gmail.com",
+      "password": "123456"
     }
   ],
   "genres": [

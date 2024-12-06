@@ -7,6 +7,7 @@ interface AuthFormProps {
   handleForm: (e: React.FormEvent) => void;
   userFormData: UserFormData;
   setUserFormData: React.Dispatch<React.SetStateAction<UserFormData>>;
+  error: string;
 }
 
 const AuthForm: React.FC<AuthFormProps> = ({
@@ -14,6 +15,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
   handleForm,
   userFormData,
   setUserFormData,
+  error,
 }) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -90,8 +92,8 @@ const AuthForm: React.FC<AuthFormProps> = ({
               </label>
               <input
                 type="date"
-                name="dob"
-                value={userFormData.dob}
+                name="DOB"
+                value={userFormData.DOB}
                 onChange={handleChange}
                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 my-3 border-b-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-accent peer"
                 required
@@ -175,6 +177,8 @@ const AuthForm: React.FC<AuthFormProps> = ({
       <p>
         <Link to="/pref">Continue as guest</Link>{" "}
       </p>
+
+      {error && <p className="text-red-400">{error}</p>}
       <button
         type="submit"
         className="mt-1 text-white bg-secondary hover:bg-accent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5"

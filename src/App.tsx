@@ -14,10 +14,11 @@ import ViewScore from "./components/ViewScore";
 import Livefeed from "./pages/feedPage/Livefeed";
 import ProfileLayout from "./layout/ProfileLayout";
 import PreferencePage from "./pages/PreferencePage";
-import { UserProvider } from "./context/UserProvider";
 import CreatorCardGrid from "./components/CreatorCardGrid";
 import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -61,9 +62,9 @@ const App = () => {
   ]);
 
   return (
-    <UserProvider>
+    <Provider store={store}>
       <RouterProvider router={router} />
-    </UserProvider>
+    </Provider>
   );
 };
 

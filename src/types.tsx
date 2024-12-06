@@ -1,16 +1,16 @@
 export type User = {
-  id: string;
+  _id: string;
   username: string;
   first_name: string;
   last_name: string;
   email: string;
-  gender: string;
-  school: string;
-  grade: number;
+  gender?: string;
+  school?: string;
+  grade?: number;
   password: string;
   DOB: string;
-  content: Content[];
-  status: string;
+  content?: Content[];
+  status?: string;
 };
 
 export type Content = {
@@ -72,7 +72,38 @@ export type UserFormData = {
   lastName?: string;
   phone?: string;
   company?: string;
-  dob?: string;
+  DOB?: string;
   username?: string;
   school?: string;
+};
+
+export interface UserInfo {
+  email: string;
+  firstName: string;
+  lastName: string;
+  DOB: string;
+  username: string;
+  _id: string;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+export type RegisterRequest = {
+  email: string;
+  password: string;
+  firstName?: string;
+  lastName?: string;
+  DOB?: string;
+  username?: string;
+};
+
+export type RegisterResponse = {
+  success: boolean;
+  message: string;
+  data: UserInfo;
+};
+
+export type ErrorMessage = {
+  status: boolean;
+  data: { message: string; stack: string };
 };

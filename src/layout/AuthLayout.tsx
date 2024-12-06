@@ -48,7 +48,7 @@ const AuthLayout = () => {
             ))}
           </section>
         </section>
-        <MainCardGrid search={""} selectedFilter={selectedFilter} />
+        {/* <MainCardGrid search={""} selectedFilter={selectedFilter} /> */}
       </section>
 
       {/* Right Section */}
