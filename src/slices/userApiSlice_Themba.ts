@@ -3,8 +3,10 @@ import {
   RegisterRequest,
   LoginResponse,
   LoginRequest,
+  LogoutResponse,
 } from "../types";
 import { apiSlice } from "./apiSlice";
+
 
 export const usersApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
@@ -22,7 +24,14 @@ export const usersApiSlice = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+    logout: builder.mutation<LogoutResponse, void>({
+      query: () => ({
+        url: `http://localhost:5000/api/users/logout`,
+        method: "POST",
+      }),
+    }),
   }),
 });
 
-export const { useRegisterMutation, useLoginMutation } = usersApiSlice;
+export const { useRegisterMutation, useLoginMutation, useLogoutMutation } =
+  usersApiSlice;

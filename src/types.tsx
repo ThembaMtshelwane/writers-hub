@@ -120,3 +120,7 @@ export type LoginResponse = {
   message: string;
   data: UserInfo;
 };
+
+export type LogoutResponse = {
+  message: string;
+};

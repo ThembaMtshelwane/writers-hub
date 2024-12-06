@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Logout from "./Logout";
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -17,11 +18,11 @@ const Navbar: React.FC = () => {
       </NavLink>
 
       {/* Desktop Menu */}
-      <ul className="hidden sm:flex justify-between w-[40%] sm:max-w-[300px] md:mr-20">
+      <ul className="hidden sm:flex justify-between w-[40%] sm:max-w-[300px] md:mr-20 ">
         {navbarOptions.map((item) => (
           <li
             key={item}
-            className="p-2 w-[150px] text-center hover:scale-110 transition-transform"
+            className="p-2 w-[150px] text-center hover:scale-110 transition-transform "
           >
             <NavLink
               to={`/${item}`}
@@ -31,6 +32,7 @@ const Navbar: React.FC = () => {
             </NavLink>
           </li>
         ))}
+        <Logout />
       </ul>
 
       {/* Mobile Menu Button */}
@@ -61,7 +63,7 @@ const Navbar: React.FC = () => {
           {navbarOptions.map((item) => (
             <li
               key={item}
-              className="text-center hover:scale-[1.02] transition-transform w-[90%] p-2 "
+              className="p-2 w-[150px] text-center hover:scale-110 transition-transform "
             >
               <Link
                 to={`/${item}`}
@@ -71,6 +73,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
           ))}
+          <Logout />
         </ul>
       )}
     </nav>
