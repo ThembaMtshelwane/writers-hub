@@ -3,7 +3,7 @@
 import { Link } from "react-router-dom";
 
 type CardProps = {
-  id: number;
+  id: string;
   image: string;
   title: string;
   author: string;

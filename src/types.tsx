@@ -28,6 +28,31 @@ export type Content = {
   final_score: number;
 };
 
+export type IContent = {
+  _id: string;
+  userId: {
+    username: string;
+    firstName: string;
+    lastName: string;
+  };
+  userName: string;
+  author: string;
+  title: string;
+  description: string;
+  image: string;
+  type: string;
+  genres: [string];
+  likesCount: number;
+  commentsCount: number;
+};
+
+export interface contentResponse {
+  data: IContent[];
+  page: number;
+  pages: number;
+  totalContents: number;
+}
+
 export type Review = {
   id: string;
   criteria: Point[];
