@@ -22,36 +22,13 @@ const MainCardGrid = () =>
   // }
   {
     const [content, setContent] = useState<IContent[]>([]);
-    // const { data, loading, error } = useFetch<User[]>("/api/users");
 
     const { data, isLoading } = useGetAllContentQuery();
 
     useEffect(() => {
       if (data?.data) setContent(data.data);
     }, [data]);
-    // if (!data || data.length === 0) return <p>No data available</p>;
-    // if (error) {
-    //   console.log("Error: ", error);
-    //   return <p>Error: {error}</p>;
-    // }
-    // if (loading) return <p>Loading...</p>;
 
-    // const filteredContent = data.flatMap((user) =>
-    //   user.content?.filter((cont) => {
-    //     const searchQuery = cont.title
-    //       .toLowerCase()
-    //       .includes(search.toLowerCase());
-
-    //     const matchType =
-    //       selectedFilter.length === 0 ||
-    //       selectedFilter.includes(cont.type.id) ||
-    //       cont.genres.some((genre) => selectedFilter.includes(genre.id));
-
-    //     return searchQuery && matchType;
-    //   })
-    // );
-
-    console.log(content);
     return (
       <div className='contentCardGrid'>
         {isLoading ? (

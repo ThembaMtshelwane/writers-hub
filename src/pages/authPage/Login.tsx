@@ -24,9 +24,9 @@ const Login = () => {
     try {
       const res = await login({ email, password }).unwrap();
       console.log("res   ", res);
-      dispatch(setCredentials({ ...(res.data) }));
+      dispatch(setCredentials({ ...res.data }));
       setErrorMessage("");
-      navigate("/pref");
+      navigate("/index");
     } catch (error) {
       console.error("error  ", error);
       const e: ErrorMessage = error as ErrorMessage;

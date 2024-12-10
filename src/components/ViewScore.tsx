@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Rubric from "./Rubric"; // Import the Rubric component
 
+
 const ViewScore = () => {
   const [showRubric, setShowRubric] = useState<boolean>(false); // State to toggle the popup
   const [selectedWork, setSelectedWork] = useState<string>(""); // State to track selected work
@@ -12,20 +13,20 @@ const ViewScore = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="bg-white w-[90%] rounded-md flex flex-col items-center border-2 p-10 mx-auto mb-20 md:w-[25rem] lg:w-[37rem] lg:h-[34rem] xl:w-[50rem] xl:h-[40rem] max-w-[40rem]">
-        <div className="p-5 text-2xl w-fit my-10 bg-secondary rounded-sm text-white">
+    <div className='relative'>
+      <div className='bg-white w-[90%] rounded-md flex flex-col items-center border-2 p-10 mx-auto mb-20 md:w-[25rem] lg:w-[37rem] lg:h-[34rem] xl:w-[50rem] xl:h-[40rem] max-w-[40rem]'>
+        <div className='p-5 text-2xl w-fit my-10 bg-secondary rounded-sm text-white'>
           260
         </div>
-        <div className="space-y-5 w-full mb-10">
+        <div className='space-y-5 w-full mb-10'>
           {["Work 1", "Work 2", "Work 3", "Work 4"].map((work, index) => (
             <div
               key={index}
               onClick={() => handleOpenRubric(work)}
-              className="flex hover:bg-secondary hover:text-white border border-black hover:border-white cursor-pointer transition ease-in-out duration-500"
+              className='flex hover:bg-secondary hover:text-white border border-black hover:border-white cursor-pointer transition ease-in-out duration-500'
             >
-              <p className="p-2 w-full">{work}</p>
-              <span className="border-l border-inherit px-5 flex items-center">
+              <p className='p-2 w-full'>{work}</p>
+              <span className='border-l border-inherit px-5 flex items-center'>
                 20
               </span>
             </div>
@@ -35,7 +36,7 @@ const ViewScore = () => {
 
       {/* Conditional rendering for Rubric popup */}
       {showRubric && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
+        <div className='fixed inset-0 bg-black/50 flex items-center justify-center'>
           <Rubric
             work={selectedWork}
             onClose={() => setShowRubric(false)}
