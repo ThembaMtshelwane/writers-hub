@@ -13,7 +13,7 @@ const userId = "39cc70c6-31b6-4074-9ad2-caf1471cd911";
   return (
     <div className=" p-10">
       <div className="space-y-2 grid place-items-center">
-        <Link to={`/profile/info/${userId}`}>
+        <Link to={`/profile/info`}>
           <button
             onClick={() => handleClick("personal-info")}
             className="bg-white grid flex-row w-[200px] h-[70px] p-5"
