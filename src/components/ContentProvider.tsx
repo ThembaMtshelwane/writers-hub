@@ -1,46 +1,38 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import CreatorCard from "./CreatorCard";
-import { User, Content } from "../types";
 import { IContent } from "../types";
 import { useGetUserContentQuery } from "../slices/contentApiSlice_Lwa";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+import SpinnerComponent from "./SpinnerComponent";
 
 const ContentProvider = () => {
-  const [users, setUsers] = useState<User[]>([]);
+  // const [users, setUsers] = useState<User[]>([]);
   const [content, setContent] = useState<IContent[]>([]);
-
-  //BUG:This needs to be checked
+  const { userInfo } = useSelector((state: RootState) => state.auth);
   const { data, isLoading } = useGetUserContentQuery();
 
-  useEffect(() => {
-    if (data?.data) setContent(data.data);
-  }, [data]);
+  console.log(useGetUserContentQuery());
 
   useEffect(() => {
-    const fetchContent = async () => {
-      try {
-        const response = await axios.get<User[]>("/api/users");
-        setUsers(response.data);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    };
+    if (userInfo && data?.data) setContent(data.data);
+  }, [data, userInfo]);
 
-    fetchContent();
-  }, []);
-
-  console.log(!isLoading && content);
   return (
     <section className='contentCardGrid'>
-      {users.map((user: User) =>
-        user.content?.map((work: Content) => (
+      {isLoading ? (
+        <SpinnerComponent />
+      ) : content ? (
+        content.map((con, index) => (
           <CreatorCard
-            key={work.id}
-            name={work.title}
-            description={work.description}
-            isReviewed={work.isReviewed}
+            key={index}
+            name={con.title}
+            description={con.description}
+            // isReviewed={con.isReviewed}
           />
         ))
+      ) : (
+        <p>No data to show</p>
       )}
     </section>
   );
