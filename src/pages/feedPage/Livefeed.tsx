@@ -21,7 +21,7 @@ const Livefeed = () => {
   return (
     <section className="grid gap-5">
       {users.map((user: User) =>
-        user.content.slice(0, 7).map((work: Content) => (
+        user?.content?.slice(0, 7).map((work: Content) => (
           <Link
             to={`/post/${user.username}/${work.id}`}
             key={`${user.username}+${work.id}`}
