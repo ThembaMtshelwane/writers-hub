@@ -129,6 +129,21 @@ export type RegisterRequest = {
   username?: string;
 };
 
+export type GetProfileResponse = {
+  success: boolean;
+  message: string;
+  data: UserInfo;
+};
+
+export type GetProfileRequest = {
+  email: string;
+  password: string;
+  firstName?: string;
+  lastName?: string;
+  DOB?: string;
+  username?: string;
+};
+
 export type RegisterResponse = {
   success: boolean;
   message: string;
@@ -148,4 +163,19 @@ export type LoginResponse = {
 
 export type LogoutResponse = {
   message: string;
+};
+
+export type UpdateUserResponse = {
+  id: string;
+  firstName: string;
+  lastName: string;
+  password: string;
+  email: string;
+};
+
+export type UpdateUserRequest = {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  password?: string;
 };
