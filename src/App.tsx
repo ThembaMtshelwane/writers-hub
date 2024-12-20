@@ -19,6 +19,7 @@ import PersonalInfoList from "./pages/profilePage/PersonalInfoList";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import UpdateProfile from "./pages/profilePage/UpdateProfile";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -57,6 +58,7 @@ const App = () => {
         { path: "view-score", element: <ViewScore /> },
         { path: "works", element: <CreatorCardGrid /> },
         { path: "info", element: <PersonalInfoList /> },
+        { path: "update", element: <UpdateProfile /> },
       ],
     },
   ]);
