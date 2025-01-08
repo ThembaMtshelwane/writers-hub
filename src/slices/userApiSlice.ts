@@ -8,6 +8,7 @@ import {
   UpdateUserResponse,
   GetProfileResponse,
   GetProfileRequest,
+  DeleteProfileResponse,
 } from "../types";
 import { apiSlice } from "./apiSlice";
 
@@ -35,7 +36,7 @@ export const usersApiSlice = apiSlice.injectEndpoints({
     }),
     updateUser: builder.mutation<UpdateUserResponse, UpdateUserRequest>({
       query: (data) => ({
-        url: `http://localhost:5000/api/users/profile`,
+        url: "http://localhost:5000/api/users/profile",
         method: "PUT",
         body: data,
       }),
@@ -45,6 +46,12 @@ export const usersApiSlice = apiSlice.injectEndpoints({
         url: "http://localhost:5000/api/users/profile",
         method: "GET",
         body: data,
+      }),
+    }),
+    Delete: builder.mutation<DeleteProfileResponse, void>({
+      query: () => ({
+        url: `http://localhost:5000/api/`,
+        method: "DELETE",
       }),
     }),
   }),

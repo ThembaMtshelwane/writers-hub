@@ -13,8 +13,8 @@ const PersonalInfoList = () => {
   const [firstName, setFirstName] = useState(userInfo?.firstName || "");
   const [lastName, setLastName] = useState(userInfo?.lastName || "");
   const [email, setEmail] = useState(userInfo?.email || "");
-  const [dob, setDob] = useState(userInfo?.DOB);
-  const [username, setUsername] = useState(userInfo?.username);
+  const [dob, setDob] = useState(userInfo?.DOB || "");
+  const [username, setUsername] = useState(userInfo?.username || "");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [showUpdateProfile, setShowUpdateProfile] = useState(false); 
@@ -26,6 +26,8 @@ const PersonalInfoList = () => {
   const handleToggleUpdateProfile = () => {
     setShowUpdateProfile((prev) => !prev);
   };
+  console.log("userInfo:", userInfo);
+
 
   return (
     <>
@@ -36,8 +38,8 @@ const PersonalInfoList = () => {
           </Link>
           <div className="py-4 grid pl-16 md:pr-20">
             <img src={avatar} className="rounded-full w-28" alt="User Avatar" />
-            <h1 className="text-xl pl-10">{lastName}</h1>
-            <p className="pl-8">@{username}</p>
+            <h1 className="text-xl pl-10">{lastName} {firstName}</h1>
+            <p className="pl-8 ">@{username}</p>
           </div>
           <div className="flex justify-around border border-gray-600 py-2 w-[270px] lg:w-[370px] big-screen:w-[700px]">
             <h1>First Name:</h1>
@@ -58,6 +60,7 @@ const PersonalInfoList = () => {
           <p className="text-red-400">{error}</p>
           <p className="text-green-400">{success}</p>
         </form>
+        
       </div>
     </>
   );

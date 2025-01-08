@@ -85,13 +85,14 @@ const UpdateProfile = () => {
           className="p-3 w-full border rounded"
           required
         />
-        {/* <input
+       
+         <input
           type="password"
           placeholder="Enter your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="p-3 w-full border rounded"
-          required
+          
         />
         <input
           type="password"
@@ -99,8 +100,8 @@ const UpdateProfile = () => {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           className="p-3 w-full border rounded"
-          required
-        /> */}
+          
+        /> 
         <p className="text-red-400">{error}</p>
         <p className="text-green-400">{success}</p>
         <button className="buttonStyle w-full" disabled={isSubmitting}>
