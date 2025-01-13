@@ -138,10 +138,10 @@ export type GetProfileResponse = {
 export type GetProfileRequest = {
   email: string;
   password: string;
-  firstName?: string;
-  lastName?: string;
-  DOB?: string;
-  username?: string;
+  firstName: string;
+  lastName: string;
+  DOB: string;
+  username: string;
 };
 
 export type RegisterResponse = {
@@ -178,4 +178,8 @@ export type UpdateUserRequest = {
   lastName?: string;
   email?: string;
   password?: string;
+};
+
+export type DeleteProfileResponse = {
+  message: string;
 };
