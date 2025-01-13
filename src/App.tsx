@@ -57,7 +57,7 @@ const App = () => {
         { path: "reviews", element: <ReviewdPage /> },
         { path: "view-score", element: <ViewScore /> },
         { path: "works", element: <CreatorCardGrid /> },
-        { path: "info", element: <PersonalInfoList /> },
+        { index: true, element: <PersonalInfoList /> },
         { path: "update", element: <UpdateProfile /> },
       ],
     },
