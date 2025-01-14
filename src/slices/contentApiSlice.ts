@@ -4,5 +4,5 @@ import { apiSlice } from "./apiSlice";
 
 export const contentApiSlice = apiSlice.injectEndpoints({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  endpoints: (_builder) => ({}), // TODO:remove underscore when we consolidate
+  endpoints: (_builder) => ({}),
 });

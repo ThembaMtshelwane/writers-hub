@@ -12,9 +12,6 @@ const Writing: React.FC = () => {
   const navigate = useNavigate();
   const  textRef = useRef<ReactQuill>(null)
 
-
-
-
   useEffect(() => {
     const savedDraft = localStorage.getItem("draft");
     if (savedDraft) {
