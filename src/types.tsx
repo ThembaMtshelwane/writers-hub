@@ -44,6 +44,7 @@ export type IContent = {
   genres: [string];
   likesCount: number;
   commentsCount: number;
+  text: string;
 };
 
 export interface contentResponse {
