@@ -1,4 +1,4 @@
-import { contentResponse } from "../types";
+import { contentResponse, IContent } from "../types";
 import { apiSlice } from "./apiSlice";
 
 const CONTENT_URL = "http://localhost:5000/api/content";
@@ -27,6 +27,12 @@ export const contentApiSlice_Lwa = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ["Content"],
     }),
+    getContentByID: builder.query<IContent, { id?: string }>({
+      query: ({ id }) => {
+        return `${CONTENT_URL}/${id}`;
+      },
+      providesTags: ["Content"],
+    }),
   }),
 });
 
@@ -34,4 +40,5 @@ export const {
   useGetAllContentQuery,
   useGetUserContentQuery,
   useCreateContentMutation,
+  useGetContentByIDQuery,
 } = contentApiSlice_Lwa;
