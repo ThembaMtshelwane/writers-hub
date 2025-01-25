@@ -15,7 +15,7 @@ const MainCard = ({ image, title, author, desc, username, id }: CardProps) => {
   return (
     <div className="contentCard">
       <Link to={`/post/${username}/${id}`}>
-        <div className="h-[55%] mb-3">
+        <div className="h-[55%] mb-3 overflow-hidden">
           <img
             src={image}
             alt={title}
@@ -26,7 +26,7 @@ const MainCard = ({ image, title, author, desc, username, id }: CardProps) => {
         <h4 className="text-black/50 font-medium px-2 mb-3">
           {author} ({username})
         </h4>
-        <p className=" px-2">{desc}</p>
+        <p className="px-2">{desc}</p>
       </Link>
     </div>
   );
