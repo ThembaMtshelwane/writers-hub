@@ -51,7 +51,7 @@ const App = () => {
       ],
     },
     {
-      path: "/edit",
+      path: "/edit/:username/:id",
       element: <MainLayout />,
       children: [
         { index: true, element: <ShareWork /> },

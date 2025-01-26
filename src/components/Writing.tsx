@@ -5,7 +5,31 @@ import Button from "./Button";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Writing: React.FC = () => {
-  const [value, setValue] = useState("");
+  const content = {
+    _id: "demo ",
+    userId: {
+      username: "demo ",
+      firstName: "demo ",
+      lastName: "demo ",
+    },
+    userName: "demo ",
+    author: "demo ",
+    title: "demo ",
+    description: "demo ",
+    image:
+      "https://images.unsplash.com/photo-1727206407683-490abfe0d682?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    type: "demo",
+    genres: [
+      { id: "1", name: "g1" },
+      { id: "2", name: "g2" },
+      { id: "3", name: "g3" },
+    ],
+    likesCount: 0,
+    commentsCount: 0,
+    text: "demo ",
+  };
+
+  const [value, setValue] = useState(content.text || "");
   const location = useLocation();
   const formData = location.state;
   const navigate = useNavigate();
@@ -64,25 +88,25 @@ const Writing: React.FC = () => {
       description: formData?.Description,
       image: formData?.image,
       base64: formData?.base64,
-      write: text,
+      write: text || content.text,
     };
     navigate("/post/preview", { state: dataToPreview, replace: true });
   };
 
   return (
-    <div className=''>
+    <div className="">
       <ReactQuill
         ref={textRef}
-        className='h-[40rem] p-10'
+        className="h-[40rem] p-10"
         modules={modules}
-        theme='snow'
+        theme="snow"
         value={value}
         onChange={setValue}
       />
 
-      <div className='py-5 flex justify-center sm:pt-10'>
-        <div className='pb-3 md:flex md:justify-center'>
-          <Button name='preview' buttonFunction={handlePreview} />
+      <div className="py-5 flex justify-center sm:pt-10">
+        <div className="pb-3 md:flex md:justify-center">
+          <Button name="preview" buttonFunction={handlePreview} />
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ export type IContent = {
   description: string;
   image: string;
   type: string;
-  genres: [string];
+  genres: Genre[];
   likesCount: number;
   commentsCount: number;
   text: string;
