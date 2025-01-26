@@ -1,6 +1,7 @@
 // import Gravity from "../assets/Images/gravity.jpeg";
 
 import { Link } from "react-router-dom";
+import ContentControls from "./ContentControls";
 
 type CardProps = {
   id: string;
@@ -14,6 +15,7 @@ type CardProps = {
 const MainCard = ({ image, title, author, desc, username, id }: CardProps) => {
   return (
     <div className="contentCard">
+      <ContentControls username={username} id={id} />
       <Link to={`/post/${username}/${id}`}>
         <div className="h-[55%] mb-3 overflow-hidden">
           <img
