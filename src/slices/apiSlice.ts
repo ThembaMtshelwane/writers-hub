@@ -7,7 +7,6 @@ const baseQuery = fetchBaseQuery({
 
 export const apiSlice = createApi({
   baseQuery,
-  tagTypes: ["User", "Content"], // this is fort caching data
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  endpoints: (_) => ({}),
+  tagTypes: ["User", "Content", "Genre"], // this is fort caching data
+  endpoints: () => ({}),
 });

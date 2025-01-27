@@ -22,41 +22,13 @@ const SinglePost = () => {
   // const [toggleLikes, setToggleLikes] = useState<boolean>(true);
   // const isReviewer = true;
 
-  //TODO: Back is returning and object (content: {}) and endpoint is expecting an IContent data, update your code types to reflect accordingly
   const { id, username } = useParams();
-
   const [content, setContent] = useState<IContent>();
-
   const { data, isLoading } = useGetContentByIDQuery({ id: id });
 
   useEffect(() => {
     if (data) setContent(data);
   }, [data]);
-
-  // useEffect(() => {
-  //   const fetchContent = async () => {
-  //     try {
-  //       const users: User[] = (await axios.get("/api/users")).data;
-
-  //       let matchedContent: Content | null = null;
-  //       users.forEach((user) =>
-  //         user.content.forEach((content) => {
-  //           if (content.id === Number(id) && user.username === username) {
-  //             matchedContent = content;
-  //             setComments(content.comments);
-  //             setLikes(content.likes);
-  //             setPreviews(content.reviews);
-  //           }
-  //         })
-  //       );
-  //       setFilteredContent(matchedContent);
-  //     } catch (error) {
-  //       console.error("Error fetching Data: ", error);
-  //     }
-  //   };
-
-  //   fetchContent();
-  // }, [id, username]);
 
   return (
     <div className='bg-white h-full m-4'>

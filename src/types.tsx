@@ -84,6 +84,10 @@ export type Genre = {
   id: string;
   name: string;
 };
+export interface IGenre {
+  _id: string;
+  name: string;
+}
 
 export type Type = {
   id: string;
