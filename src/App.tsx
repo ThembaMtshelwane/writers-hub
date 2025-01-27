@@ -51,6 +51,16 @@ const App = () => {
       ],
     },
     {
+      path: "/edit/:username/:id",
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <ShareWork /> },
+        { path: "write", element: <Writing /> },
+        { path: "preview", element: <Preview /> },
+        { path: ":username/:id", element: <SinglePost /> },
+      ],
+    },
+    {
       path: "/profile",
       element: <ProfileLayout />,
       children: [
