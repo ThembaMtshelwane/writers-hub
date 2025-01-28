@@ -107,7 +107,7 @@ const UpdateProfile = () => {
           {isSubmitting ? "Saving..." : "Save"}
         </button>
         {/* Back Button */}
-        <Link className="buttonStyle w-full text-center" to={"/profile/info"}>
+        <Link className="buttonStyle w-full text-center" to={"/profile"}>
           Back to profile
         </Link>
       </form>
