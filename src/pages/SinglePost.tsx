@@ -1,63 +1,48 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Comment, Content, Like, Review, User } from "../types";
-import axios from "axios";
+// import { Comment, Content, IContent, Like, Review, User } from "../types";
+import { IContent } from "../types";
+// import axios from "axios";
 import BasicInfoCard from "../components/BasicInfoCard";
-import Button from "../components/Button";
-import CommentsSection from "../components/CommentsSection";
-import ReviewSection from "../components/ReviewSection";
+// import Button from "../components/Button";
+// import CommentsSection from "../components/CommentsSection";
+// import ReviewSection from "../components/ReviewSection";
+import { useGetContentByIDQuery } from "../slices/contentApiSlice_Lwa";
 
 const SinglePost = () => {
-  const [filteredContent, setFilteredContent] = useState<Content | null>(null);
-  const [comments, setComments] = useState<Comment[] | null>([]);
-  const [likes, setLikes] = useState<Like[] | []>([]);
-  const [previews, setPreviews] = useState<Review[] | null>(null);
+  // const [filteredContent, setFilteredContent] = useState<Content | null>(null);
+  // const [comments, setComments] = useState<Comment[] | null>([]);
+  // const [likes, setLikes] = useState<Like[] | []>([]);
+  // const [previews, setPreviews] = useState<Review[] | null>(null);
 
-  const [isCommentsOpen, setIsCommentsOpen] = useState<boolean>(false);
-  const [isReviewOpen, setIsReviewOpen] = useState<boolean>(false);
+  // const [isCommentsOpen, setIsCommentsOpen] = useState<boolean>(false);
+  // const [isReviewOpen, setIsReviewOpen] = useState<boolean>(false);
+
+  // const [likesCount, setLikesCount] = useState<number>(0);
+  // const [toggleLikes, setToggleLikes] = useState<boolean>(true);
+  // const isReviewer = true;
 
   const { id, username } = useParams();
-
-  const [likesCount, setLikesCount] = useState<number>(0);
-  const [toggleLikes, setToggleLikes] = useState<boolean>(true);
-  const isReviewer = true;
+  const [content, setContent] = useState<IContent>();
+  const { data, isLoading } = useGetContentByIDQuery({ id: id });
 
   useEffect(() => {
-    const fetchContent = async () => {
-      try {
-        const users: User[] = (await axios.get("/api/users")).data;
-
-        let matchedContent: Content | null = null;
-        users.forEach((user) =>
-          user.content.forEach((content) => {
-            if (content.id === Number(id) && user.username === username) {
-              matchedContent = content;
-              setComments(content.comments);
-              setLikes(content.likes);
-              setPreviews(content.reviews);
-            }
-          })
-        );
-        setFilteredContent(matchedContent);
-      } catch (error) {
-        console.error("Error fetching Data: ", error);
-      }
-    };
-
-    fetchContent();
-  }, [id, username]);
+    if (data) setContent(data);
+  }, [data]);
 
   return (
-    <div className="bg-white h-full m-4">
-      {filteredContent ? (
-        <div className="mb-4 text-justify  w-full  md:w-[90%] mx-auto">
+    <div className='bg-white h-full m-4'>
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : content ? (
+        <div className='mb-4 text-justify  w-full  md:w-[90%] mx-auto'>
           <BasicInfoCard
-            title={filteredContent.title}
-            author={username || ""}
-            description={filteredContent.description}
-            image={filteredContent.image}
+            title={content.title}
+            author={username || content.userId.username}
+            description={content.description}
+            image={content.image}
           >
-            <Button
+            {/* <Button
               name={`Likes (${likes?.length + likesCount})`}
               buttonFunction={() => {
                 if (toggleLikes) {
@@ -81,16 +66,16 @@ const SinglePost = () => {
                   setIsReviewOpen((prevState) => !prevState)
                 }
               />
-            )}
+            )} */}
           </BasicInfoCard>
 
-          <div
-            className="my-10"
+          {/* <div
+            className='my-10'
             dangerouslySetInnerHTML={{
-              __html: filteredContent.body.replace(/\n\n/g, "<br><br>"),
+              __html: content.body.replace(/\n\n/g, "<br><br>"),
             }}
-          />
-          <CommentsSection
+          /> */}
+          {/* <CommentsSection
             isOpen={isCommentsOpen}
             setIsOpen={setIsCommentsOpen}
             data={comments}
@@ -98,11 +83,11 @@ const SinglePost = () => {
           <ReviewSection
             isOpen={isReviewOpen}
             setIsOpen={setIsReviewOpen}
-            title={filteredContent.title}
-          />
+            title={content.title}
+          /> */}
         </div>
       ) : (
-        <p>No matching content found.</p>
+        <p>Content not found.</p>
       )}
     </div>
   );

@@ -12,7 +12,7 @@ import { useLocation } from "react-router-dom";
 // import { IoMenuOutline } from "react-icons/io5";
 
 const LandingPage = () => {
-  const [searchQuery, setSearchQuery] = useState<string>("");
+  // const [searchQuery, setSearchQuery] = useState<string>("");
   const [types, setTypes] = useState<Type[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -60,7 +60,7 @@ const LandingPage = () => {
             })}
           </div>
 
-          <div className="rounded-full border border-slate-800 bg-transparent">
+          {/* <div className="rounded-full border border-slate-800 bg-transparent">
             <input
               type="text"
               placeholder="Search"
@@ -70,12 +70,12 @@ const LandingPage = () => {
                 setSearchQuery(e.target.value)
               }
             />
-          </div>
+          </div> */}
 
           <div className="w-full">
             <MainCardGrid
-              search={searchQuery}
-              selectedFilter={selectedFilter}
+              // search={searchQuery}
+              // selectedFilter={selectedFilter}
             />
           </div>
         </section>

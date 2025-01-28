@@ -1,16 +1,8 @@
 import MainCard from "./MainCard";
-// import maincard from "../maincard.json";|
-
 import { useEffect, useState } from "react";
 import { IContent } from "../types";
-// import axios from "axios";
-// import useFetch from "../hooks/useFetch";
 import { useGetAllContentQuery } from "../slices/contentApiSlice_Lwa";
 import SpinnerComponent from "./SpinnerComponent";
-
-/* Hey Hilton, I changed a few things here, was possible undefined so I added some code to resolve that i.e. content?  and the two lines below*/
-// let authorName = "";
-// let username = "";
 
 const MainCardGrid = () =>
   //   {

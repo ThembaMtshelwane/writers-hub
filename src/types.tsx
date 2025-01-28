@@ -41,9 +41,10 @@ export type IContent = {
   description: string;
   image: string;
   type: string;
-  genres: [string];
+  genres: Genre[];
   likesCount: number;
   commentsCount: number;
+  text: string;
 };
 
 export interface contentResponse {
@@ -83,6 +84,10 @@ export type Genre = {
   id: string;
   name: string;
 };
+export interface IGenre {
+  _id: string;
+  name: string;
+}
 
 export type Type = {
   id: string;
