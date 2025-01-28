@@ -171,12 +171,16 @@ export type UpdateUserResponse = {
   lastName: string;
   password: string;
   email: string;
+  DOB : string;
+  username : string;
 };
 
 export type UpdateUserRequest = {
   firstName?: string;
   lastName?: string;
   email?: string;
+  DOB?: string;
+  username?: string;
   password?: string;
 };
 

@@ -20,6 +20,7 @@ const UpdateProfile = () => {
   const dispatch = useDispatch();
   const [updateProfile] = useUpdateUserMutation();
 
+  
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (password !== confirmPassword) {
@@ -28,21 +29,19 @@ const UpdateProfile = () => {
     }
     setIsSubmitting(true);
     try {
-      const res = await updateProfile({
+      const updatedUser = {
         firstName,
         lastName,
         email,
         password,
-      }).unwrap();
-      dispatch(
-        setCredentials({
-          ...res,
-          DOB: "",
-          username: "",
-          _id: "",
-          preferences: [],
-        })
-      );
+      };
+
+      const res = await updateProfile(updatedUser).unwrap();
+      dispatch(setCredentials({
+           ...res,
+           _id: "",
+          preferences: []
+       })); // Update the Redux store with the new profile data
       setError("");
       setSuccess("Profile updated");
     } catch (err: any) {
@@ -51,6 +50,7 @@ const UpdateProfile = () => {
       setIsSubmitting(false);
     }
   };
+
 
   return (
     <div className="flex flex-col gap-12 items-center">
@@ -86,13 +86,13 @@ const UpdateProfile = () => {
           required
         />
        
-         <input
+       
+        <input
           type="password"
           placeholder="Enter your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="p-3 w-full border rounded"
-          
         />
         <input
           type="password"
@@ -100,8 +100,7 @@ const UpdateProfile = () => {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           className="p-3 w-full border rounded"
-          
-        /> 
+        />
         <p className="text-red-400">{error}</p>
         <p className="text-green-400">{success}</p>
         <button className="buttonStyle w-full" disabled={isSubmitting}>
