@@ -20,6 +20,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import UpdateProfile from "./pages/profilePage/UpdateProfile";
+import EditContentBasicInfo from "./components/EditContent/EditContentBasicInfo";
+import EditContentBody from "./components/EditContent/EditContentBody";
+import EditContentPreview from "./components/EditContent/EditContentPreview";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -54,10 +57,9 @@ const App = () => {
       path: "/edit/:username/:id",
       element: <MainLayout />,
       children: [
-        { index: true, element: <ShareWork /> },
-        { path: "write", element: <Writing /> },
-        { path: "preview", element: <Preview /> },
-        { path: ":username/:id", element: <SinglePost /> },
+        { path: "basic-info", element: <EditContentBasicInfo /> },
+        { path: "write", element: <EditContentBody /> },
+        { path: "preview", element: <EditContentPreview /> },
       ],
     },
     {

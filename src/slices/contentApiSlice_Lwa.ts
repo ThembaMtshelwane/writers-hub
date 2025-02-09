@@ -33,6 +33,14 @@ export const contentApiSlice_Lwa = apiSlice.injectEndpoints({
       },
       providesTags: ["Content"],
     }),
+    updateContent: builder.mutation({
+      query: ({ id, data }) => ({
+        url: `${CONTENT_URL}/${id}`,
+        method: "PUT",
+        body: data,
+      }),
+      invalidatesTags: ["Content"],
+    }),
   }),
 });
 
@@ -41,4 +49,5 @@ export const {
   useGetUserContentQuery,
   useCreateContentMutation,
   useGetContentByIDQuery,
+  useUpdateContentMutation,
 } = contentApiSlice_Lwa;

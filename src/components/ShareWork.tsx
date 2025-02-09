@@ -4,61 +4,23 @@ import Button from "./Button";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "../index.css";
-// import { Genre } from "../types";
 import axios from "axios";
-import { Genre } from "../types";
-// import { useGetContentByIDQuery } from "../slices/contentApiSlice_Lwa";
+import { IGenre } from "../types";
 
 const ShareWork = () => {
   const modules = {
     toolbar: [[{ header: [1, 2, false] }], ["bold", "italic", "underline"]],
   };
 
-  const content = {
-    _id: "demo ",
-    userId: {
-      username: "demo ",
-      firstName: "demo ",
-      lastName: "demo ",
-    },
-    userName: "demo ",
-    author: "demo ",
-    title: "demo ",
-    description: "demo ",
-    image:
-      "https://images.unsplash.com/photo-1727206407683-490abfe0d682?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    type: "demo",
-    genres: [
-      { id: "1", name: "g1" },
-      { id: "2", name: "g2" },
-      { id: "3", name: "g3" },
-    ],
-    likesCount: 0,
-    commentsCount: 0,
-    text: "demo ",
-  };
-
-  const [image, setImage] = useState<string | null>(content.image || null);
-  const [Title, setTitle] = useState<string>(content.title || "");
-  const [Genres, setGenres] = useState<Genre[]>(content.genres || []);
-  const [selectedGenre, setSelectedGenre] = useState(Genres[0].name || "");
-  const [Description, setDescription] = useState<string>(
-    content.description || ""
-  );
+  const [image, setImage] = useState<string>("");
+  const [Title, setTitle] = useState<string>("");
+  const [Genres, setGenres] = useState<IGenre[]>([]);
+  const [selectedGenre, setSelectedGenre] = useState("");
+  const [Description, setDescription] = useState<string>("");
   const [base64, setBase64] = useState<string>("");
-  const [Type, setType] = useState<string | null>(content.type || "");
+  const [Type, setType] = useState<string>("");
   const textRef = useRef<ReactQuill>(null);
   const navigate = useNavigate();
-
-  // const { id } = useParams();
-
-  // const [content, setContent] = useState<IContent>();
-
-  // const { data, isLoading } = useGetContentByIDQuery({ id: id });
-
-  // useEffect(() => {
-  //   if (data) setContent(data);
-  // }, [data]);
 
   useEffect(() => {
     const fetchContent = async () => {
@@ -95,11 +57,11 @@ const ShareWork = () => {
     const qui = textRef.current?.getEditor();
     const text = qui?.getText();
     const formData = {
-      Title: Title || content.title,
-      selectedGenre: selectedGenre || content.genres[0].name,
-      Type: Type || content.type,
-      Description: text || content.description,
-      image: image || content.image,
+      Title,
+      selectedGenre,
+      Type: Type,
+      Description: text,
+      image,
       base64,
     };
 
@@ -158,7 +120,7 @@ const ShareWork = () => {
                   Select Genre
                 </option>
                 {Genres.map((genre) => (
-                  <option key={genre.id} value={genre.name}>
+                  <option key={genre._id} value={genre.name}>
                     {genre.name}
                   </option>
                 ))}

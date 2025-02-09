@@ -16,7 +16,7 @@ const ContentControls = ({username, id}:{username:string; id:string}) => {
             X
           </h2>
           <Link
-            to={`/edit/${username}/${id}`}
+            to={`/edit/${username}/${id}/basic-info`}
             className="text-center p-2  border-t border-secondary w-full"
           >
             Edit
