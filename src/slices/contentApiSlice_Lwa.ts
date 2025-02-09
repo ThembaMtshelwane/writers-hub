@@ -41,6 +41,13 @@ export const contentApiSlice_Lwa = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ["Content"],
     }),
+    deleteContent: builder.mutation({
+      query: ({id}) => ({
+        url: `${CONTENT_URL}/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["Content"],
+    }),
   }),
 });
 
@@ -50,4 +57,5 @@ export const {
   useCreateContentMutation,
   useGetContentByIDQuery,
   useUpdateContentMutation,
+  useDeleteContentMutation,
 } = contentApiSlice_Lwa;

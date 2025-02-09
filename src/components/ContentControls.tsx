@@ -1,9 +1,29 @@
 import { useState } from "react";
 import { VscKebabVertical } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import { useDeleteContentMutation } from "../slices/contentApiSlice_Lwa";
 
-const ContentControls = ({username, id}:{username:string; id:string}) => {
+const ContentControls = ({
+  username,
+  id,
+}: {
+  username: string;
+  id: string;
+}) => {
   const [open, setOpen] = useState(false);
+  const [deleteContent] = useDeleteContentMutation();
+
+  const handleDeleteContent = async (id: string) => {
+    console.log("id", id);
+
+    try {
+      await deleteContent({ id }).unwrap();
+      alert("Content deleted successfully!");
+    } catch (error) {
+      console.error("Delete failed:", error);
+      alert("Failed to delete content.");
+    }
+  };
   return (
     <>
       <VscKebabVertical
@@ -21,7 +41,10 @@ const ContentControls = ({username, id}:{username:string; id:string}) => {
           >
             Edit
           </Link>
-          <h2 className="text-center p-2 border-t border-secondary w-full">
+          <h2
+            onClick={() => handleDeleteContent(id)}
+            className="text-center p-2 border-t border-secondary w-full"
+          >
             Delete
           </h2>
         </div>
