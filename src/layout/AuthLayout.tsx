@@ -2,25 +2,18 @@ import { Outlet } from "react-router-dom";
 import MainCardGrid from "../components/MainCardGrid";
 import FilterButton from "../components/FilterButton";
 import { useEffect, useState } from "react";
-import axios from "axios";
-import { Genre } from "../types";
+import { IGenre } from "../types";
+import { useGetGenresQuery } from "../slices/genreApiSlice";
 
 const AuthLayout = () => {
-  const [genres, setGenres] = useState<Genre[]>([]);
+  const [genres, setGenres] = useState<IGenre[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
+  const { data, isLoading } = useGetGenresQuery();
 
+  //TODO: Filter is not functional
   useEffect(() => {
-    const fetchGenres = async () => {
-      try {
-        const data = (await axios.get("/api/genres")).data;
-
-        setGenres(data);
-      } catch (error) {
-        console.error("Error fetching Data: ", error);
-      }
-    };
-    fetchGenres();
-  }, []);
+    if (data) setGenres(data.data);
+  }, [data]);
 
   const handleSelection = (filter: string) => {
     setSelectedFilter((selected) =>
@@ -37,15 +30,19 @@ const AuthLayout = () => {
         <section className='my-3 p-4 flex flex-col items-center'>
           <h2 className='text-4xl text-accent mt-4 mb-4'>Categories</h2>
           <section className='flex gap-2 my-4 flex-wrap items-center justify-center'>
-            {genres.map((genre) => (
-              <FilterButton
-                name={genre.name}
-                id={genre.id}
-                key={genre.id}
-                isSelected={selectedFilter.includes(genre.id)}
-                onSelect={handleSelection}
-              />
-            ))}
+            {isLoading ? (
+              <p>Loading...</p>
+            ) : (
+              genres.map((genre, index) => (
+                <FilterButton
+                  name={genre.name}
+                  id={genre._id}
+                  key={index}
+                  isSelected={selectedFilter.includes(genre._id)}
+                  onSelect={handleSelection}
+                />
+              ))
+            )}
           </section>
         </section>
         <MainCardGrid /*search={""} selectedFilter={selectedFilter}*/ />
